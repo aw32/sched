@@ -1,0 +1,1940 @@
+980866.629384442 INFO : Main: Starting scheduler
+980866.629461013 DEBUG : Main: thread 22714
+980866.629953262 DEBUG : TaskDefinitions: taskdef loaded for markov
+980866.629973646 DEBUG : TaskDefinitions: taskdef loaded for bfs
+980866.629986217 DEBUG : TaskDefinitions: taskdef loaded for correlation
+980866.629995292 DEBUG : TaskDefinitions: taskdef loaded for gaussblur
+980866.630014427 DEBUG : TaskDefinitions: taskdef loaded for heat
+980866.630027452 DEBUG : TaskDefinitions: taskdef loaded for sleep
+980866.630054521 INFO : TaskGroup: read group file /home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/wrap7.groupconf
+980866.630154302 DEBUG : TaskGroups: task app loaded for heat
+980866.630165166 DEBUG : TaskGroups: task app loaded for correlation
+980866.630173244 DEBUG : TaskGroups: task app loaded for heat
+980866.630180625 DEBUG : TaskGroups: task app loaded for correlation
+980866.630188571 DEBUG : TaskGroups: task app loaded for correlation
+980866.630195891 DEBUG : TaskGroups: task app loaded for heat
+980866.630203044 DEBUG : TaskGroups: task app loaded for heat
+980866.630209943 DEBUG : TaskGroups: task app loaded for gaussblur
+980866.630217630 DEBUG : TaskGroups: task app loaded for heat
+980866.630253835 DEBUG : Config: Start config parsing
+980866.630300167 DEBUG : Config: Start Stream
+980866.630330267 DEBUG : Config: Start Document
+980866.630341548 DEBUG : Config: Start Mapping
+980866.630352598 DEBUG : Config: Scalar value (resources) (null) (null)
+980866.630367398 DEBUG : Config: Start Sequence
+980866.630376121 DEBUG : Config: Start Mapping
+980866.630383806 DEBUG : Config: Scalar value (name) (null) (null)
+980866.630395684 DEBUG : Config: Scalar value (IntelXeon) (null) (null)
+980866.630403132 DEBUG : Config: End Mapping
+980866.630411539 DEBUG : Config: Start Mapping
+980866.630418670 DEBUG : Config: Scalar value (name) (null) (null)
+980866.630426963 DEBUG : Config: Scalar value (NvidiaTesla) (null) (null)
+980866.630433855 DEBUG : Config: End Mapping
+980866.630441041 DEBUG : Config: Start Mapping
+980866.630448383 DEBUG : Config: Scalar value (name) (null) (null)
+980866.630462475 DEBUG : Config: Scalar value (MaxelerVectis) (null) (null)
+980866.630470993 DEBUG : Config: End Mapping
+980866.630477244 DEBUG : Config: End Sequence
+980866.630484465 DEBUG : Config: Scalar value (scheduler) (null) (null)
+980866.630494201 DEBUG : Config: Scalar value (METMig2) (null) (null)
+980866.630502860 DEBUG : Config: Scalar value (resource_taskendhook) (null) (null)
+980866.630512500 DEBUG : Config: Scalar value (/home/awiens/sched/scripts/endtaskhook.sh) (null) (null)
+980866.630521046 DEBUG : Config: Scalar value (genetic_seed) (null) (null)
+980866.630530068 DEBUG : Config: Scalar value (1634861967) (null) (null)
+980866.630538105 DEBUG : Config: Scalar value (geneticmig_solver) (null) (null)
+980866.630549334 DEBUG : Config: Scalar value (/home/awiens/sched/scripts/lp_solve.sh) (null) (null)
+980866.630557908 DEBUG : Config: Scalar value (lp_destination) (null) (null)
+980866.630566924 DEBUG : Config: Scalar value (/home/awiens/sched) (null) (null)
+980866.630574598 DEBUG : Config: Scalar value (sa_ratio_lower) (null) (null)
+980866.630582891 DEBUG : Config: Scalar value (0.5) (null) (null)
+980866.630590979 DEBUG : Config: Scalar value (sa_ratio_higher) (null) (null)
+980866.630599425 DEBUG : Config: Scalar value (0.9) (null) (null)
+980866.630607011 DEBUG : Config: Scalar value (kpb_percentage) (null) (null)
+980866.630615436 DEBUG : Config: Scalar value (0.5) (null) (null)
+980866.630623600 DEBUG : Config: Scalar value (simann_init_prob) (null) (null)
+980866.630632272 DEBUG : Config: Scalar value (0.4) (null) (null)
+980866.630639934 DEBUG : Config: Scalar value (simann_loops_factor) (null) (null)
+980866.630648515 DEBUG : Config: Scalar value (16) (null) (null)
+980866.630656456 DEBUG : Config: Scalar value (simann_reduce) (null) (null)
+980866.630665056 DEBUG : Config: Scalar value (0.95) (null) (null)
+980866.630672772 DEBUG : Config: Scalar value (simann_min_prob) (null) (null)
+980866.630681376 DEBUG : Config: Scalar value (0.02) (null) (null)
+980866.630698614 DEBUG : Config: Scalar value (computer_interrupt) (null) (null)
+980866.630708708 DEBUG : Config: Scalar value (get_progress) (null) (null)
+980866.630716956 DEBUG : Config: Scalar value (computer_required_applications) (null) (null)
+980866.630725918 DEBUG : Config: Scalar value (0) (null) (null)
+980866.630733948 DEBUG : Config: Scalar value (executor_idle_reschedule) (null) (null)
+980866.630742897 DEBUG : Config: Scalar value (false) (null) (null)
+980866.630750867 DEBUG : Config: Scalar value (task_rununtil) (null) (null)
+980866.630760072 DEBUG : Config: Scalar value (progress_suspend) (null) (null)
+980866.630768075 DEBUG : Config: Scalar value (taskloader) (null) (null)
+980866.630777102 DEBUG : Config: Scalar value (taskloaderms) (null) (null)
+980866.630784804 DEBUG : Config: Scalar value (taskloadermspath) (null) (null)
+980866.630794235 DEBUG : Config: Scalar value (/home/awiens/sched/hosts/test/ms_results) (null) (null)
+980866.630802060 DEBUG : Config: Scalar value (resourceloader) (null) (null)
+980866.630811089 DEBUG : Config: Scalar value (resourceloaderms) (null) (null)
+980866.630818916 DEBUG : Config: Scalar value (resourceloaderms_idle) (null) (null)
+980866.630829209 DEBUG : Config: Scalar value (/home/awiens/sched/hosts/test/ms_idle/idle_power_cc-8.pc2.uni-paderborn.de.json) (null) (null)
+980866.630837043 DEBUG : Config: Scalar value (measure) (null) (null)
+980866.630845827 DEBUG : Config: Scalar value (true) (null) (null)
+980866.630853224 DEBUG : Config: Scalar value (measurement) (null) (null)
+980866.630865283 DEBUG : Config: Scalar value (ampehre) (null) (null)
+980866.630873404 DEBUG : Config: Scalar value (ampehre_cpu_s) (null) (null)
+980866.630881662 DEBUG : Config: Scalar value (0) (null) (null)
+980866.630889268 DEBUG : Config: Scalar value (ampehre_cpu_ns) (null) (null)
+980866.630897902 DEBUG : Config: Scalar value (500000000) (null) (null)
+980866.630905414 DEBUG : Config: Scalar value (ampehre_gpu_s) (null) (null)
+980866.630915560 DEBUG : Config: Scalar value (0) (null) (null)
+980866.630923099 DEBUG : Config: Scalar value (ampehre_gpu_ns) (null) (null)
+980866.630931673 DEBUG : Config: Scalar value (500000000) (null) (null)
+980866.630939179 DEBUG : Config: Scalar value (ampehre_fpga_s) (null) (null)
+980866.630947659 DEBUG : Config: Scalar value (0) (null) (null)
+980866.630955270 DEBUG : Config: Scalar value (ampehre_fpga_ns) (null) (null)
+980866.630963897 DEBUG : Config: Scalar value (500000000) (null) (null)
+980866.630971558 DEBUG : Config: Scalar value (ampehre_system_s) (null) (null)
+980866.630980097 DEBUG : Config: Scalar value (0) (null) (null)
+980866.630987726 DEBUG : Config: Scalar value (ampehre_system_ns) (null) (null)
+980866.630996088 DEBUG : Config: Scalar value (500000000) (null) (null)
+980866.631024691 DEBUG : Config: Scalar value (ampehre_mic_s) (null) (null)
+980866.631038931 DEBUG : Config: Scalar value (0) (null) (null)
+980866.631046861 DEBUG : Config: Scalar value (ampehre_mic_ns) (null) (null)
+980866.631058145 DEBUG : Config: Scalar value (500000000) (null) (null)
+980866.631065205 DEBUG : Config: End Mapping
+980866.631071640 DEBUG : Config: End Document
+980866.631077214 DEBUG : Config: End Stream
+980866.631082376 DEBUG : Config: Config parsing finished
+980866.631105101 INFO : Main: Start TaskDatabase
+980866.631123097 INFO : TaskLoader: loaded TaskLoaderMS
+980866.631135440 INFO : TaskLoaderMS: path /home/awiens/sched/hosts/test/ms_results
+980866.631227840 DEBUG : TaskLoaderMS: ignore .
+980866.631235446 DEBUG : TaskLoaderMS: ignore ..
+980866.631264627 DEBUG : TaskLoaderMS: load ms_bfs(1024)@IntelXeon_energy.csv
+980866.631351849 DEBUG : TaskLoaderMS: load ms_bfs(1024)@IntelXeon_time.csv
+980866.631398326 DEBUG : TaskLoaderMS: load ms_bfs(1024)@NvidiaTesla_energy.csv
+980866.631441592 DEBUG : TaskLoaderMS: load ms_bfs(1024)@NvidiaTesla_time.csv
+980866.631484400 DEBUG : TaskLoaderMS: load ms_bfs(128)@IntelXeon_energy.csv
+980866.631527187 DEBUG : TaskLoaderMS: load ms_bfs(128)@IntelXeon_time.csv
+980866.631569885 DEBUG : TaskLoaderMS: load ms_bfs(128)@NvidiaTesla_energy.csv
+980866.631619501 DEBUG : TaskLoaderMS: load ms_bfs(128)@NvidiaTesla_time.csv
+980866.631661789 DEBUG : TaskLoaderMS: load ms_bfs(16384)@IntelXeon_energy.csv
+980866.631704891 DEBUG : TaskLoaderMS: load ms_bfs(16384)@IntelXeon_time.csv
+980866.631746978 DEBUG : TaskLoaderMS: load ms_bfs(16384)@NvidiaTesla_energy.csv
+980866.631788771 DEBUG : TaskLoaderMS: load ms_bfs(16384)@NvidiaTesla_time.csv
+980866.631829864 DEBUG : TaskLoaderMS: load ms_bfs(2048)@IntelXeon_energy.csv
+980866.631874827 DEBUG : TaskLoaderMS: load ms_bfs(2048)@IntelXeon_time.csv
+980866.631917846 DEBUG : TaskLoaderMS: load ms_bfs(2048)@NvidiaTesla_energy.csv
+980866.631959234 DEBUG : TaskLoaderMS: load ms_bfs(2048)@NvidiaTesla_time.csv
+980866.631999744 DEBUG : TaskLoaderMS: load ms_bfs(256)@IntelXeon_energy.csv
+980866.632054512 DEBUG : TaskLoaderMS: load ms_bfs(256)@IntelXeon_time.csv
+980866.632096632 DEBUG : TaskLoaderMS: load ms_bfs(256)@NvidiaTesla_energy.csv
+980866.632137399 DEBUG : TaskLoaderMS: load ms_bfs(256)@NvidiaTesla_time.csv
+980866.632177397 DEBUG : TaskLoaderMS: load ms_bfs(4096)@IntelXeon_energy.csv
+980866.632219138 DEBUG : TaskLoaderMS: load ms_bfs(4096)@IntelXeon_time.csv
+980866.632259307 DEBUG : TaskLoaderMS: load ms_bfs(4096)@NvidiaTesla_energy.csv
+980866.632300507 DEBUG : TaskLoaderMS: load ms_bfs(4096)@NvidiaTesla_time.csv
+980866.632340989 DEBUG : TaskLoaderMS: load ms_bfs(512)@IntelXeon_energy.csv
+980866.632383104 DEBUG : TaskLoaderMS: load ms_bfs(512)@IntelXeon_time.csv
+980866.632423771 DEBUG : TaskLoaderMS: load ms_bfs(512)@NvidiaTesla_energy.csv
+980866.632464146 DEBUG : TaskLoaderMS: load ms_bfs(512)@NvidiaTesla_time.csv
+980866.632504763 DEBUG : TaskLoaderMS: load ms_bfs(8192)@IntelXeon_energy.csv
+980866.632546493 DEBUG : TaskLoaderMS: load ms_bfs(8192)@IntelXeon_time.csv
+980866.632586900 DEBUG : TaskLoaderMS: load ms_bfs(8192)@NvidiaTesla_energy.csv
+980866.632627823 DEBUG : TaskLoaderMS: load ms_bfs(8192)@NvidiaTesla_time.csv
+980866.632669109 DEBUG : TaskLoaderMS: load ms_correlation(1024)@IntelXeon_energy.csv
+980866.632712364 DEBUG : TaskLoaderMS: load ms_correlation(1024)@IntelXeon_time.csv
+980866.632753724 DEBUG : TaskLoaderMS: load ms_correlation(1024)@MaxelerVectis_energy.csv
+980866.632794895 DEBUG : TaskLoaderMS: load ms_correlation(1024)@MaxelerVectis_time.csv
+980866.632837004 DEBUG : TaskLoaderMS: load ms_correlation(1024)@NvidiaTesla_energy.csv
+980866.632878333 DEBUG : TaskLoaderMS: load ms_correlation(1024)@NvidiaTesla_time.csv
+980866.632919351 DEBUG : TaskLoaderMS: load ms_correlation(128)@IntelXeon_energy.csv
+980866.632963600 DEBUG : TaskLoaderMS: load ms_correlation(128)@IntelXeon_time.csv
+980866.633011650 DEBUG : TaskLoaderMS: load ms_correlation(128)@NvidiaTesla_energy.csv
+980866.633058472 DEBUG : TaskLoaderMS: load ms_correlation(128)@NvidiaTesla_time.csv
+980866.633099669 DEBUG : TaskLoaderMS: load ms_correlation(16384)@IntelXeon_energy.csv
+980866.633141634 DEBUG : TaskLoaderMS: load ms_correlation(16384)@IntelXeon_time.csv
+980866.633182204 DEBUG : TaskLoaderMS: load ms_correlation(16384)@MaxelerVectis_energy.csv
+980866.633222748 DEBUG : TaskLoaderMS: load ms_correlation(16384)@MaxelerVectis_time.csv
+980866.633263524 DEBUG : TaskLoaderMS: load ms_correlation(16384)@NvidiaTesla_energy.csv
+980866.633304969 DEBUG : TaskLoaderMS: load ms_correlation(16384)@NvidiaTesla_time.csv
+980866.633345956 DEBUG : TaskLoaderMS: load ms_correlation(2048)@IntelXeon_energy.csv
+980866.633388265 DEBUG : TaskLoaderMS: load ms_correlation(2048)@IntelXeon_time.csv
+980866.633429329 DEBUG : TaskLoaderMS: load ms_correlation(2048)@MaxelerVectis_energy.csv
+980866.633470004 DEBUG : TaskLoaderMS: load ms_correlation(2048)@MaxelerVectis_time.csv
+980866.633510524 DEBUG : TaskLoaderMS: load ms_correlation(2048)@NvidiaTesla_energy.csv
+980866.633550921 DEBUG : TaskLoaderMS: load ms_correlation(2048)@NvidiaTesla_time.csv
+980866.633591703 DEBUG : TaskLoaderMS: load ms_correlation(256)@IntelXeon_energy.csv
+980866.633633750 DEBUG : TaskLoaderMS: load ms_correlation(256)@IntelXeon_time.csv
+980866.633674662 DEBUG : TaskLoaderMS: load ms_correlation(256)@MaxelerVectis_energy.csv
+980866.633721502 DEBUG : TaskLoaderMS: load ms_correlation(256)@MaxelerVectis_time.csv
+980866.633762697 DEBUG : TaskLoaderMS: load ms_correlation(256)@NvidiaTesla_energy.csv
+980866.633803244 DEBUG : TaskLoaderMS: load ms_correlation(256)@NvidiaTesla_time.csv
+980866.633842641 DEBUG : TaskLoaderMS: load ms_correlation(4096)@IntelXeon_energy.csv
+980866.633884894 DEBUG : TaskLoaderMS: load ms_correlation(4096)@IntelXeon_time.csv
+980866.633926108 DEBUG : TaskLoaderMS: load ms_correlation(4096)@MaxelerVectis_energy.csv
+980866.633966639 DEBUG : TaskLoaderMS: load ms_correlation(4096)@MaxelerVectis_time.csv
+980866.634019964 DEBUG : TaskLoaderMS: load ms_correlation(4096)@NvidiaTesla_energy.csv
+980866.634067670 DEBUG : TaskLoaderMS: load ms_correlation(4096)@NvidiaTesla_time.csv
+980866.634109590 DEBUG : TaskLoaderMS: load ms_correlation(512)@IntelXeon_energy.csv
+980866.634152471 DEBUG : TaskLoaderMS: load ms_correlation(512)@IntelXeon_time.csv
+980866.634193892 DEBUG : TaskLoaderMS: load ms_correlation(512)@MaxelerVectis_energy.csv
+980866.634234270 DEBUG : TaskLoaderMS: load ms_correlation(512)@MaxelerVectis_time.csv
+980866.634274737 DEBUG : TaskLoaderMS: load ms_correlation(512)@NvidiaTesla_energy.csv
+980866.634315075 DEBUG : TaskLoaderMS: load ms_correlation(512)@NvidiaTesla_time.csv
+980866.634355275 DEBUG : TaskLoaderMS: load ms_correlation(8192)@IntelXeon_energy.csv
+980866.634399508 DEBUG : TaskLoaderMS: load ms_correlation(8192)@IntelXeon_time.csv
+980866.634441705 DEBUG : TaskLoaderMS: load ms_correlation(8192)@MaxelerVectis_energy.csv
+980866.634482575 DEBUG : TaskLoaderMS: load ms_correlation(8192)@MaxelerVectis_time.csv
+980866.634522217 DEBUG : TaskLoaderMS: load ms_correlation(8192)@NvidiaTesla_energy.csv
+980866.634562351 DEBUG : TaskLoaderMS: load ms_correlation(8192)@NvidiaTesla_time.csv
+980866.634602105 DEBUG : TaskLoaderMS: load ms_gaussblur(1024)@IntelXeon_energy.csv
+980866.634644768 DEBUG : TaskLoaderMS: load ms_gaussblur(1024)@IntelXeon_time.csv
+980866.634685668 DEBUG : TaskLoaderMS: load ms_gaussblur(1024)@MaxelerVectis_energy.csv
+980866.634726385 DEBUG : TaskLoaderMS: load ms_gaussblur(1024)@MaxelerVectis_time.csv
+980866.634767347 DEBUG : TaskLoaderMS: load ms_gaussblur(1024)@NvidiaTesla_energy.csv
+980866.634808715 DEBUG : TaskLoaderMS: load ms_gaussblur(1024)@NvidiaTesla_time.csv
+980866.634849276 DEBUG : TaskLoaderMS: load ms_gaussblur(128)@IntelXeon_energy.csv
+980866.634891310 DEBUG : TaskLoaderMS: load ms_gaussblur(128)@IntelXeon_time.csv
+980866.634932833 DEBUG : TaskLoaderMS: load ms_gaussblur(128)@NvidiaTesla_energy.csv
+980866.634973820 DEBUG : TaskLoaderMS: load ms_gaussblur(128)@NvidiaTesla_time.csv
+980866.635020529 DEBUG : TaskLoaderMS: load ms_gaussblur(2048)@IntelXeon_energy.csv
+980866.635067505 DEBUG : TaskLoaderMS: load ms_gaussblur(2048)@IntelXeon_time.csv
+980866.635108329 DEBUG : TaskLoaderMS: load ms_gaussblur(2048)@MaxelerVectis_energy.csv
+980866.635148862 DEBUG : TaskLoaderMS: load ms_gaussblur(2048)@MaxelerVectis_time.csv
+980866.635188803 DEBUG : TaskLoaderMS: load ms_gaussblur(2048)@NvidiaTesla_energy.csv
+980866.635229309 DEBUG : TaskLoaderMS: load ms_gaussblur(2048)@NvidiaTesla_time.csv
+980866.635269758 DEBUG : TaskLoaderMS: load ms_gaussblur(256)@IntelXeon_energy.csv
+980866.635311275 DEBUG : TaskLoaderMS: load ms_gaussblur(256)@IntelXeon_time.csv
+980866.635352782 DEBUG : TaskLoaderMS: load ms_gaussblur(256)@MaxelerVectis_energy.csv
+980866.635393061 DEBUG : TaskLoaderMS: load ms_gaussblur(256)@MaxelerVectis_time.csv
+980866.635433643 DEBUG : TaskLoaderMS: load ms_gaussblur(256)@NvidiaTesla_energy.csv
+980866.635474670 DEBUG : TaskLoaderMS: load ms_gaussblur(256)@NvidiaTesla_time.csv
+980866.635513766 DEBUG : TaskLoaderMS: load ms_gaussblur(4096)@IntelXeon_energy.csv
+980866.635554781 DEBUG : TaskLoaderMS: load ms_gaussblur(4096)@IntelXeon_time.csv
+980866.635595152 DEBUG : TaskLoaderMS: load ms_gaussblur(4096)@MaxelerVectis_energy.csv
+980866.635637827 DEBUG : TaskLoaderMS: load ms_gaussblur(4096)@MaxelerVectis_time.csv
+980866.635678318 DEBUG : TaskLoaderMS: load ms_gaussblur(4096)@NvidiaTesla_energy.csv
+980866.635724358 DEBUG : TaskLoaderMS: load ms_gaussblur(4096)@NvidiaTesla_time.csv
+980866.635765504 DEBUG : TaskLoaderMS: load ms_gaussblur(512)@IntelXeon_energy.csv
+980866.635807358 DEBUG : TaskLoaderMS: load ms_gaussblur(512)@IntelXeon_time.csv
+980866.635848061 DEBUG : TaskLoaderMS: load ms_gaussblur(512)@MaxelerVectis_energy.csv
+980866.635888478 DEBUG : TaskLoaderMS: load ms_gaussblur(512)@MaxelerVectis_time.csv
+980866.635928016 DEBUG : TaskLoaderMS: load ms_gaussblur(512)@NvidiaTesla_energy.csv
+980866.635968662 DEBUG : TaskLoaderMS: load ms_gaussblur(512)@NvidiaTesla_time.csv
+980866.636013898 DEBUG : TaskLoaderMS: load ms_gaussblur(8192)@IntelXeon_energy.csv
+980866.636061117 DEBUG : TaskLoaderMS: load ms_gaussblur(8192)@IntelXeon_time.csv
+980866.636102789 DEBUG : TaskLoaderMS: load ms_heat(1024)@IntelXeon_energy.csv
+980866.636145960 DEBUG : TaskLoaderMS: load ms_gaussblur(8192)@MaxelerVectis_energy.csv
+980866.636187427 DEBUG : TaskLoaderMS: load ms_gaussblur(8192)@MaxelerVectis_time.csv
+980866.636227863 DEBUG : TaskLoaderMS: load ms_gaussblur(8192)@NvidiaTesla_energy.csv
+980866.636269099 DEBUG : TaskLoaderMS: load ms_gaussblur(8192)@NvidiaTesla_time.csv
+980866.636308935 DEBUG : TaskLoaderMS: load ms_heat(1024)@IntelXeon_time.csv
+980866.636348656 DEBUG : TaskLoaderMS: load ms_heat(1024)@MaxelerVectis_energy.csv
+980866.636390179 DEBUG : TaskLoaderMS: load ms_heat(1024)@MaxelerVectis_time.csv
+980866.636431160 DEBUG : TaskLoaderMS: load ms_heat(1024)@NvidiaTesla_energy.csv
+980866.636471706 DEBUG : TaskLoaderMS: load ms_heat(1024)@NvidiaTesla_time.csv
+980866.636511275 DEBUG : TaskLoaderMS: load ms_heat(128)@IntelXeon_energy.csv
+980866.636552248 DEBUG : TaskLoaderMS: load ms_heat(128)@IntelXeon_time.csv
+980866.636592523 DEBUG : TaskLoaderMS: load ms_heat(128)@NvidiaTesla_energy.csv
+980866.636632551 DEBUG : TaskLoaderMS: load ms_heat(128)@NvidiaTesla_time.csv
+980866.636671997 DEBUG : TaskLoaderMS: load ms_heat(16384)@IntelXeon_energy.csv
+980866.636713453 DEBUG : TaskLoaderMS: load ms_heat(16384)@IntelXeon_time.csv
+980866.636754186 DEBUG : TaskLoaderMS: load ms_heat(16384)@MaxelerVectis_energy.csv
+980866.636794700 DEBUG : TaskLoaderMS: load ms_heat(16384)@MaxelerVectis_time.csv
+980866.636835413 DEBUG : TaskLoaderMS: load ms_heat(16384)@NvidiaTesla_energy.csv
+980866.636875896 DEBUG : TaskLoaderMS: load ms_heat(16384)@NvidiaTesla_time.csv
+980866.636916741 DEBUG : TaskLoaderMS: load ms_heat(2048)@IntelXeon_energy.csv
+980866.636960888 DEBUG : TaskLoaderMS: load ms_heat(2048)@IntelXeon_time.csv
+980866.637006992 DEBUG : TaskLoaderMS: load ms_heat(2048)@MaxelerVectis_energy.csv
+980866.637062629 DEBUG : TaskLoaderMS: load ms_heat(2048)@MaxelerVectis_time.csv
+980866.637103762 DEBUG : TaskLoaderMS: load ms_heat(2048)@NvidiaTesla_energy.csv
+980866.637145823 DEBUG : TaskLoaderMS: load ms_heat(2048)@NvidiaTesla_time.csv
+980866.637185616 DEBUG : TaskLoaderMS: load ms_heat(256)@IntelXeon_energy.csv
+980866.637227001 DEBUG : TaskLoaderMS: load ms_heat(256)@IntelXeon_time.csv
+980866.637267519 DEBUG : TaskLoaderMS: load ms_heat(256)@MaxelerVectis_energy.csv
+980866.637307588 DEBUG : TaskLoaderMS: load ms_heat(256)@MaxelerVectis_time.csv
+980866.637347735 DEBUG : TaskLoaderMS: load ms_heat(256)@NvidiaTesla_energy.csv
+980866.637388773 DEBUG : TaskLoaderMS: load ms_heat(256)@NvidiaTesla_time.csv
+980866.637428293 DEBUG : TaskLoaderMS: load ms_heat(4096)@IntelXeon_energy.csv
+980866.637469679 DEBUG : TaskLoaderMS: load ms_heat(4096)@IntelXeon_time.csv
+980866.637510036 DEBUG : TaskLoaderMS: load ms_heat(4096)@MaxelerVectis_energy.csv
+980866.637550345 DEBUG : TaskLoaderMS: load ms_heat(4096)@MaxelerVectis_time.csv
+980866.637590572 DEBUG : TaskLoaderMS: load ms_heat(4096)@NvidiaTesla_energy.csv
+980866.637631349 DEBUG : TaskLoaderMS: load ms_heat(4096)@NvidiaTesla_time.csv
+980866.637671186 DEBUG : TaskLoaderMS: load ms_heat(512)@IntelXeon_energy.csv
+980866.637712420 DEBUG : TaskLoaderMS: load ms_heat(512)@IntelXeon_time.csv
+980866.637752458 DEBUG : TaskLoaderMS: load ms_heat(512)@MaxelerVectis_energy.csv
+980866.637793982 DEBUG : TaskLoaderMS: load ms_heat(512)@MaxelerVectis_time.csv
+980866.637840983 DEBUG : TaskLoaderMS: load ms_heat(512)@NvidiaTesla_energy.csv
+980866.637882110 DEBUG : TaskLoaderMS: load ms_heat(512)@NvidiaTesla_time.csv
+980866.637922802 DEBUG : TaskLoaderMS: load ms_heat(8192)@IntelXeon_energy.csv
+980866.637964407 DEBUG : TaskLoaderMS: load ms_heat(8192)@IntelXeon_time.csv
+980866.638028190 DEBUG : TaskLoaderMS: load ms_heat(8192)@MaxelerVectis_energy.csv
+980866.638076831 DEBUG : TaskLoaderMS: load ms_heat(8192)@MaxelerVectis_time.csv
+980866.638118126 DEBUG : TaskLoaderMS: load ms_heat(8192)@NvidiaTesla_energy.csv
+980866.638159121 DEBUG : TaskLoaderMS: load ms_heat(8192)@NvidiaTesla_time.csv
+980866.638198710 DEBUG : TaskLoaderMS: load ms_markov(1024)@IntelXeon_energy.csv
+980866.638241591 DEBUG : TaskLoaderMS: load ms_markov(1024)@IntelXeon_time.csv
+980866.638286318 DEBUG : TaskLoaderMS: load ms_markov(1024)@MaxelerVectis_energy.csv
+980866.638326705 DEBUG : TaskLoaderMS: load ms_markov(1024)@MaxelerVectis_time.csv
+980866.638366724 DEBUG : TaskLoaderMS: load ms_markov(1024)@NvidiaTesla_energy.csv
+980866.638407475 DEBUG : TaskLoaderMS: load ms_markov(1024)@NvidiaTesla_time.csv
+980866.638447327 DEBUG : TaskLoaderMS: load ms_markov(128)@IntelXeon_energy.csv
+980866.638489015 DEBUG : TaskLoaderMS: load ms_markov(128)@IntelXeon_time.csv
+980866.638529222 DEBUG : TaskLoaderMS: load ms_markov(128)@MaxelerVectis_energy.csv
+980866.638570047 DEBUG : TaskLoaderMS: load ms_markov(128)@MaxelerVectis_time.csv
+980866.638610135 DEBUG : TaskLoaderMS: load ms_markov(128)@NvidiaTesla_energy.csv
+980866.638650111 DEBUG : TaskLoaderMS: load ms_markov(128)@NvidiaTesla_time.csv
+980866.638690206 DEBUG : TaskLoaderMS: load ms_markov(2048)@IntelXeon_energy.csv
+980866.638731942 DEBUG : TaskLoaderMS: load ms_markov(2048)@IntelXeon_time.csv
+980866.638772262 DEBUG : TaskLoaderMS: load ms_markov(2048)@NvidiaTesla_energy.csv
+980866.638812814 DEBUG : TaskLoaderMS: load ms_markov(2048)@NvidiaTesla_time.csv
+980866.638852184 DEBUG : TaskLoaderMS: load ms_markov(256)@IntelXeon_energy.csv
+980866.638893689 DEBUG : TaskLoaderMS: load ms_markov(256)@IntelXeon_time.csv
+980866.638934646 DEBUG : TaskLoaderMS: load ms_markov(256)@MaxelerVectis_energy.csv
+980866.638975720 DEBUG : TaskLoaderMS: load ms_markov(256)@MaxelerVectis_time.csv
+980866.639021315 DEBUG : TaskLoaderMS: load ms_markov(256)@NvidiaTesla_energy.csv
+980866.639067718 DEBUG : TaskLoaderMS: load ms_markov(256)@NvidiaTesla_time.csv
+980866.639108478 DEBUG : TaskLoaderMS: load ms_markov(4096)@IntelXeon_energy.csv
+980866.639149964 DEBUG : TaskLoaderMS: load ms_markov(4096)@IntelXeon_time.csv
+980866.639190404 DEBUG : TaskLoaderMS: load ms_markov(4096)@NvidiaTesla_energy.csv
+980866.639230723 DEBUG : TaskLoaderMS: load ms_markov(4096)@NvidiaTesla_time.csv
+980866.639270840 DEBUG : TaskLoaderMS: load ms_markov(512)@IntelXeon_energy.csv
+980866.639313030 DEBUG : TaskLoaderMS: load ms_markov(512)@IntelXeon_time.csv
+980866.639353744 DEBUG : TaskLoaderMS: load ms_markov(512)@MaxelerVectis_energy.csv
+980866.639393869 DEBUG : TaskLoaderMS: load ms_markov(512)@MaxelerVectis_time.csv
+980866.639432707 DEBUG : TaskLoaderMS: ignore 2247843 test_all.sh
+980866.639442961 DEBUG : TaskLoaderMS: load ms_markov(512)@NvidiaTesla_energy.csv
+980866.639483174 DEBUG : TaskLoaderMS: load ms_markov(512)@NvidiaTesla_time.csv
+980866.639522667 DEBUG : TaskLoaderMS: load ms_markov(8192)@IntelXeon_energy.csv
+980866.639563409 DEBUG : TaskLoaderMS: load ms_markov(8192)@IntelXeon_time.csv
+980866.639603334 DEBUG : TaskLoaderMS: load ms_markov(8192)@NvidiaTesla_energy.csv
+980866.639644056 DEBUG : TaskLoaderMS: load ms_markov(8192)@NvidiaTesla_time.csv
+980866.639682225 DEBUG : TaskLoaderMS: ignore 22479c3 test_check.sh
+980866.639690573 DEBUG : TaskLoaderMS: ignore 22479eb test_plan.sh
+980866.639715325 INFO : ResourceLoader: loaded ResourceLoaderMS
+980866.639723853 INFO : ResourceLoaderMS: idle file /home/awiens/sched/hosts/test/ms_idle/idle_power_cc-8.pc2.uni-paderborn.de.json
+980866.639921558 INFO : Resource: task runs until target progress and suspends
+980866.640083842 INFO : Main: Found 3 resources:
+980866.640098752 INFO : Main:  - IntelXeon
+980866.640105784 INFO : Main:  - NvidiaTesla
+980866.640111790 INFO : Main:  - MaxelerVectis
+980866.640204429 INFO : UnixServer: socket path: /tmp/wrapsocketkx9862tz
+980866.640214302 INFO : UnixServer: start
+980866.640467258 DEBUG : UnixServer: start 7
+980866.640519112 DEBUG : UnixServer: thread 22721
+980866.640533639 DEBUG : UnixServer accept
+980866.640563339 DEBUG : Timer: thread 22716
+980866.640596359 DEBUG : Timer: thread 22717
+980866.650883059 DEBUG : Timer: thread 22718
+980866.652791405 DEBUG : ComUnixWriter: thread 22720
+980867.640564013 INFO : WrapMain: initialize
+980867.640594458 DEBUG : WrapClient: initiliaze 9 apps
+980867.640609031 DEBUG : WrapClient: start app heat
+980867.640624744 DEBUG : WrapTaskGroup: WD /
+980867.640631144 DEBUG : WrapTaskGroup: ARG /home/awiens/egysched/tasks_mig/build/heat/task_mig_heat1
+980867.640684287 DEBUG : WrapTaskGroup: ENV LD_LIBRARY_PATH=/usr/local/cuda-7.0/targets/x86_64-linux/lib/:/opt/pgi/linux86-64/18.4/lib/
+980867.640691368 DEBUG : WrapTaskGroup: ENV LD_PRELOAD=/usr/ampehre/lib/libms_common_apapi.so
+980867.640697188 DEBUG : WrapTaskGroup: ENV CUDA_HOME=/usr/local/cuda-7.0/
+980867.640703072 DEBUG : WrapTaskGroup: ENV SCHED_VERBOSE=1
+980867.640708764 DEBUG : WrapTaskGroup: ENV LOG_PATH=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/logs
+980867.640714490 DEBUG : WrapTaskGroup: ENV WRAP_CONFIG=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/METMig2.conf
+980867.640720439 DEBUG : WrapTaskGroup: ENV WRAP_FILE_PATH=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2
+980867.640725944 DEBUG : WrapTaskGroup: ENV WRAP_PATH=/home/awiens/sched/build/wrap
+980867.640731383 DEBUG : WrapTaskGroup: ENV SCHED_LOG_PRIORITY=DEBUG
+980867.640736831 DEBUG : WrapTaskGroup: ENV MANPATH=:/opt/pgi/linux86-64/19.4/man:/opt/pgi/linux86-64/19.4/man
+980867.640742216 DEBUG : WrapTaskGroup: ENV CUDA_PATH=/usr/local/cuda
+980867.640747524 DEBUG : WrapTaskGroup: ENV XDG_SESSION_ID=733
+980867.640752842 DEBUG : WrapTaskGroup: ENV HOSTNAME=cc-8.pc2.uni-paderborn.de
+980867.640758053 DEBUG : WrapTaskGroup: ENV TERM=screen-256color
+980867.640763212 DEBUG : WrapTaskGroup: ENV SHELL=/bin/bash
+980867.640768402 DEBUG : WrapTaskGroup: ENV MAXELEROSDIR=/opt/maxeler/maxeleros
+980867.640773593 DEBUG : WrapTaskGroup: ENV HISTSIZE=1000
+980867.640778711 DEBUG : WrapTaskGroup: ENV SSH_CLIENT=131.234.11.196 56856 22
+980867.640783932 DEBUG : WrapTaskGroup: ENV QTDIR=/usr/lib64/qt-3.3
+980867.640789069 DEBUG : WrapTaskGroup: ENV QTINC=/usr/lib64/qt-3.3/include
+980867.640794161 DEBUG : WrapTaskGroup: ENV SSH_TTY=/dev/pts/0
+980867.640799217 DEBUG : WrapTaskGroup: ENV QT_GRAPHICSSYSTEM_CHECKED=1
+980867.640804381 DEBUG : WrapTaskGroup: ENV MEASURE=true
+980867.640809617 DEBUG : WrapTaskGroup: ENV USER=awiens
+980867.640814793 DEBUG : WrapTaskGroup: ENV SCHED_HOST=test
+980867.640828561 DEBUG : WrapTaskGroup: ENV LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
+980867.640853908 DEBUG : WrapTaskGroup: ENV TMUX=/tmp/tmux-1004/default,34010,0
+980867.640859956 DEBUG : WrapTaskGroup: ENV PGI=/opt/pgi
+980867.640866002 DEBUG : WrapTaskGroup: ENV PATH=/opt/Xilinx/13.3/ISE_DS/../xilinx_wrappers:/opt/pgi/linux86-64/19.4/bin:/opt/maxeler/maxeleros/utils/:/usr/egysched/bin:/usr/ampehre/bin:/opt/Xilinx/13.3/ISE_DS/../xilinx_wrappers:/usr/lib64/qt-3.3/bin:/opt/pgi/linux86-64/19.4/bin:/opt/maxeler/maxeleros/utils/:/usr/egysched/bin:/usr/ampehre/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/awiens/.local/bin:/home/awiens/bin:/home/awiens/.local/bin:/home/awiens/bin
+980867.640871719 DEBUG : WrapTaskGroup: ENV MAIL=/var/spool/mail/awiens
+980867.640877073 DEBUG : WrapTaskGroup: ENV TEST_RESULTDIR=/home/awiens/sched/hosts/test/test_results/default/20190628-161917
+980867.640882561 DEBUG : WrapTaskGroup: ENV PWD=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2
+980867.640887793 DEBUG : WrapTaskGroup: ENV PRECONF=default
+980867.640892957 DEBUG : WrapTaskGroup: ENV LANG=en_US.UTF-8
+980867.640898089 DEBUG : WrapTaskGroup: ENV TMUX_PANE=%45
+980867.640903357 DEBUG : WrapTaskGroup: ENV SCHED_EVENTLOG=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/logs/wrap7.eventlog
+980867.640908959 DEBUG : WrapTaskGroup: ENV LM_LICENSE_FILE=27000@license1.uni-paderborn.de:27000@license2.uni-paderborn.de:27000@license3.uni-paderborn.de:/opt/pgi/license.dat
+980867.640914321 DEBUG : WrapTaskGroup: ENV HISTCONTROL=ignoredups
+980867.640919498 DEBUG : WrapTaskGroup: ENV SHLVL=4
+980867.640924676 DEBUG : WrapTaskGroup: ENV HOME=/home/awiens
+980867.640929778 DEBUG : WrapTaskGroup: ENV SCHED_RESULTS=/home/awiens/sched/hosts
+980867.640934929 DEBUG : WrapTaskGroup: ENV SCHED_ENV=/home/awiens/sched
+980867.640940212 DEBUG : WrapTaskGroup: ENV PYTHONPATH=/home/awiens/sched/scripts/:/home/awiens/sched/scripts/
+980867.640945522 DEBUG : WrapTaskGroup: ENV LOGNAME=awiens
+980867.640950573 DEBUG : WrapTaskGroup: ENV QTLIB=/usr/lib64/qt-3.3/lib
+980867.640955732 DEBUG : WrapTaskGroup: ENV TASKDEF=/home/awiens/sched/hosts/test/tasks.def
+980867.640960993 DEBUG : WrapTaskGroup: ENV XDG_DATA_DIRS=/home/awiens/.local/share/flatpak/exports/share/:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share/
+980867.640966311 DEBUG : WrapTaskGroup: ENV SSH_CONNECTION=131.234.11.196 43230 131.234.58.31 22
+980867.640971554 DEBUG : WrapTaskGroup: ENV SCHED_CONFIG=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/METMig2.conf
+980867.640976815 DEBUG : WrapTaskGroup: ENV LESSOPEN=||/usr/bin/lesspipe.sh %s
+980867.640981897 DEBUG : WrapTaskGroup: ENV XDG_RUNTIME_DIR=/run/user/1004
+980867.640986986 DEBUG : WrapTaskGroup: ENV SCHEDULER=METMig2
+980867.640992178 DEBUG : WrapTaskGroup: ENV _=/home/awiens/sched/scripts/taskset_exec.py
+980867.640997441 DEBUG : WrapTaskGroup: ENV WRAP_LOGPREFIX=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/logs/wrap7
+980867.641009492 DEBUG : WrapTaskGroup: ENV SCHED_TASKDEF=/home/awiens/sched/hosts/test/tasks.def
+980867.641018549 DEBUG : WrapTaskGroup: ENV SCHED_TASKSIZE=512
+980867.641024089 DEBUG : WrapTaskGroup: ENV SCHED_SOCKET=/tmp/wrapsocketkx9862tz
+980867.641289591 DEBUG : WrapTaskApp: started process 22723
+980867.650202121 DEBUG : UnixServer POLL incoming socket
+980867.650236722 DEBUG : UnixServer got socket
+980867.650251804 DEBUG : UnixServer: add new client c4000b70 socket 8
+980867.650272989 DEBUG : UnixServer accept
+980867.650316365 DEBUG : UnixServer POLL other data
+980867.650325143 DEBUG : UnixServer 8: POLL 1
+980867.650330767 DEBUG : UnixServer 8: read from client
+980867.650341548 DEBUG : UnixClient initClient
+980867.650363317 DEBUG : UnixClient protocol version 1
+980867.650369901 DEBUG : UnixClient start
+980867.650375199 DEBUG : UnixClient read new data
+980867.650381450 DEBUG : UnixClient recv -1
+980867.650403650 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980867.650409900 DEBUG : UnixClient nothing to parse
+980867.650415527 DEBUG : UnixServer accept
+980867.650485633 DEBUG : UnixServer POLL other data
+980867.650494597 DEBUG : UnixServer 8: POLL 1
+980867.650500177 DEBUG : UnixServer 8: read from client
+980867.650506260 DEBUG : UnixClient start
+980867.650511319 DEBUG : UnixClient read new data
+980867.650518676 DEBUG : UnixClient recv 151
+980867.650524013 DEBUG : UnixClient going to parse
+980867.650530244 DEBUG : < {"msg":"TASKLIST","tasklist":[{"name":"heat","size":512,"checkpoints":768,"dependencies":[],"resources":["IntelXeon","NvidiaTesla","MaxelerVectis"]}]}
+980867.650571367 DEBUG : TaskDatabase: registerTasklist
+980867.650590942 DEBUG : TaskDatabase: task 0/1 id 0
+980867.650619724 DEBUG : CTaskDatabase: registerTasklist: 0 0x7f4fc40013e0
+980867.650638266 DEBUG : WrapClient: clientTasklist
+980867.650654348 DEBUG : UnixClient start
+980867.650660474 DEBUG : UnixClient read new data
+980867.650667281 DEBUG : UnixClient recv -1
+980867.650675522 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980867.650683634 DEBUG : UnixClient nothing to parse
+980867.650691210 DEBUG : UnixServer accept
+980867.650705112 DEBUG : WrapClient: start app correlation
+980867.650728617 DEBUG : WrapTaskGroup: WD /
+980867.650735336 DEBUG : WrapTaskGroup: ARG /home/awiens/egysched/tasks_mig/build/correlation/task_mig_correlation1
+980867.650752599 DEBUG : > {"msg":"TASKIDS","taskids":[0]}
+980867.650766030 DEBUG : 32 written
+980867.650773564 DEBUG : WrapTaskGroup: ENV LD_LIBRARY_PATH=/usr/local/cuda-7.0/targets/x86_64-linux/lib/:/opt/pgi/linux86-64/18.4/lib/
+980867.650780886 DEBUG : WrapTaskGroup: ENV LD_PRELOAD=/usr/ampehre/lib/libms_common_apapi.so
+980867.650786489 DEBUG : WrapTaskGroup: ENV CUDA_HOME=/usr/local/cuda-7.0/
+980867.650791987 DEBUG : WrapTaskGroup: ENV SCHED_VERBOSE=1
+980867.650797350 DEBUG : WrapTaskGroup: ENV LOG_PATH=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/logs
+980867.650803073 DEBUG : WrapTaskGroup: ENV WRAP_CONFIG=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/METMig2.conf
+980867.650808768 DEBUG : WrapTaskGroup: ENV WRAP_FILE_PATH=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2
+980867.650814044 DEBUG : WrapTaskGroup: ENV WRAP_PATH=/home/awiens/sched/build/wrap
+980867.650819132 DEBUG : WrapTaskGroup: ENV SCHED_LOG_PRIORITY=DEBUG
+980867.650824384 DEBUG : WrapTaskGroup: ENV MANPATH=:/opt/pgi/linux86-64/19.4/man:/opt/pgi/linux86-64/19.4/man
+980867.650829536 DEBUG : WrapTaskGroup: ENV CUDA_PATH=/usr/local/cuda
+980867.650834552 DEBUG : WrapTaskGroup: ENV XDG_SESSION_ID=733
+980867.650839672 DEBUG : WrapTaskGroup: ENV HOSTNAME=cc-8.pc2.uni-paderborn.de
+980867.650844742 DEBUG : WrapTaskGroup: ENV TERM=screen-256color
+980867.650849787 DEBUG : WrapTaskGroup: ENV SHELL=/bin/bash
+980867.650854921 DEBUG : WrapTaskGroup: ENV MAXELEROSDIR=/opt/maxeler/maxeleros
+980867.650860024 DEBUG : WrapTaskGroup: ENV HISTSIZE=1000
+980867.650865156 DEBUG : WrapTaskGroup: ENV SSH_CLIENT=131.234.11.196 56856 22
+980867.650870104 DEBUG : WrapTaskGroup: ENV QTDIR=/usr/lib64/qt-3.3
+980867.650875112 DEBUG : WrapTaskGroup: ENV QTINC=/usr/lib64/qt-3.3/include
+980867.650880086 DEBUG : WrapTaskGroup: ENV SSH_TTY=/dev/pts/0
+980867.650885115 DEBUG : WrapTaskGroup: ENV QT_GRAPHICSSYSTEM_CHECKED=1
+980867.650890132 DEBUG : WrapTaskGroup: ENV MEASURE=true
+980867.650895076 DEBUG : WrapTaskGroup: ENV USER=awiens
+980867.650900172 DEBUG : WrapTaskGroup: ENV SCHED_HOST=test
+980867.650917305 DEBUG : WrapTaskGroup: ENV LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
+980867.650934688 DEBUG : WrapTaskGroup: ENV TMUX=/tmp/tmux-1004/default,34010,0
+980867.650940483 DEBUG : WrapTaskGroup: ENV PGI=/opt/pgi
+980867.650946318 DEBUG : WrapTaskGroup: ENV PATH=/opt/Xilinx/13.3/ISE_DS/../xilinx_wrappers:/opt/pgi/linux86-64/19.4/bin:/opt/maxeler/maxeleros/utils/:/usr/egysched/bin:/usr/ampehre/bin:/opt/Xilinx/13.3/ISE_DS/../xilinx_wrappers:/usr/lib64/qt-3.3/bin:/opt/pgi/linux86-64/19.4/bin:/opt/maxeler/maxeleros/utils/:/usr/egysched/bin:/usr/ampehre/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/awiens/.local/bin:/home/awiens/bin:/home/awiens/.local/bin:/home/awiens/bin
+980867.650951865 DEBUG : WrapTaskGroup: ENV MAIL=/var/spool/mail/awiens
+980867.650957270 DEBUG : WrapTaskGroup: ENV TEST_RESULTDIR=/home/awiens/sched/hosts/test/test_results/default/20190628-161917
+980867.650962598 DEBUG : WrapTaskGroup: ENV PWD=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2
+980867.650967844 DEBUG : WrapTaskGroup: ENV PRECONF=default
+980867.650972969 DEBUG : WrapTaskGroup: ENV LANG=en_US.UTF-8
+980867.650978052 DEBUG : WrapTaskGroup: ENV TMUX_PANE=%45
+980867.650983449 DEBUG : WrapTaskGroup: ENV SCHED_EVENTLOG=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/logs/wrap7.eventlog
+980867.650988892 DEBUG : WrapTaskGroup: ENV LM_LICENSE_FILE=27000@license1.uni-paderborn.de:27000@license2.uni-paderborn.de:27000@license3.uni-paderborn.de:/opt/pgi/license.dat
+980867.650994184 DEBUG : WrapTaskGroup: ENV HISTCONTROL=ignoredups
+980867.650999203 DEBUG : WrapTaskGroup: ENV SHLVL=4
+980867.651014881 DEBUG : WrapTaskGroup: ENV HOME=/home/awiens
+980867.651020804 DEBUG : WrapTaskGroup: ENV SCHED_RESULTS=/home/awiens/sched/hosts
+980867.651026206 DEBUG : WrapTaskGroup: ENV SCHED_ENV=/home/awiens/sched
+980867.651031419 DEBUG : WrapTaskGroup: ENV PYTHONPATH=/home/awiens/sched/scripts/:/home/awiens/sched/scripts/
+980867.651036630 DEBUG : WrapTaskGroup: ENV LOGNAME=awiens
+980867.651041641 DEBUG : WrapTaskGroup: ENV QTLIB=/usr/lib64/qt-3.3/lib
+980867.651046840 DEBUG : WrapTaskGroup: ENV TASKDEF=/home/awiens/sched/hosts/test/tasks.def
+980867.651052126 DEBUG : WrapTaskGroup: ENV XDG_DATA_DIRS=/home/awiens/.local/share/flatpak/exports/share/:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share/
+980867.651057320 DEBUG : WrapTaskGroup: ENV SSH_CONNECTION=131.234.11.196 43230 131.234.58.31 22
+980867.651067531 DEBUG : WrapTaskGroup: ENV SCHED_CONFIG=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/METMig2.conf
+980867.651073323 DEBUG : WrapTaskGroup: ENV LESSOPEN=||/usr/bin/lesspipe.sh %s
+980867.651078475 DEBUG : WrapTaskGroup: ENV XDG_RUNTIME_DIR=/run/user/1004
+980867.651083645 DEBUG : WrapTaskGroup: ENV SCHEDULER=METMig2
+980867.651088798 DEBUG : WrapTaskGroup: ENV _=/home/awiens/sched/scripts/taskset_exec.py
+980867.651094057 DEBUG : WrapTaskGroup: ENV WRAP_LOGPREFIX=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/logs/wrap7
+980867.651099355 DEBUG : WrapTaskGroup: ENV SCHED_TASKDEF=/home/awiens/sched/hosts/test/tasks.def
+980867.651104592 DEBUG : WrapTaskGroup: ENV SCHED_TASKSIZE=512
+980867.651109665 DEBUG : WrapTaskGroup: ENV SCHED_SOCKET=/tmp/wrapsocketkx9862tz
+980867.651349011 DEBUG : WrapTaskApp: started process 22725
+980867.657324067 DEBUG : UnixServer POLL incoming socket
+980867.657347027 DEBUG : UnixServer got socket
+980867.657358981 DEBUG : UnixServer: add new client c4000960 socket 9
+980867.657368645 DEBUG : UnixServer accept
+980867.657407325 DEBUG : UnixServer POLL other data
+980867.657415515 DEBUG : UnixServer 9: POLL 1
+980867.657421197 DEBUG : UnixServer 9: read from client
+980867.657428301 DEBUG : UnixClient initClient
+980867.657437890 DEBUG : UnixClient protocol version 1
+980867.657443527 DEBUG : UnixClient start
+980867.657448818 DEBUG : UnixClient read new data
+980867.657455251 DEBUG : UnixClient recv -1
+980867.657465687 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980867.657471891 DEBUG : UnixClient nothing to parse
+980867.657477557 DEBUG : UnixServer accept
+980867.657540863 DEBUG : UnixServer POLL other data
+980867.657549834 DEBUG : UnixServer 9: POLL 1
+980867.657555517 DEBUG : UnixServer 9: read from client
+980867.657561891 DEBUG : UnixClient start
+980867.657567015 DEBUG : UnixClient read new data
+980867.657574216 DEBUG : UnixClient recv 158
+980867.657579571 DEBUG : UnixClient going to parse
+980867.657585730 DEBUG : < {"msg":"TASKLIST","tasklist":[{"name":"correlation","size":512,"checkpoints":512,"dependencies":[],"resources":["IntelXeon","NvidiaTesla","MaxelerVectis"]}]}
+980867.657611451 DEBUG : TaskDatabase: registerTasklist
+980867.657626157 DEBUG : TaskDatabase: task 0/1 id 1
+980867.657650383 DEBUG : CTaskDatabase: registerTasklist: 1 0x7f4fc4001140
+980867.657663795 DEBUG : WrapClient: clientTasklist
+980867.657679461 DEBUG : UnixClient start
+980867.657685739 DEBUG : UnixClient read new data
+980867.657692912 DEBUG : UnixClient recv -1
+980867.657704783 DEBUG : WrapClient: start app heat
+980867.657723762 DEBUG : WrapTaskGroup: WD /
+980867.657732721 DEBUG : WrapTaskGroup: ARG /home/awiens/egysched/tasks_mig/build/heat/task_mig_heat1
+980867.657744330 DEBUG : > {"msg":"TASKIDS","taskids":[1]}
+980867.657758687 DEBUG : 32 written
+980867.657769572 DEBUG : WrapTaskGroup: ENV LD_LIBRARY_PATH=/usr/local/cuda-7.0/targets/x86_64-linux/lib/:/opt/pgi/linux86-64/18.4/lib/
+980867.657776341 DEBUG : WrapTaskGroup: ENV LD_PRELOAD=/usr/ampehre/lib/libms_common_apapi.so
+980867.657781814 DEBUG : WrapTaskGroup: ENV CUDA_HOME=/usr/local/cuda-7.0/
+980867.657787025 DEBUG : WrapTaskGroup: ENV SCHED_VERBOSE=1
+980867.657792303 DEBUG : WrapTaskGroup: ENV LOG_PATH=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/logs
+980867.657797772 DEBUG : WrapTaskGroup: ENV WRAP_CONFIG=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/METMig2.conf
+980867.657803108 DEBUG : WrapTaskGroup: ENV WRAP_FILE_PATH=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2
+980867.657808263 DEBUG : WrapTaskGroup: ENV WRAP_PATH=/home/awiens/sched/build/wrap
+980867.657813414 DEBUG : WrapTaskGroup: ENV SCHED_LOG_PRIORITY=DEBUG
+980867.657818514 DEBUG : WrapTaskGroup: ENV MANPATH=:/opt/pgi/linux86-64/19.4/man:/opt/pgi/linux86-64/19.4/man
+980867.657823639 DEBUG : WrapTaskGroup: ENV CUDA_PATH=/usr/local/cuda
+980867.657828652 DEBUG : WrapTaskGroup: ENV XDG_SESSION_ID=733
+980867.657833641 DEBUG : WrapTaskGroup: ENV HOSTNAME=cc-8.pc2.uni-paderborn.de
+980867.657844495 DEBUG : WrapTaskGroup: ENV TERM=screen-256color
+980867.657850178 DEBUG : WrapTaskGroup: ENV SHELL=/bin/bash
+980867.657855484 DEBUG : WrapTaskGroup: ENV MAXELEROSDIR=/opt/maxeler/maxeleros
+980867.657860790 DEBUG : WrapTaskGroup: ENV HISTSIZE=1000
+980867.657865993 DEBUG : WrapTaskGroup: ENV SSH_CLIENT=131.234.11.196 56856 22
+980867.657871161 DEBUG : WrapTaskGroup: ENV QTDIR=/usr/lib64/qt-3.3
+980867.657876420 DEBUG : WrapTaskGroup: ENV QTINC=/usr/lib64/qt-3.3/include
+980867.657881529 DEBUG : WrapTaskGroup: ENV SSH_TTY=/dev/pts/0
+980867.657886564 DEBUG : WrapTaskGroup: ENV QT_GRAPHICSSYSTEM_CHECKED=1
+980867.657891668 DEBUG : WrapTaskGroup: ENV MEASURE=true
+980867.657896777 DEBUG : WrapTaskGroup: ENV USER=awiens
+980867.657901817 DEBUG : WrapTaskGroup: ENV SCHED_HOST=test
+980867.657918110 DEBUG : WrapTaskGroup: ENV LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
+980867.657926850 DEBUG : WrapTaskGroup: ENV TMUX=/tmp/tmux-1004/default,34010,0
+980867.657932137 DEBUG : WrapTaskGroup: ENV PGI=/opt/pgi
+980867.657937942 DEBUG : WrapTaskGroup: ENV PATH=/opt/Xilinx/13.3/ISE_DS/../xilinx_wrappers:/opt/pgi/linux86-64/19.4/bin:/opt/maxeler/maxeleros/utils/:/usr/egysched/bin:/usr/ampehre/bin:/opt/Xilinx/13.3/ISE_DS/../xilinx_wrappers:/usr/lib64/qt-3.3/bin:/opt/pgi/linux86-64/19.4/bin:/opt/maxeler/maxeleros/utils/:/usr/egysched/bin:/usr/ampehre/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/awiens/.local/bin:/home/awiens/bin:/home/awiens/.local/bin:/home/awiens/bin
+980867.657943473 DEBUG : WrapTaskGroup: ENV MAIL=/var/spool/mail/awiens
+980867.657948812 DEBUG : WrapTaskGroup: ENV TEST_RESULTDIR=/home/awiens/sched/hosts/test/test_results/default/20190628-161917
+980867.657954199 DEBUG : WrapTaskGroup: ENV PWD=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2
+980867.657959484 DEBUG : WrapTaskGroup: ENV PRECONF=default
+980867.657964503 DEBUG : WrapTaskGroup: ENV LANG=en_US.UTF-8
+980867.657969540 DEBUG : WrapTaskGroup: ENV TMUX_PANE=%45
+980867.657974673 DEBUG : WrapTaskGroup: ENV SCHED_EVENTLOG=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/logs/wrap7.eventlog
+980867.657980102 DEBUG : WrapTaskGroup: ENV LM_LICENSE_FILE=27000@license1.uni-paderborn.de:27000@license2.uni-paderborn.de:27000@license3.uni-paderborn.de:/opt/pgi/license.dat
+980867.657985335 DEBUG : WrapTaskGroup: ENV HISTCONTROL=ignoredups
+980867.657996310 DEBUG : WrapTaskGroup: ENV SHLVL=4
+980867.658007278 DEBUG : WrapTaskGroup: ENV HOME=/home/awiens
+980867.658017689 DEBUG : WrapTaskGroup: ENV SCHED_RESULTS=/home/awiens/sched/hosts
+980867.658023143 DEBUG : WrapTaskGroup: ENV SCHED_ENV=/home/awiens/sched
+980867.658028463 DEBUG : WrapTaskGroup: ENV PYTHONPATH=/home/awiens/sched/scripts/:/home/awiens/sched/scripts/
+980867.658033553 DEBUG : WrapTaskGroup: ENV LOGNAME=awiens
+980867.658038615 DEBUG : WrapTaskGroup: ENV QTLIB=/usr/lib64/qt-3.3/lib
+980867.658043846 DEBUG : WrapTaskGroup: ENV TASKDEF=/home/awiens/sched/hosts/test/tasks.def
+980867.658049292 DEBUG : WrapTaskGroup: ENV XDG_DATA_DIRS=/home/awiens/.local/share/flatpak/exports/share/:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share/
+980867.658054692 DEBUG : WrapTaskGroup: ENV SSH_CONNECTION=131.234.11.196 43230 131.234.58.31 22
+980867.658059983 DEBUG : WrapTaskGroup: ENV SCHED_CONFIG=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/METMig2.conf
+980867.658065185 DEBUG : WrapTaskGroup: ENV LESSOPEN=||/usr/bin/lesspipe.sh %s
+980867.658070313 DEBUG : WrapTaskGroup: ENV XDG_RUNTIME_DIR=/run/user/1004
+980867.658075351 DEBUG : WrapTaskGroup: ENV SCHEDULER=METMig2
+980867.658080532 DEBUG : WrapTaskGroup: ENV _=/home/awiens/sched/scripts/taskset_exec.py
+980867.658085772 DEBUG : WrapTaskGroup: ENV WRAP_LOGPREFIX=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/logs/wrap7
+980867.658090902 DEBUG : WrapTaskGroup: ENV SCHED_TASKDEF=/home/awiens/sched/hosts/test/tasks.def
+980867.658095996 DEBUG : WrapTaskGroup: ENV SCHED_TASKSIZE=1024
+980867.658101078 DEBUG : WrapTaskGroup: ENV SCHED_SOCKET=/tmp/wrapsocketkx9862tz
+980867.658299379 DEBUG : WrapTaskApp: started process 22727
+980867.658320187 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980867.658338750 DEBUG : UnixClient nothing to parse
+980867.658346046 DEBUG : UnixServer accept
+980867.669925291 DEBUG : UnixServer POLL incoming socket
+980867.669948000 DEBUG : UnixServer got socket
+980867.669956354 DEBUG : UnixServer: add new client c40008c0 socket 10
+980867.669964799 DEBUG : UnixServer accept
+980867.670009127 DEBUG : UnixServer POLL other data
+980867.670021365 DEBUG : UnixServer 10: POLL 1
+980867.670027027 DEBUG : UnixServer 10: read from client
+980867.670033904 DEBUG : UnixClient initClient
+980867.670043331 DEBUG : UnixClient protocol version 1
+980867.670048799 DEBUG : UnixClient start
+980867.670053883 DEBUG : UnixClient read new data
+980867.670059898 DEBUG : UnixClient recv -1
+980867.670070637 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980867.670076771 DEBUG : UnixClient nothing to parse
+980867.670082133 DEBUG : UnixServer accept
+980867.670148976 DEBUG : UnixServer POLL other data
+980867.670158267 DEBUG : UnixServer 10: POLL 1
+980867.670163792 DEBUG : UnixServer 10: read from client
+980867.670169986 DEBUG : UnixClient start
+980867.670174951 DEBUG : UnixClient read new data
+980867.670182007 DEBUG : UnixClient recv 152
+980867.670187173 DEBUG : UnixClient going to parse
+980867.670193159 DEBUG : < {"msg":"TASKLIST","tasklist":[{"name":"heat","size":1024,"checkpoints":768,"dependencies":[],"resources":["IntelXeon","NvidiaTesla","MaxelerVectis"]}]}
+980867.670220730 DEBUG : TaskDatabase: registerTasklist
+980867.670235684 DEBUG : TaskDatabase: task 0/1 id 2
+980867.670259754 DEBUG : CTaskDatabase: registerTasklist: 2 0x7f4fc40022f0
+980867.670272744 DEBUG : WrapClient: clientTasklist
+980867.670288495 DEBUG : UnixClient start
+980867.670294501 DEBUG : UnixClient read new data
+980867.670301132 DEBUG : UnixClient recv -1
+980867.670310815 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980867.670318448 DEBUG : UnixClient nothing to parse
+980867.670325724 DEBUG : UnixServer accept
+980867.670337295 DEBUG : WrapClient: start app correlation
+980867.670354886 DEBUG : WrapTaskGroup: WD /
+980867.670363785 DEBUG : WrapTaskGroup: ARG /home/awiens/egysched/tasks_mig/build/correlation/task_mig_correlation1
+980867.670375693 DEBUG : > {"msg":"TASKIDS","taskids":[2]}
+980867.670397028 DEBUG : 32 written
+980867.670409366 DEBUG : WrapTaskGroup: ENV LD_LIBRARY_PATH=/usr/local/cuda-7.0/targets/x86_64-linux/lib/:/opt/pgi/linux86-64/18.4/lib/
+980867.670419951 DEBUG : WrapTaskGroup: ENV LD_PRELOAD=/usr/ampehre/lib/libms_common_apapi.so
+980867.670425599 DEBUG : WrapTaskGroup: ENV CUDA_HOME=/usr/local/cuda-7.0/
+980867.670430948 DEBUG : WrapTaskGroup: ENV SCHED_VERBOSE=1
+980867.670436412 DEBUG : WrapTaskGroup: ENV LOG_PATH=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/logs
+980867.670441996 DEBUG : WrapTaskGroup: ENV WRAP_CONFIG=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/METMig2.conf
+980867.670447415 DEBUG : WrapTaskGroup: ENV WRAP_FILE_PATH=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2
+980867.670452590 DEBUG : WrapTaskGroup: ENV WRAP_PATH=/home/awiens/sched/build/wrap
+980867.670457638 DEBUG : WrapTaskGroup: ENV SCHED_LOG_PRIORITY=DEBUG
+980867.670462770 DEBUG : WrapTaskGroup: ENV MANPATH=:/opt/pgi/linux86-64/19.4/man:/opt/pgi/linux86-64/19.4/man
+980867.670467929 DEBUG : WrapTaskGroup: ENV CUDA_PATH=/usr/local/cuda
+980867.670473014 DEBUG : WrapTaskGroup: ENV XDG_SESSION_ID=733
+980867.670478057 DEBUG : WrapTaskGroup: ENV HOSTNAME=cc-8.pc2.uni-paderborn.de
+980867.670483130 DEBUG : WrapTaskGroup: ENV TERM=screen-256color
+980867.670488134 DEBUG : WrapTaskGroup: ENV SHELL=/bin/bash
+980867.670493103 DEBUG : WrapTaskGroup: ENV MAXELEROSDIR=/opt/maxeler/maxeleros
+980867.670498137 DEBUG : WrapTaskGroup: ENV HISTSIZE=1000
+980867.670503209 DEBUG : WrapTaskGroup: ENV SSH_CLIENT=131.234.11.196 56856 22
+980867.670508266 DEBUG : WrapTaskGroup: ENV QTDIR=/usr/lib64/qt-3.3
+980867.670513290 DEBUG : WrapTaskGroup: ENV QTINC=/usr/lib64/qt-3.3/include
+980867.670518266 DEBUG : WrapTaskGroup: ENV SSH_TTY=/dev/pts/0
+980867.670523276 DEBUG : WrapTaskGroup: ENV QT_GRAPHICSSYSTEM_CHECKED=1
+980867.670528289 DEBUG : WrapTaskGroup: ENV MEASURE=true
+980867.670533402 DEBUG : WrapTaskGroup: ENV USER=awiens
+980867.670538553 DEBUG : WrapTaskGroup: ENV SCHED_HOST=test
+980867.670554940 DEBUG : WrapTaskGroup: ENV LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
+980867.670563982 DEBUG : WrapTaskGroup: ENV TMUX=/tmp/tmux-1004/default,34010,0
+980867.670569246 DEBUG : WrapTaskGroup: ENV PGI=/opt/pgi
+980867.670575089 DEBUG : WrapTaskGroup: ENV PATH=/opt/Xilinx/13.3/ISE_DS/../xilinx_wrappers:/opt/pgi/linux86-64/19.4/bin:/opt/maxeler/maxeleros/utils/:/usr/egysched/bin:/usr/ampehre/bin:/opt/Xilinx/13.3/ISE_DS/../xilinx_wrappers:/usr/lib64/qt-3.3/bin:/opt/pgi/linux86-64/19.4/bin:/opt/maxeler/maxeleros/utils/:/usr/egysched/bin:/usr/ampehre/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/awiens/.local/bin:/home/awiens/bin:/home/awiens/.local/bin:/home/awiens/bin
+980867.670588722 DEBUG : WrapTaskGroup: ENV MAIL=/var/spool/mail/awiens
+980867.670594738 DEBUG : WrapTaskGroup: ENV TEST_RESULTDIR=/home/awiens/sched/hosts/test/test_results/default/20190628-161917
+980867.670600166 DEBUG : WrapTaskGroup: ENV PWD=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2
+980867.670605668 DEBUG : WrapTaskGroup: ENV PRECONF=default
+980867.670610890 DEBUG : WrapTaskGroup: ENV LANG=en_US.UTF-8
+980867.670616068 DEBUG : WrapTaskGroup: ENV TMUX_PANE=%45
+980867.670621263 DEBUG : WrapTaskGroup: ENV SCHED_EVENTLOG=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/logs/wrap7.eventlog
+980867.670626910 DEBUG : WrapTaskGroup: ENV LM_LICENSE_FILE=27000@license1.uni-paderborn.de:27000@license2.uni-paderborn.de:27000@license3.uni-paderborn.de:/opt/pgi/license.dat
+980867.670632239 DEBUG : WrapTaskGroup: ENV HISTCONTROL=ignoredups
+980867.670637474 DEBUG : WrapTaskGroup: ENV SHLVL=4
+980867.670642583 DEBUG : WrapTaskGroup: ENV HOME=/home/awiens
+980867.670647734 DEBUG : WrapTaskGroup: ENV SCHED_RESULTS=/home/awiens/sched/hosts
+980867.670652929 DEBUG : WrapTaskGroup: ENV SCHED_ENV=/home/awiens/sched
+980867.670658289 DEBUG : WrapTaskGroup: ENV PYTHONPATH=/home/awiens/sched/scripts/:/home/awiens/sched/scripts/
+980867.670663438 DEBUG : WrapTaskGroup: ENV LOGNAME=awiens
+980867.670668588 DEBUG : WrapTaskGroup: ENV QTLIB=/usr/lib64/qt-3.3/lib
+980867.670673732 DEBUG : WrapTaskGroup: ENV TASKDEF=/home/awiens/sched/hosts/test/tasks.def
+980867.670679046 DEBUG : WrapTaskGroup: ENV XDG_DATA_DIRS=/home/awiens/.local/share/flatpak/exports/share/:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share/
+980867.670684300 DEBUG : WrapTaskGroup: ENV SSH_CONNECTION=131.234.11.196 43230 131.234.58.31 22
+980867.670689713 DEBUG : WrapTaskGroup: ENV SCHED_CONFIG=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/METMig2.conf
+980867.670694947 DEBUG : WrapTaskGroup: ENV LESSOPEN=||/usr/bin/lesspipe.sh %s
+980867.670700153 DEBUG : WrapTaskGroup: ENV XDG_RUNTIME_DIR=/run/user/1004
+980867.670705246 DEBUG : WrapTaskGroup: ENV SCHEDULER=METMig2
+980867.670710601 DEBUG : WrapTaskGroup: ENV _=/home/awiens/sched/scripts/taskset_exec.py
+980867.670715915 DEBUG : WrapTaskGroup: ENV WRAP_LOGPREFIX=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/logs/wrap7
+980867.670721334 DEBUG : WrapTaskGroup: ENV SCHED_TASKDEF=/home/awiens/sched/hosts/test/tasks.def
+980867.670726537 DEBUG : WrapTaskGroup: ENV SCHED_TASKSIZE=256
+980867.670732660 DEBUG : WrapTaskGroup: ENV SCHED_SOCKET=/tmp/wrapsocketkx9862tz
+980867.670938211 DEBUG : WrapTaskApp: started process 22729
+980867.680344882 DEBUG : UnixServer POLL incoming socket
+980867.680367001 DEBUG : UnixServer got socket
+980867.680378577 DEBUG : UnixServer: add new client c4002520 socket 11
+980867.680386476 DEBUG : UnixServer accept
+980867.680425453 DEBUG : UnixServer POLL other data
+980867.680433601 DEBUG : UnixServer 11: POLL 1
+980867.680439077 DEBUG : UnixServer 11: read from client
+980867.680445988 DEBUG : UnixClient initClient
+980867.680455791 DEBUG : UnixClient protocol version 1
+980867.680461349 DEBUG : UnixClient start
+980867.680466599 DEBUG : UnixClient read new data
+980867.680472813 DEBUG : UnixClient recv -1
+980867.680483543 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980867.680489647 DEBUG : UnixClient nothing to parse
+980867.680495098 DEBUG : UnixServer accept
+980867.680555078 DEBUG : UnixServer POLL other data
+980867.680563497 DEBUG : UnixServer 11: POLL 1
+980867.680568938 DEBUG : UnixServer 11: read from client
+980867.680575478 DEBUG : UnixClient start
+980867.680580623 DEBUG : UnixClient read new data
+980867.680594863 DEBUG : UnixClient recv 158
+980867.680600750 DEBUG : UnixClient going to parse
+980867.680607086 DEBUG : < {"msg":"TASKLIST","tasklist":[{"name":"correlation","size":256,"checkpoints":256,"dependencies":[],"resources":["IntelXeon","NvidiaTesla","MaxelerVectis"]}]}
+980867.680633551 DEBUG : TaskDatabase: registerTasklist
+980867.680654039 DEBUG : TaskDatabase: task 0/1 id 3
+980867.680678180 DEBUG : CTaskDatabase: registerTasklist: 3 0x7f4fc4002c50
+980867.680692022 DEBUG : WrapClient: clientTasklist
+980867.680707639 DEBUG : UnixClient start
+980867.680713639 DEBUG : UnixClient read new data
+980867.680722816 DEBUG : WrapClient: start app correlation
+980867.680743406 DEBUG : > {"msg":"TASKIDS","taskids":[3]}
+980867.680762148 DEBUG : UnixClient recv -1
+980867.680776200 DEBUG : WrapTaskGroup: WD /
+980867.680788008 DEBUG : WrapTaskGroup: ARG /home/awiens/egysched/tasks_mig/build/correlation/task_mig_correlation1
+980867.680801751 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980867.680814572 DEBUG : 32 written
+980867.680826319 DEBUG : UnixClient nothing to parse
+980867.680837850 DEBUG : UnixServer accept
+980867.680848085 DEBUG : WrapTaskGroup: ENV LD_LIBRARY_PATH=/usr/local/cuda-7.0/targets/x86_64-linux/lib/:/opt/pgi/linux86-64/18.4/lib/
+980867.680858152 DEBUG : WrapTaskGroup: ENV LD_PRELOAD=/usr/ampehre/lib/libms_common_apapi.so
+980867.680863800 DEBUG : WrapTaskGroup: ENV CUDA_HOME=/usr/local/cuda-7.0/
+980867.680869242 DEBUG : WrapTaskGroup: ENV SCHED_VERBOSE=1
+980867.680874499 DEBUG : WrapTaskGroup: ENV LOG_PATH=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/logs
+980867.680880114 DEBUG : WrapTaskGroup: ENV WRAP_CONFIG=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/METMig2.conf
+980867.680885646 DEBUG : WrapTaskGroup: ENV WRAP_FILE_PATH=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2
+980867.680890962 DEBUG : WrapTaskGroup: ENV WRAP_PATH=/home/awiens/sched/build/wrap
+980867.680896002 DEBUG : WrapTaskGroup: ENV SCHED_LOG_PRIORITY=DEBUG
+980867.680901064 DEBUG : WrapTaskGroup: ENV MANPATH=:/opt/pgi/linux86-64/19.4/man:/opt/pgi/linux86-64/19.4/man
+980867.680906280 DEBUG : WrapTaskGroup: ENV CUDA_PATH=/usr/local/cuda
+980867.680911269 DEBUG : WrapTaskGroup: ENV XDG_SESSION_ID=733
+980867.680916269 DEBUG : WrapTaskGroup: ENV HOSTNAME=cc-8.pc2.uni-paderborn.de
+980867.680921336 DEBUG : WrapTaskGroup: ENV TERM=screen-256color
+980867.680926406 DEBUG : WrapTaskGroup: ENV SHELL=/bin/bash
+980867.680931432 DEBUG : WrapTaskGroup: ENV MAXELEROSDIR=/opt/maxeler/maxeleros
+980867.680936426 DEBUG : WrapTaskGroup: ENV HISTSIZE=1000
+980867.680941440 DEBUG : WrapTaskGroup: ENV SSH_CLIENT=131.234.11.196 56856 22
+980867.680946491 DEBUG : WrapTaskGroup: ENV QTDIR=/usr/lib64/qt-3.3
+980867.680951579 DEBUG : WrapTaskGroup: ENV QTINC=/usr/lib64/qt-3.3/include
+980867.680956570 DEBUG : WrapTaskGroup: ENV SSH_TTY=/dev/pts/0
+980867.680961568 DEBUG : WrapTaskGroup: ENV QT_GRAPHICSSYSTEM_CHECKED=1
+980867.680966568 DEBUG : WrapTaskGroup: ENV MEASURE=true
+980867.680971557 DEBUG : WrapTaskGroup: ENV USER=awiens
+980867.680976682 DEBUG : WrapTaskGroup: ENV SCHED_HOST=test
+980867.680992437 DEBUG : WrapTaskGroup: ENV LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
+980867.681015029 DEBUG : WrapTaskGroup: ENV TMUX=/tmp/tmux-1004/default,34010,0
+980867.681027611 DEBUG : WrapTaskGroup: ENV PGI=/opt/pgi
+980867.681033818 DEBUG : WrapTaskGroup: ENV PATH=/opt/Xilinx/13.3/ISE_DS/../xilinx_wrappers:/opt/pgi/linux86-64/19.4/bin:/opt/maxeler/maxeleros/utils/:/usr/egysched/bin:/usr/ampehre/bin:/opt/Xilinx/13.3/ISE_DS/../xilinx_wrappers:/usr/lib64/qt-3.3/bin:/opt/pgi/linux86-64/19.4/bin:/opt/maxeler/maxeleros/utils/:/usr/egysched/bin:/usr/ampehre/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/awiens/.local/bin:/home/awiens/bin:/home/awiens/.local/bin:/home/awiens/bin
+980867.681039453 DEBUG : WrapTaskGroup: ENV MAIL=/var/spool/mail/awiens
+980867.681044743 DEBUG : WrapTaskGroup: ENV TEST_RESULTDIR=/home/awiens/sched/hosts/test/test_results/default/20190628-161917
+980867.681050091 DEBUG : WrapTaskGroup: ENV PWD=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2
+980867.681055199 DEBUG : WrapTaskGroup: ENV PRECONF=default
+980867.681060170 DEBUG : WrapTaskGroup: ENV LANG=en_US.UTF-8
+980867.681065194 DEBUG : WrapTaskGroup: ENV TMUX_PANE=%45
+980867.681070338 DEBUG : WrapTaskGroup: ENV SCHED_EVENTLOG=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/logs/wrap7.eventlog
+980867.681075805 DEBUG : WrapTaskGroup: ENV LM_LICENSE_FILE=27000@license1.uni-paderborn.de:27000@license2.uni-paderborn.de:27000@license3.uni-paderborn.de:/opt/pgi/license.dat
+980867.681081037 DEBUG : WrapTaskGroup: ENV HISTCONTROL=ignoredups
+980867.681086123 DEBUG : WrapTaskGroup: ENV SHLVL=4
+980867.681091213 DEBUG : WrapTaskGroup: ENV HOME=/home/awiens
+980867.681096255 DEBUG : WrapTaskGroup: ENV SCHED_RESULTS=/home/awiens/sched/hosts
+980867.681101392 DEBUG : WrapTaskGroup: ENV SCHED_ENV=/home/awiens/sched
+980867.681106469 DEBUG : WrapTaskGroup: ENV PYTHONPATH=/home/awiens/sched/scripts/:/home/awiens/sched/scripts/
+980867.681111483 DEBUG : WrapTaskGroup: ENV LOGNAME=awiens
+980867.681116346 DEBUG : WrapTaskGroup: ENV QTLIB=/usr/lib64/qt-3.3/lib
+980867.681121355 DEBUG : WrapTaskGroup: ENV TASKDEF=/home/awiens/sched/hosts/test/tasks.def
+980867.681126525 DEBUG : WrapTaskGroup: ENV XDG_DATA_DIRS=/home/awiens/.local/share/flatpak/exports/share/:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share/
+980867.681131623 DEBUG : WrapTaskGroup: ENV SSH_CONNECTION=131.234.11.196 43230 131.234.58.31 22
+980867.681136736 DEBUG : WrapTaskGroup: ENV SCHED_CONFIG=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/METMig2.conf
+980867.681141847 DEBUG : WrapTaskGroup: ENV LESSOPEN=||/usr/bin/lesspipe.sh %s
+980867.681146827 DEBUG : WrapTaskGroup: ENV XDG_RUNTIME_DIR=/run/user/1004
+980867.681151845 DEBUG : WrapTaskGroup: ENV SCHEDULER=METMig2
+980867.681156928 DEBUG : WrapTaskGroup: ENV _=/home/awiens/sched/scripts/taskset_exec.py
+980867.681162103 DEBUG : WrapTaskGroup: ENV WRAP_LOGPREFIX=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/logs/wrap7
+980867.681167314 DEBUG : WrapTaskGroup: ENV SCHED_TASKDEF=/home/awiens/sched/hosts/test/tasks.def
+980867.681172306 DEBUG : WrapTaskGroup: ENV SCHED_TASKSIZE=256
+980867.681177373 DEBUG : WrapTaskGroup: ENV SCHED_SOCKET=/tmp/wrapsocketkx9862tz
+980867.681389453 DEBUG : WrapTaskApp: started process 22731
+980867.685625638 DEBUG : UnixServer POLL incoming socket
+980867.685648788 DEBUG : UnixServer got socket
+980867.685657510 DEBUG : UnixServer: add new client c4001710 socket 12
+980867.685665956 DEBUG : UnixServer accept
+980867.685705595 DEBUG : UnixServer POLL other data
+980867.685714128 DEBUG : UnixServer 12: POLL 1
+980867.685719564 DEBUG : UnixServer 12: read from client
+980867.685726960 DEBUG : UnixClient initClient
+980867.685737052 DEBUG : UnixClient protocol version 1
+980867.685742572 DEBUG : UnixClient start
+980867.685747985 DEBUG : UnixClient read new data
+980867.685754184 DEBUG : UnixClient recv -1
+980867.685764452 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980867.685770555 DEBUG : UnixClient nothing to parse
+980867.685776153 DEBUG : UnixServer accept
+980867.685837918 DEBUG : UnixServer POLL other data
+980867.685846905 DEBUG : UnixServer 12: POLL 1
+980867.685852276 DEBUG : UnixServer 12: read from client
+980867.685858822 DEBUG : UnixClient start
+980867.685863971 DEBUG : UnixClient read new data
+980867.685871153 DEBUG : UnixClient recv 158
+980867.685876440 DEBUG : UnixClient going to parse
+980867.685882520 DEBUG : < {"msg":"TASKLIST","tasklist":[{"name":"correlation","size":256,"checkpoints":256,"dependencies":[],"resources":["IntelXeon","NvidiaTesla","MaxelerVectis"]}]}
+980867.685909488 DEBUG : TaskDatabase: registerTasklist
+980867.685923812 DEBUG : TaskDatabase: task 0/1 id 4
+980867.685948161 DEBUG : CTaskDatabase: registerTasklist: 4 0x7f4fc40031e0
+980867.685961787 DEBUG : WrapClient: clientTasklist
+980867.685977121 DEBUG : UnixClient start
+980867.685984734 DEBUG : > {"msg":"TASKIDS","taskids":[4]}
+980867.686006451 DEBUG : UnixClient read new data
+980867.686025015 DEBUG : WrapClient: start app heat
+980867.686041950 DEBUG : 32 written
+980867.686056163 DEBUG : UnixClient recv -1
+980867.686070616 DEBUG : WrapTaskGroup: WD /
+980867.686082236 DEBUG : WrapTaskGroup: ARG /home/awiens/egysched/tasks_mig/build/heat/task_mig_heat1
+980867.686093414 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980867.686103651 DEBUG : UnixClient nothing to parse
+980867.686109336 DEBUG : UnixServer accept
+980867.686118522 DEBUG : WrapTaskGroup: ENV LD_LIBRARY_PATH=/usr/local/cuda-7.0/targets/x86_64-linux/lib/:/opt/pgi/linux86-64/18.4/lib/
+980867.686125426 DEBUG : WrapTaskGroup: ENV LD_PRELOAD=/usr/ampehre/lib/libms_common_apapi.so
+980867.686130773 DEBUG : WrapTaskGroup: ENV CUDA_HOME=/usr/local/cuda-7.0/
+980867.686136037 DEBUG : WrapTaskGroup: ENV SCHED_VERBOSE=1
+980867.686141296 DEBUG : WrapTaskGroup: ENV LOG_PATH=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/logs
+980867.686146530 DEBUG : WrapTaskGroup: ENV WRAP_CONFIG=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/METMig2.conf
+980867.686151839 DEBUG : WrapTaskGroup: ENV WRAP_FILE_PATH=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2
+980867.686156916 DEBUG : WrapTaskGroup: ENV WRAP_PATH=/home/awiens/sched/build/wrap
+980867.686161906 DEBUG : WrapTaskGroup: ENV SCHED_LOG_PRIORITY=DEBUG
+980867.686166956 DEBUG : WrapTaskGroup: ENV MANPATH=:/opt/pgi/linux86-64/19.4/man:/opt/pgi/linux86-64/19.4/man
+980867.686172060 DEBUG : WrapTaskGroup: ENV CUDA_PATH=/usr/local/cuda
+980867.686177109 DEBUG : WrapTaskGroup: ENV XDG_SESSION_ID=733
+980867.686182159 DEBUG : WrapTaskGroup: ENV HOSTNAME=cc-8.pc2.uni-paderborn.de
+980867.686187116 DEBUG : WrapTaskGroup: ENV TERM=screen-256color
+980867.686192060 DEBUG : WrapTaskGroup: ENV SHELL=/bin/bash
+980867.686197007 DEBUG : WrapTaskGroup: ENV MAXELEROSDIR=/opt/maxeler/maxeleros
+980867.686201964 DEBUG : WrapTaskGroup: ENV HISTSIZE=1000
+980867.686206983 DEBUG : WrapTaskGroup: ENV SSH_CLIENT=131.234.11.196 56856 22
+980867.686211972 DEBUG : WrapTaskGroup: ENV QTDIR=/usr/lib64/qt-3.3
+980867.686217085 DEBUG : WrapTaskGroup: ENV QTINC=/usr/lib64/qt-3.3/include
+980867.686222055 DEBUG : WrapTaskGroup: ENV SSH_TTY=/dev/pts/0
+980867.686227010 DEBUG : WrapTaskGroup: ENV QT_GRAPHICSSYSTEM_CHECKED=1
+980867.686236130 DEBUG : WrapTaskGroup: ENV MEASURE=true
+980867.686241525 DEBUG : WrapTaskGroup: ENV USER=awiens
+980867.686246709 DEBUG : WrapTaskGroup: ENV SCHED_HOST=test
+980867.686262610 DEBUG : WrapTaskGroup: ENV LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
+980867.686270797 DEBUG : WrapTaskGroup: ENV TMUX=/tmp/tmux-1004/default,34010,0
+980867.686275908 DEBUG : WrapTaskGroup: ENV PGI=/opt/pgi
+980867.686281607 DEBUG : WrapTaskGroup: ENV PATH=/opt/Xilinx/13.3/ISE_DS/../xilinx_wrappers:/opt/pgi/linux86-64/19.4/bin:/opt/maxeler/maxeleros/utils/:/usr/egysched/bin:/usr/ampehre/bin:/opt/Xilinx/13.3/ISE_DS/../xilinx_wrappers:/usr/lib64/qt-3.3/bin:/opt/pgi/linux86-64/19.4/bin:/opt/maxeler/maxeleros/utils/:/usr/egysched/bin:/usr/ampehre/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/awiens/.local/bin:/home/awiens/bin:/home/awiens/.local/bin:/home/awiens/bin
+980867.686287105 DEBUG : WrapTaskGroup: ENV MAIL=/var/spool/mail/awiens
+980867.686292338 DEBUG : WrapTaskGroup: ENV TEST_RESULTDIR=/home/awiens/sched/hosts/test/test_results/default/20190628-161917
+980867.686297634 DEBUG : WrapTaskGroup: ENV PWD=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2
+980867.686302714 DEBUG : WrapTaskGroup: ENV PRECONF=default
+980867.686307921 DEBUG : WrapTaskGroup: ENV LANG=en_US.UTF-8
+980867.686312890 DEBUG : WrapTaskGroup: ENV TMUX_PANE=%45
+980867.686318065 DEBUG : WrapTaskGroup: ENV SCHED_EVENTLOG=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/logs/wrap7.eventlog
+980867.686323410 DEBUG : WrapTaskGroup: ENV LM_LICENSE_FILE=27000@license1.uni-paderborn.de:27000@license2.uni-paderborn.de:27000@license3.uni-paderborn.de:/opt/pgi/license.dat
+980867.686328553 DEBUG : WrapTaskGroup: ENV HISTCONTROL=ignoredups
+980867.686333503 DEBUG : WrapTaskGroup: ENV SHLVL=4
+980867.686338631 DEBUG : WrapTaskGroup: ENV HOME=/home/awiens
+980867.686343671 DEBUG : WrapTaskGroup: ENV SCHED_RESULTS=/home/awiens/sched/hosts
+980867.686348754 DEBUG : WrapTaskGroup: ENV SCHED_ENV=/home/awiens/sched
+980867.686353836 DEBUG : WrapTaskGroup: ENV PYTHONPATH=/home/awiens/sched/scripts/:/home/awiens/sched/scripts/
+980867.686358932 DEBUG : WrapTaskGroup: ENV LOGNAME=awiens
+980867.686363881 DEBUG : WrapTaskGroup: ENV QTLIB=/usr/lib64/qt-3.3/lib
+980867.686368980 DEBUG : WrapTaskGroup: ENV TASKDEF=/home/awiens/sched/hosts/test/tasks.def
+980867.686377461 DEBUG : WrapTaskGroup: ENV XDG_DATA_DIRS=/home/awiens/.local/share/flatpak/exports/share/:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share/
+980867.686382895 DEBUG : WrapTaskGroup: ENV SSH_CONNECTION=131.234.11.196 43230 131.234.58.31 22
+980867.686388191 DEBUG : WrapTaskGroup: ENV SCHED_CONFIG=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/METMig2.conf
+980867.686393364 DEBUG : WrapTaskGroup: ENV LESSOPEN=||/usr/bin/lesspipe.sh %s
+980867.686398365 DEBUG : WrapTaskGroup: ENV XDG_RUNTIME_DIR=/run/user/1004
+980867.686403277 DEBUG : WrapTaskGroup: ENV SCHEDULER=METMig2
+980867.686408309 DEBUG : WrapTaskGroup: ENV _=/home/awiens/sched/scripts/taskset_exec.py
+980867.686413471 DEBUG : WrapTaskGroup: ENV WRAP_LOGPREFIX=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/logs/wrap7
+980867.686418548 DEBUG : WrapTaskGroup: ENV SCHED_TASKDEF=/home/awiens/sched/hosts/test/tasks.def
+980867.686423586 DEBUG : WrapTaskGroup: ENV SCHED_TASKSIZE=512
+980867.686428580 DEBUG : WrapTaskGroup: ENV SCHED_SOCKET=/tmp/wrapsocketkx9862tz
+980867.686632865 DEBUG : WrapTaskApp: started process 22733
+980867.712164203 DEBUG : UnixServer POLL incoming socket
+980867.712185246 DEBUG : UnixServer got socket
+980867.712193318 DEBUG : UnixServer: add new client c4002420 socket 13
+980867.712200789 DEBUG : UnixServer accept
+980867.712241749 DEBUG : UnixServer POLL other data
+980867.712249969 DEBUG : UnixServer 13: POLL 1
+980867.712255200 DEBUG : UnixServer 13: read from client
+980867.712262408 DEBUG : UnixClient initClient
+980867.712271969 DEBUG : UnixClient protocol version 1
+980867.712277485 DEBUG : UnixClient start
+980867.712282669 DEBUG : UnixClient read new data
+980867.712288830 DEBUG : UnixClient recv -1
+980867.712299097 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980867.712305168 DEBUG : UnixClient nothing to parse
+980867.712310569 DEBUG : UnixServer accept
+980867.712376545 DEBUG : UnixServer POLL other data
+980867.712385392 DEBUG : UnixServer 13: POLL 1
+980867.712390723 DEBUG : UnixServer 13: read from client
+980867.712397403 DEBUG : UnixClient start
+980867.712402425 DEBUG : UnixClient read new data
+980867.712409521 DEBUG : UnixClient recv 151
+980867.712414720 DEBUG : UnixClient going to parse
+980867.712420825 DEBUG : < {"msg":"TASKLIST","tasklist":[{"name":"heat","size":512,"checkpoints":768,"dependencies":[],"resources":["IntelXeon","NvidiaTesla","MaxelerVectis"]}]}
+980867.712447750 DEBUG : TaskDatabase: registerTasklist
+980867.712462704 DEBUG : TaskDatabase: task 0/1 id 5
+980867.712489945 DEBUG : CTaskDatabase: registerTasklist: 5 0x7f4fc40033d0
+980867.712503950 DEBUG : WrapClient: clientTasklist
+980867.712519811 DEBUG : UnixClient start
+980867.712525778 DEBUG : UnixClient read new data
+980867.712536231 DEBUG : > {"msg":"TASKIDS","taskids":[5]}
+980867.712551864 DEBUG : UnixClient recv -1
+980867.712564126 DEBUG : 32 written
+980867.712575245 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980867.712584974 DEBUG : UnixClient nothing to parse
+980867.712590925 DEBUG : UnixServer accept
+980867.725021329 DEBUG : WrapClient: start app heat
+980867.725040531 DEBUG : WrapTaskGroup: WD /
+980867.725046961 DEBUG : WrapTaskGroup: ARG /home/awiens/egysched/tasks_mig/build/heat/task_mig_heat1
+980867.725081369 DEBUG : WrapTaskGroup: ENV LD_LIBRARY_PATH=/usr/local/cuda-7.0/targets/x86_64-linux/lib/:/opt/pgi/linux86-64/18.4/lib/
+980867.725087457 DEBUG : WrapTaskGroup: ENV LD_PRELOAD=/usr/ampehre/lib/libms_common_apapi.so
+980867.725092902 DEBUG : WrapTaskGroup: ENV CUDA_HOME=/usr/local/cuda-7.0/
+980867.725098177 DEBUG : WrapTaskGroup: ENV SCHED_VERBOSE=1
+980867.725103390 DEBUG : WrapTaskGroup: ENV LOG_PATH=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/logs
+980867.725108660 DEBUG : WrapTaskGroup: ENV WRAP_CONFIG=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/METMig2.conf
+980867.725114040 DEBUG : WrapTaskGroup: ENV WRAP_FILE_PATH=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2
+980867.725123763 DEBUG : WrapTaskGroup: ENV WRAP_PATH=/home/awiens/sched/build/wrap
+980867.725129454 DEBUG : WrapTaskGroup: ENV SCHED_LOG_PRIORITY=DEBUG
+980867.725134776 DEBUG : WrapTaskGroup: ENV MANPATH=:/opt/pgi/linux86-64/19.4/man:/opt/pgi/linux86-64/19.4/man
+980867.725140001 DEBUG : WrapTaskGroup: ENV CUDA_PATH=/usr/local/cuda
+980867.725145003 DEBUG : WrapTaskGroup: ENV XDG_SESSION_ID=733
+980867.725150044 DEBUG : WrapTaskGroup: ENV HOSTNAME=cc-8.pc2.uni-paderborn.de
+980867.725155000 DEBUG : WrapTaskGroup: ENV TERM=screen-256color
+980867.725159964 DEBUG : WrapTaskGroup: ENV SHELL=/bin/bash
+980867.725164902 DEBUG : WrapTaskGroup: ENV MAXELEROSDIR=/opt/maxeler/maxeleros
+980867.725169852 DEBUG : WrapTaskGroup: ENV HISTSIZE=1000
+980867.725174819 DEBUG : WrapTaskGroup: ENV SSH_CLIENT=131.234.11.196 56856 22
+980867.725179806 DEBUG : WrapTaskGroup: ENV QTDIR=/usr/lib64/qt-3.3
+980867.725184777 DEBUG : WrapTaskGroup: ENV QTINC=/usr/lib64/qt-3.3/include
+980867.725189660 DEBUG : WrapTaskGroup: ENV SSH_TTY=/dev/pts/0
+980867.725194558 DEBUG : WrapTaskGroup: ENV QT_GRAPHICSSYSTEM_CHECKED=1
+980867.725199478 DEBUG : WrapTaskGroup: ENV MEASURE=true
+980867.725204448 DEBUG : WrapTaskGroup: ENV USER=awiens
+980867.725209464 DEBUG : WrapTaskGroup: ENV SCHED_HOST=test
+980867.725225340 DEBUG : WrapTaskGroup: ENV LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
+980867.725233593 DEBUG : WrapTaskGroup: ENV TMUX=/tmp/tmux-1004/default,34010,0
+980867.725238739 DEBUG : WrapTaskGroup: ENV PGI=/opt/pgi
+980867.725244403 DEBUG : WrapTaskGroup: ENV PATH=/opt/Xilinx/13.3/ISE_DS/../xilinx_wrappers:/opt/pgi/linux86-64/19.4/bin:/opt/maxeler/maxeleros/utils/:/usr/egysched/bin:/usr/ampehre/bin:/opt/Xilinx/13.3/ISE_DS/../xilinx_wrappers:/usr/lib64/qt-3.3/bin:/opt/pgi/linux86-64/19.4/bin:/opt/maxeler/maxeleros/utils/:/usr/egysched/bin:/usr/ampehre/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/awiens/.local/bin:/home/awiens/bin:/home/awiens/.local/bin:/home/awiens/bin
+980867.725249891 DEBUG : WrapTaskGroup: ENV MAIL=/var/spool/mail/awiens
+980867.725255088 DEBUG : WrapTaskGroup: ENV TEST_RESULTDIR=/home/awiens/sched/hosts/test/test_results/default/20190628-161917
+980867.725260337 DEBUG : WrapTaskGroup: ENV PWD=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2
+980867.725265483 DEBUG : WrapTaskGroup: ENV PRECONF=default
+980867.725270532 DEBUG : WrapTaskGroup: ENV LANG=en_US.UTF-8
+980867.725278792 DEBUG : WrapTaskGroup: ENV TMUX_PANE=%45
+980867.725284316 DEBUG : WrapTaskGroup: ENV SCHED_EVENTLOG=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/logs/wrap7.eventlog
+980867.725289811 DEBUG : WrapTaskGroup: ENV LM_LICENSE_FILE=27000@license1.uni-paderborn.de:27000@license2.uni-paderborn.de:27000@license3.uni-paderborn.de:/opt/pgi/license.dat
+980867.725295126 DEBUG : WrapTaskGroup: ENV HISTCONTROL=ignoredups
+980867.725300225 DEBUG : WrapTaskGroup: ENV SHLVL=4
+980867.725305262 DEBUG : WrapTaskGroup: ENV HOME=/home/awiens
+980867.725310323 DEBUG : WrapTaskGroup: ENV SCHED_RESULTS=/home/awiens/sched/hosts
+980867.725315430 DEBUG : WrapTaskGroup: ENV SCHED_ENV=/home/awiens/sched
+980867.725320528 DEBUG : WrapTaskGroup: ENV PYTHONPATH=/home/awiens/sched/scripts/:/home/awiens/sched/scripts/
+980867.725325582 DEBUG : WrapTaskGroup: ENV LOGNAME=awiens
+980867.725330523 DEBUG : WrapTaskGroup: ENV QTLIB=/usr/lib64/qt-3.3/lib
+980867.725335608 DEBUG : WrapTaskGroup: ENV TASKDEF=/home/awiens/sched/hosts/test/tasks.def
+980867.725340816 DEBUG : WrapTaskGroup: ENV XDG_DATA_DIRS=/home/awiens/.local/share/flatpak/exports/share/:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share/
+980867.725346016 DEBUG : WrapTaskGroup: ENV SSH_CONNECTION=131.234.11.196 43230 131.234.58.31 22
+980867.725351172 DEBUG : WrapTaskGroup: ENV SCHED_CONFIG=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/METMig2.conf
+980867.725356310 DEBUG : WrapTaskGroup: ENV LESSOPEN=||/usr/bin/lesspipe.sh %s
+980867.725361302 DEBUG : WrapTaskGroup: ENV XDG_RUNTIME_DIR=/run/user/1004
+980867.725366200 DEBUG : WrapTaskGroup: ENV SCHEDULER=METMig2
+980867.725371204 DEBUG : WrapTaskGroup: ENV _=/home/awiens/sched/scripts/taskset_exec.py
+980867.725376331 DEBUG : WrapTaskGroup: ENV WRAP_LOGPREFIX=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/logs/wrap7
+980867.725381396 DEBUG : WrapTaskGroup: ENV SCHED_TASKDEF=/home/awiens/sched/hosts/test/tasks.def
+980867.725386358 DEBUG : WrapTaskGroup: ENV SCHED_TASKSIZE=256
+980867.725391270 DEBUG : WrapTaskGroup: ENV SCHED_SOCKET=/tmp/wrapsocketkx9862tz
+980867.725589533 DEBUG : WrapTaskApp: started process 22735
+980867.739500354 DEBUG : UnixServer POLL incoming socket
+980867.739524698 DEBUG : UnixServer got socket
+980867.739534172 DEBUG : UnixServer: add new client c4001510 socket 14
+980867.739543319 DEBUG : UnixServer accept
+980867.739586398 DEBUG : UnixServer POLL other data
+980867.739594697 DEBUG : UnixServer 14: POLL 1
+980867.739599991 DEBUG : UnixServer 14: read from client
+980867.739607935 DEBUG : UnixClient initClient
+980867.739619223 DEBUG : UnixClient protocol version 1
+980867.739624828 DEBUG : UnixClient start
+980867.739630039 DEBUG : UnixClient read new data
+980867.739636092 DEBUG : UnixClient recv -1
+980867.739647863 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980867.739653756 DEBUG : UnixClient nothing to parse
+980867.739659145 DEBUG : UnixServer accept
+980867.739727881 DEBUG : UnixServer POLL other data
+980867.739736815 DEBUG : UnixServer 14: POLL 1
+980867.739742110 DEBUG : UnixServer 14: read from client
+980867.739748922 DEBUG : UnixClient start
+980867.739753854 DEBUG : UnixClient read new data
+980867.739760988 DEBUG : UnixClient recv 151
+980867.739766273 DEBUG : UnixClient going to parse
+980867.739772273 DEBUG : < {"msg":"TASKLIST","tasklist":[{"name":"heat","size":256,"checkpoints":768,"dependencies":[],"resources":["IntelXeon","NvidiaTesla","MaxelerVectis"]}]}
+980867.739804657 DEBUG : TaskDatabase: registerTasklist
+980867.739822466 DEBUG : TaskDatabase: task 0/1 id 6
+980867.739846913 DEBUG : CTaskDatabase: registerTasklist: 6 0x7f4fc40040e0
+980867.739861665 DEBUG : WrapClient: clientTasklist
+980867.739880073 DEBUG : UnixClient start
+980867.739886543 DEBUG : UnixClient read new data
+980867.739895463 DEBUG : UnixClient recv -1
+980867.739905967 DEBUG : WrapClient: start app gaussblur
+980867.739922738 DEBUG : > {"msg":"TASKIDS","taskids":[6]}
+980867.739943495 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980867.739962980 DEBUG : WrapTaskGroup: WD /
+980867.739973853 DEBUG : WrapTaskGroup: ARG /home/awiens/egysched/tasks_mig/build/gaussblur/task_mig_gaussblur1
+980867.739986084 DEBUG : UnixClient nothing to parse
+980867.739998127 DEBUG : UnixServer accept
+980867.740014557 DEBUG : 32 written
+980867.740036537 DEBUG : WrapTaskGroup: ENV LD_LIBRARY_PATH=/usr/local/cuda-7.0/targets/x86_64-linux/lib/:/opt/pgi/linux86-64/18.4/lib/
+980867.740048623 DEBUG : WrapTaskGroup: ENV LD_PRELOAD=/usr/ampehre/lib/libms_common_apapi.so
+980867.740054494 DEBUG : WrapTaskGroup: ENV CUDA_HOME=/usr/local/cuda-7.0/
+980867.740060003 DEBUG : WrapTaskGroup: ENV SCHED_VERBOSE=1
+980867.740065487 DEBUG : WrapTaskGroup: ENV LOG_PATH=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/logs
+980867.740070963 DEBUG : WrapTaskGroup: ENV WRAP_CONFIG=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/METMig2.conf
+980867.740076563 DEBUG : WrapTaskGroup: ENV WRAP_FILE_PATH=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2
+980867.740081879 DEBUG : WrapTaskGroup: ENV WRAP_PATH=/home/awiens/sched/build/wrap
+980867.740087129 DEBUG : WrapTaskGroup: ENV SCHED_LOG_PRIORITY=DEBUG
+980867.740092463 DEBUG : WrapTaskGroup: ENV MANPATH=:/opt/pgi/linux86-64/19.4/man:/opt/pgi/linux86-64/19.4/man
+980867.740097819 DEBUG : WrapTaskGroup: ENV CUDA_PATH=/usr/local/cuda
+980867.740103025 DEBUG : WrapTaskGroup: ENV XDG_SESSION_ID=733
+980867.740108187 DEBUG : WrapTaskGroup: ENV HOSTNAME=cc-8.pc2.uni-paderborn.de
+980867.740113366 DEBUG : WrapTaskGroup: ENV TERM=screen-256color
+980867.740118444 DEBUG : WrapTaskGroup: ENV SHELL=/bin/bash
+980867.740123567 DEBUG : WrapTaskGroup: ENV MAXELEROSDIR=/opt/maxeler/maxeleros
+980867.740128697 DEBUG : WrapTaskGroup: ENV HISTSIZE=1000
+980867.740133745 DEBUG : WrapTaskGroup: ENV SSH_CLIENT=131.234.11.196 56856 22
+980867.740138855 DEBUG : WrapTaskGroup: ENV QTDIR=/usr/lib64/qt-3.3
+980867.740143950 DEBUG : WrapTaskGroup: ENV QTINC=/usr/lib64/qt-3.3/include
+980867.740148923 DEBUG : WrapTaskGroup: ENV SSH_TTY=/dev/pts/0
+980867.740153908 DEBUG : WrapTaskGroup: ENV QT_GRAPHICSSYSTEM_CHECKED=1
+980867.740159097 DEBUG : WrapTaskGroup: ENV MEASURE=true
+980867.740164243 DEBUG : WrapTaskGroup: ENV USER=awiens
+980867.740169243 DEBUG : WrapTaskGroup: ENV SCHED_HOST=test
+980867.740185307 DEBUG : WrapTaskGroup: ENV LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
+980867.740198215 DEBUG : WrapTaskGroup: ENV TMUX=/tmp/tmux-1004/default,34010,0
+980867.740204043 DEBUG : WrapTaskGroup: ENV PGI=/opt/pgi
+980867.740209915 DEBUG : WrapTaskGroup: ENV PATH=/opt/Xilinx/13.3/ISE_DS/../xilinx_wrappers:/opt/pgi/linux86-64/19.4/bin:/opt/maxeler/maxeleros/utils/:/usr/egysched/bin:/usr/ampehre/bin:/opt/Xilinx/13.3/ISE_DS/../xilinx_wrappers:/usr/lib64/qt-3.3/bin:/opt/pgi/linux86-64/19.4/bin:/opt/maxeler/maxeleros/utils/:/usr/egysched/bin:/usr/ampehre/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/awiens/.local/bin:/home/awiens/bin:/home/awiens/.local/bin:/home/awiens/bin
+980867.740215620 DEBUG : WrapTaskGroup: ENV MAIL=/var/spool/mail/awiens
+980867.740220972 DEBUG : WrapTaskGroup: ENV TEST_RESULTDIR=/home/awiens/sched/hosts/test/test_results/default/20190628-161917
+980867.740226366 DEBUG : WrapTaskGroup: ENV PWD=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2
+980867.740231684 DEBUG : WrapTaskGroup: ENV PRECONF=default
+980867.740236849 DEBUG : WrapTaskGroup: ENV LANG=en_US.UTF-8
+980867.740241886 DEBUG : WrapTaskGroup: ENV TMUX_PANE=%45
+980867.740247161 DEBUG : WrapTaskGroup: ENV SCHED_EVENTLOG=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/logs/wrap7.eventlog
+980867.740252700 DEBUG : WrapTaskGroup: ENV LM_LICENSE_FILE=27000@license1.uni-paderborn.de:27000@license2.uni-paderborn.de:27000@license3.uni-paderborn.de:/opt/pgi/license.dat
+980867.740258059 DEBUG : WrapTaskGroup: ENV HISTCONTROL=ignoredups
+980867.740263244 DEBUG : WrapTaskGroup: ENV SHLVL=4
+980867.740268316 DEBUG : WrapTaskGroup: ENV HOME=/home/awiens
+980867.740273449 DEBUG : WrapTaskGroup: ENV SCHED_RESULTS=/home/awiens/sched/hosts
+980867.740278668 DEBUG : WrapTaskGroup: ENV SCHED_ENV=/home/awiens/sched
+980867.740283876 DEBUG : WrapTaskGroup: ENV PYTHONPATH=/home/awiens/sched/scripts/:/home/awiens/sched/scripts/
+980867.740288991 DEBUG : WrapTaskGroup: ENV LOGNAME=awiens
+980867.740293979 DEBUG : WrapTaskGroup: ENV QTLIB=/usr/lib64/qt-3.3/lib
+980867.740299105 DEBUG : WrapTaskGroup: ENV TASKDEF=/home/awiens/sched/hosts/test/tasks.def
+980867.740304337 DEBUG : WrapTaskGroup: ENV XDG_DATA_DIRS=/home/awiens/.local/share/flatpak/exports/share/:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share/
+980867.740309713 DEBUG : WrapTaskGroup: ENV SSH_CONNECTION=131.234.11.196 43230 131.234.58.31 22
+980867.740315070 DEBUG : WrapTaskGroup: ENV SCHED_CONFIG=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/METMig2.conf
+980867.740320284 DEBUG : WrapTaskGroup: ENV LESSOPEN=||/usr/bin/lesspipe.sh %s
+980867.740325257 DEBUG : WrapTaskGroup: ENV XDG_RUNTIME_DIR=/run/user/1004
+980867.740330321 DEBUG : WrapTaskGroup: ENV SCHEDULER=METMig2
+980867.740335428 DEBUG : WrapTaskGroup: ENV _=/home/awiens/sched/scripts/taskset_exec.py
+980867.740340745 DEBUG : WrapTaskGroup: ENV WRAP_LOGPREFIX=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/logs/wrap7
+980867.740345983 DEBUG : WrapTaskGroup: ENV SCHED_TASKDEF=/home/awiens/sched/hosts/test/tasks.def
+980867.740351107 DEBUG : WrapTaskGroup: ENV SCHED_TASKSIZE=512
+980867.740356095 DEBUG : WrapTaskGroup: ENV SCHED_SOCKET=/tmp/wrapsocketkx9862tz
+980867.740544376 DEBUG : WrapTaskApp: started process 22737
+980867.749102484 DEBUG : UnixServer POLL incoming socket
+980867.749123065 DEBUG : UnixServer got socket
+980867.749131830 DEBUG : UnixServer: add new client c40015b0 socket 15
+980867.749139584 DEBUG : UnixServer accept
+980867.749184296 DEBUG : UnixServer POLL other data
+980867.749193077 DEBUG : UnixServer 15: POLL 1
+980867.749198614 DEBUG : UnixServer 15: read from client
+980867.749206371 DEBUG : UnixClient initClient
+980867.749215885 DEBUG : UnixClient protocol version 1
+980867.749221601 DEBUG : UnixClient start
+980867.749226974 DEBUG : UnixClient read new data
+980867.749233104 DEBUG : UnixClient recv -1
+980867.749243408 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980867.749249365 DEBUG : UnixClient nothing to parse
+980867.749254782 DEBUG : UnixServer accept
+980867.749333880 DEBUG : UnixServer POLL other data
+980867.749343273 DEBUG : UnixServer 15: POLL 1
+980867.749348819 DEBUG : UnixServer 15: read from client
+980867.749356022 DEBUG : UnixClient start
+980867.749361273 DEBUG : UnixClient read new data
+980867.749368651 DEBUG : UnixClient recv 156
+980867.749373928 DEBUG : UnixClient going to parse
+980867.749380091 DEBUG : < {"msg":"TASKLIST","tasklist":[{"name":"gaussblur","size":512,"checkpoints":256,"dependencies":[],"resources":["IntelXeon","NvidiaTesla","MaxelerVectis"]}]}
+980867.749406397 DEBUG : TaskDatabase: registerTasklist
+980867.749420744 DEBUG : TaskDatabase: task 0/1 id 7
+980867.749447371 DEBUG : CTaskDatabase: registerTasklist: 7 0x7f4fc40043e0
+980867.749460325 DEBUG : WrapClient: clientTasklist
+980867.749476477 DEBUG : UnixClient start
+980867.749483152 DEBUG : UnixClient read new data
+980867.749493101 DEBUG : UnixClient recv -1
+980867.749505154 DEBUG : > {"msg":"TASKIDS","taskids":[7]}
+980867.749525670 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980867.749538787 DEBUG : UnixClient nothing to parse
+980867.749544726 DEBUG : UnixServer accept
+980867.749555349 DEBUG : WrapClient: start app heat
+980867.749566001 DEBUG : 32 written
+980867.749580525 DEBUG : WrapTaskGroup: WD /
+980867.749591464 DEBUG : WrapTaskGroup: ARG /home/awiens/egysched/tasks_mig/build/heat/task_mig_heat1
+980867.749628509 DEBUG : WrapTaskGroup: ENV LD_LIBRARY_PATH=/usr/local/cuda-7.0/targets/x86_64-linux/lib/:/opt/pgi/linux86-64/18.4/lib/
+980867.749634840 DEBUG : WrapTaskGroup: ENV LD_PRELOAD=/usr/ampehre/lib/libms_common_apapi.so
+980867.749640472 DEBUG : WrapTaskGroup: ENV CUDA_HOME=/usr/local/cuda-7.0/
+980867.749646000 DEBUG : WrapTaskGroup: ENV SCHED_VERBOSE=1
+980867.749651406 DEBUG : WrapTaskGroup: ENV LOG_PATH=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/logs
+980867.749656766 DEBUG : WrapTaskGroup: ENV WRAP_CONFIG=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/METMig2.conf
+980867.749662395 DEBUG : WrapTaskGroup: ENV WRAP_FILE_PATH=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2
+980867.749667629 DEBUG : WrapTaskGroup: ENV WRAP_PATH=/home/awiens/sched/build/wrap
+980867.749672883 DEBUG : WrapTaskGroup: ENV SCHED_LOG_PRIORITY=DEBUG
+980867.749678104 DEBUG : WrapTaskGroup: ENV MANPATH=:/opt/pgi/linux86-64/19.4/man:/opt/pgi/linux86-64/19.4/man
+980867.749683402 DEBUG : WrapTaskGroup: ENV CUDA_PATH=/usr/local/cuda
+980867.749688443 DEBUG : WrapTaskGroup: ENV XDG_SESSION_ID=733
+980867.749693472 DEBUG : WrapTaskGroup: ENV HOSTNAME=cc-8.pc2.uni-paderborn.de
+980867.749698470 DEBUG : WrapTaskGroup: ENV TERM=screen-256color
+980867.749703422 DEBUG : WrapTaskGroup: ENV SHELL=/bin/bash
+980867.749708362 DEBUG : WrapTaskGroup: ENV MAXELEROSDIR=/opt/maxeler/maxeleros
+980867.749713530 DEBUG : WrapTaskGroup: ENV HISTSIZE=1000
+980867.749718592 DEBUG : WrapTaskGroup: ENV SSH_CLIENT=131.234.11.196 56856 22
+980867.749723624 DEBUG : WrapTaskGroup: ENV QTDIR=/usr/lib64/qt-3.3
+980867.749728702 DEBUG : WrapTaskGroup: ENV QTINC=/usr/lib64/qt-3.3/include
+980867.749733688 DEBUG : WrapTaskGroup: ENV SSH_TTY=/dev/pts/0
+980867.749738706 DEBUG : WrapTaskGroup: ENV QT_GRAPHICSSYSTEM_CHECKED=1
+980867.749743765 DEBUG : WrapTaskGroup: ENV MEASURE=true
+980867.749748850 DEBUG : WrapTaskGroup: ENV USER=awiens
+980867.749753813 DEBUG : WrapTaskGroup: ENV SCHED_HOST=test
+980867.749769573 DEBUG : WrapTaskGroup: ENV LS_COLORS=rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
+980867.749782848 DEBUG : WrapTaskGroup: ENV TMUX=/tmp/tmux-1004/default,34010,0
+980867.749788530 DEBUG : WrapTaskGroup: ENV PGI=/opt/pgi
+980867.749794322 DEBUG : WrapTaskGroup: ENV PATH=/opt/Xilinx/13.3/ISE_DS/../xilinx_wrappers:/opt/pgi/linux86-64/19.4/bin:/opt/maxeler/maxeleros/utils/:/usr/egysched/bin:/usr/ampehre/bin:/opt/Xilinx/13.3/ISE_DS/../xilinx_wrappers:/usr/lib64/qt-3.3/bin:/opt/pgi/linux86-64/19.4/bin:/opt/maxeler/maxeleros/utils/:/usr/egysched/bin:/usr/ampehre/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/awiens/.local/bin:/home/awiens/bin:/home/awiens/.local/bin:/home/awiens/bin
+980867.749799962 DEBUG : WrapTaskGroup: ENV MAIL=/var/spool/mail/awiens
+980867.749805162 DEBUG : WrapTaskGroup: ENV TEST_RESULTDIR=/home/awiens/sched/hosts/test/test_results/default/20190628-161917
+980867.749810456 DEBUG : WrapTaskGroup: ENV PWD=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2
+980867.749815715 DEBUG : WrapTaskGroup: ENV PRECONF=default
+980867.749820768 DEBUG : WrapTaskGroup: ENV LANG=en_US.UTF-8
+980867.749825731 DEBUG : WrapTaskGroup: ENV TMUX_PANE=%45
+980867.749830874 DEBUG : WrapTaskGroup: ENV SCHED_EVENTLOG=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/logs/wrap7.eventlog
+980867.749836381 DEBUG : WrapTaskGroup: ENV LM_LICENSE_FILE=27000@license1.uni-paderborn.de:27000@license2.uni-paderborn.de:27000@license3.uni-paderborn.de:/opt/pgi/license.dat
+980867.749841530 DEBUG : WrapTaskGroup: ENV HISTCONTROL=ignoredups
+980867.749846562 DEBUG : WrapTaskGroup: ENV SHLVL=4
+980867.749851621 DEBUG : WrapTaskGroup: ENV HOME=/home/awiens
+980867.749856693 DEBUG : WrapTaskGroup: ENV SCHED_RESULTS=/home/awiens/sched/hosts
+980867.749861995 DEBUG : WrapTaskGroup: ENV SCHED_ENV=/home/awiens/sched
+980867.749867165 DEBUG : WrapTaskGroup: ENV PYTHONPATH=/home/awiens/sched/scripts/:/home/awiens/sched/scripts/
+980867.749872290 DEBUG : WrapTaskGroup: ENV LOGNAME=awiens
+980867.749877282 DEBUG : WrapTaskGroup: ENV QTLIB=/usr/lib64/qt-3.3/lib
+980867.749882419 DEBUG : WrapTaskGroup: ENV TASKDEF=/home/awiens/sched/hosts/test/tasks.def
+980867.749887693 DEBUG : WrapTaskGroup: ENV XDG_DATA_DIRS=/home/awiens/.local/share/flatpak/exports/share/:/var/lib/flatpak/exports/share/:/usr/local/share/:/usr/share/
+980867.749893035 DEBUG : WrapTaskGroup: ENV SSH_CONNECTION=131.234.11.196 43230 131.234.58.31 22
+980867.749898272 DEBUG : WrapTaskGroup: ENV SCHED_CONFIG=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/METMig2.conf
+980867.749903434 DEBUG : WrapTaskGroup: ENV LESSOPEN=||/usr/bin/lesspipe.sh %s
+980867.749908554 DEBUG : WrapTaskGroup: ENV XDG_RUNTIME_DIR=/run/user/1004
+980867.749913494 DEBUG : WrapTaskGroup: ENV SCHEDULER=METMig2
+980867.749918482 DEBUG : WrapTaskGroup: ENV _=/home/awiens/sched/scripts/taskset_exec.py
+980867.749923613 DEBUG : WrapTaskGroup: ENV WRAP_LOGPREFIX=/home/awiens/sched/hosts/test/test_results/default/20190628-161917/METMig2/logs/wrap7
+980867.749931846 DEBUG : WrapTaskGroup: ENV SCHED_TASKDEF=/home/awiens/sched/hosts/test/tasks.def
+980867.749937333 DEBUG : WrapTaskGroup: ENV SCHED_TASKSIZE=1024
+980867.749942488 DEBUG : WrapTaskGroup: ENV SCHED_SOCKET=/tmp/wrapsocketkx9862tz
+980867.750167411 DEBUG : WrapTaskApp: started process 22739
+980867.758023682 DEBUG : UnixServer POLL incoming socket
+980867.758045474 DEBUG : UnixServer got socket
+980867.758055128 DEBUG : UnixServer: add new client c40025c0 socket 16
+980867.758064874 DEBUG : UnixServer accept
+980867.758120206 DEBUG : UnixServer POLL other data
+980867.758129106 DEBUG : UnixServer 16: POLL 1
+980867.758134574 DEBUG : UnixServer 16: read from client
+980867.758142347 DEBUG : UnixClient initClient
+980867.758152144 DEBUG : UnixClient protocol version 1
+980867.758157765 DEBUG : UnixClient start
+980867.758162885 DEBUG : UnixClient read new data
+980867.758169091 DEBUG : UnixClient recv -1
+980867.758179666 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980867.758185402 DEBUG : UnixClient nothing to parse
+980867.758190798 DEBUG : UnixServer accept
+980867.758259445 DEBUG : UnixServer POLL other data
+980867.758268654 DEBUG : UnixServer 16: POLL 1
+980867.758274157 DEBUG : UnixServer 16: read from client
+980867.758281472 DEBUG : UnixClient start
+980867.758286558 DEBUG : UnixClient read new data
+980867.758293739 DEBUG : UnixClient recv 152
+980867.758299072 DEBUG : UnixClient going to parse
+980867.758305078 DEBUG : < {"msg":"TASKLIST","tasklist":[{"name":"heat","size":1024,"checkpoints":768,"dependencies":[],"resources":["IntelXeon","NvidiaTesla","MaxelerVectis"]}]}
+980867.758330658 DEBUG : TaskDatabase: registerTasklist
+980867.758344259 DEBUG : TaskDatabase: task 0/1 id 8
+980867.758367646 DEBUG : CTaskDatabase: registerTasklist: 8 0x7f4fc4005010
+980867.758380434 DEBUG : WrapClient: clientTasklist
+980867.758395789 DEBUG : UnixClient start
+980867.758402278 DEBUG : UnixClient read new data
+980867.758411472 DEBUG : UnixClient recv -1
+980867.758423514 DEBUG : > {"msg":"TASKIDS","taskids":[8]}
+980867.758443528 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980867.758457205 DEBUG : UnixClient nothing to parse
+980867.758463114 DEBUG : UnixServer accept
+980867.758474155 INFO : WrapMain: register group
+980867.758484884 DEBUG : 32 written
+980867.758499355 INFO : WrapClient: connect to scheduler at /tmp/sched.socket.a9A7b2
+980867.758542112 DEBUG : UnixSchedScheduler initClient
+980867.758552584 DEBUG : > PROTOCOL=1
+980867.758561003 DEBUG : 11 written
+980867.758568581 DEBUG : UnixClient protocol version 1
+980867.758574568 DEBUG : UnixServer: add new client 22540b0 socket 17
+980867.758607623 DEBUG : UnixSchedScheduler: Writer: writeMessage
+980867.758618623 DEBUG : UnixClient: tasklist
+980867.758629669 DEBUG : UnixServer POLL wakeup
+980867.758645568 DEBUG : UnixServer accept
+980867.758705559 DEBUG : > {"msg":"TASKLIST","tasklist":[{"name":"heat","size":512,"checkpoints":768,"resources":["IntelXeon","NvidiaTesla","MaxelerVectis"]},{"name":"correlation","size":512,"checkpoints":512,"resources":["IntelXeon","NvidiaTesla","MaxelerVectis"],"dependencies":[0]},{"name":"heat","size":1024,"checkpoints":768,"resources":["IntelXeon","NvidiaTesla","MaxelerVectis"],"dependencies":[1]},{"name":"correlation","size":256,"checkpoints":256,"resources":["IntelXeon","NvidiaTesla","MaxelerVectis"],"dependencies":[2]},{"name":"correlation","size":256,"checkpoints":256,"resources":["IntelXeon","NvidiaTesla","MaxelerVectis"],"dependencies":[3]},{"name":"heat","size":512,"checkpoints":768,"resources":["IntelXeon","NvidiaTesla","MaxelerVectis"],"dependencies":[4]},{"name":"heat","size":256,"checkpoints":768,"resources":["IntelXeon","NvidiaTesla","MaxelerVectis"],"dependencies":[5]},{"name":"gaussblur","size":512,"checkpoints":256,"resources":["IntelXeon","NvidiaTesla","MaxelerVectis"],"dependencies":[6]},{"name":"heat","size":1024,"checkpoints":768,"resources":["IntelXeon","NvidiaTesla","MaxelerVectis"],"dependencies":[7]}]}
+980867.758725729 DEBUG : 1121 written
+980867.759329237 DEBUG : UnixServer POLL other data
+980867.759346829 DEBUG : UnixServer 17: POLL 1
+980867.759353004 DEBUG : UnixServer 17: read from client
+980867.759366127 DEBUG : < {"msg":"TASKIDS","taskids":[61,62,63,64,65,66,67,68,69]}
+980867.759382959 DEBUG : WrapClient: serverTaskIds
+980867.759417848 DEBUG : UnixSchedScheduler socket read failure 11 Resource temporarily unavailable
+980867.759425098 DEBUG : UnixSchedScheduler nothing to parse
+980867.759430919 DEBUG : UnixServer accept
+980879.178835068 DEBUG : UnixServer POLL other data
+980879.178881651 DEBUG : UnixServer 17: POLL 1
+980879.178893983 DEBUG : UnixServer 17: read from client
+980879.178920348 DEBUG : < {"msg":"TASK_START","id":61,"resource":"NvidiaTesla","endprogress":429,"onend":"suspend"}
+980879.178951411 DEBUG : WrapClient: serverTaskStart 61
+980879.178966540 DEBUG : WrapClient: found task c40013e0
+980879.178978260 DEBUG : Task 0 PRE: start
+980879.179067370 DEBUG : UnixSchedScheduler socket read failure 11 Resource temporarily unavailable
+980879.179084072 DEBUG : UnixSchedScheduler nothing to parse
+980879.179105523 DEBUG : UnixClient: start task 0 on resource NvidiaTesla
+980879.179134438 DEBUG : UnixServer accept
+980879.179149403 DEBUG : > {"msg":"TASK_START","id":0,"resource":"NvidiaTesla","endprogress":429,"onend":"suspend"}
+980879.179168238 DEBUG : 89 written
+980879.347463642 DEBUG : UnixServer POLL other data
+980879.347491646 DEBUG : UnixServer 8: POLL 1
+980879.347498438 DEBUG : UnixServer 8: read from client
+980879.347507700 DEBUG : UnixClient start
+980879.347513348 DEBUG : UnixClient read new data
+980879.347528465 DEBUG : UnixClient recv 30
+980879.347534711 DEBUG : UnixClient going to parse
+980879.347541018 DEBUG : < {"msg":"TASK_STARTED","id":0}
+980879.347560759 DEBUG : Task 0 STARTING: started
+980879.347580902 DEBUG : WrapClient: clientStarted
+980879.347600441 DEBUG : UnixClient start
+980879.347606674 DEBUG : UnixClient read new data
+980879.347613250 DEBUG : UnixClient recv -1
+980879.347625086 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980879.347631267 DEBUG : UnixClient nothing to parse
+980879.347640539 DEBUG : UnixServer accept
+980879.347662995 DEBUG : UnixSchedScheduler: Writer: writeMessage
+980879.347671135 DEBUG : UnixClient: task started 61
+980879.347694724 DEBUG : > {"msg":"TASK_STARTED","id":61}
+980879.347708523 DEBUG : 31 written
+980879.862420134 DEBUG : UnixServer POLL other data
+980879.862448668 DEBUG : UnixServer 8: POLL 1
+980879.862455481 DEBUG : UnixServer 8: read from client
+980879.862463552 DEBUG : UnixClient start
+980879.862469072 DEBUG : UnixClient read new data
+980879.862482236 DEBUG : UnixClient recv 47
+980879.862488366 DEBUG : UnixClient going to parse
+980879.862494974 DEBUG : < {"msg":"TASK_SUSPENDED","id":0,"progress":429}
+980879.862515553 DEBUG : Task 0 RUNNING: suspended
+980879.862533857 DEBUG : WrapClient: clientSuspended
+980879.862549931 DEBUG : UnixClient start
+980879.862555585 DEBUG : UnixClient read new data
+980879.862562342 DEBUG : UnixClient recv -1
+980879.862572571 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980879.862578233 DEBUG : UnixClient nothing to parse
+980879.862586440 DEBUG : UnixServer accept
+980879.862608358 DEBUG : UnixSchedScheduler: Writer: writeMessage
+980879.862616488 DEBUG : UnixClient: task suspended 61 429
+980879.862637587 DEBUG : > {"msg":"TASK_SUSPENDED","id":61,"progress":429}
+980879.862649964 DEBUG : 48 written
+980880.232944371 DEBUG : UnixServer POLL other data
+980880.232971483 DEBUG : UnixServer 17: POLL 1
+980880.232977982 DEBUG : UnixServer 17: read from client
+980880.232992809 DEBUG : < {"msg":"TASK_START","id":61,"resource":"IntelXeon","endprogress":768,"onend":"suspend"}
+980880.233018979 DEBUG : WrapClient: serverTaskStart 61
+980880.233030856 DEBUG : WrapClient: found task c40013e0
+980880.233037284 DEBUG : Task 0 SUSPENDED: start
+980880.233066715 DEBUG : UnixSchedScheduler socket read failure 11 Resource temporarily unavailable
+980880.233073278 DEBUG : UnixSchedScheduler nothing to parse
+980880.233078920 DEBUG : UnixServer accept
+980880.233096626 DEBUG : UnixClient: start task 0 on resource IntelXeon
+980880.233156743 DEBUG : > {"msg":"TASK_START","id":0,"resource":"IntelXeon","endprogress":768,"onend":"suspend"}
+980880.233177233 DEBUG : 87 written
+980880.233366650 DEBUG : UnixServer POLL other data
+980880.233383089 DEBUG : UnixServer 8: POLL 1
+980880.233389193 DEBUG : UnixServer 8: read from client
+980880.233396724 DEBUG : UnixClient start
+980880.233401985 DEBUG : UnixClient read new data
+980880.233413791 DEBUG : UnixClient recv 30
+980880.233419754 DEBUG : UnixClient going to parse
+980880.233425460 DEBUG : < {"msg":"TASK_STARTED","id":0}
+980880.233439430 DEBUG : Task 0 STARTING: started
+980880.233454298 DEBUG : WrapClient: clientStarted
+980880.233469395 DEBUG : UnixClient start
+980880.233475123 DEBUG : UnixClient read new data
+980880.233485263 DEBUG : UnixSchedScheduler: Writer: writeMessage
+980880.233499914 DEBUG : UnixClient: task started 61
+980880.233509033 DEBUG : UnixClient recv -1
+980880.233518332 DEBUG : > {"msg":"TASK_STARTED","id":61}
+980880.233527111 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980880.233533314 DEBUG : 31 written
+980880.233541911 DEBUG : UnixClient nothing to parse
+980880.233553063 DEBUG : UnixServer accept
+980880.505014631 DEBUG : UnixServer POLL other data
+980880.505029591 DEBUG : UnixServer 8: POLL 1
+980880.505035467 DEBUG : UnixServer 8: read from client
+980880.505041795 DEBUG : UnixClient start
+980880.505046912 DEBUG : UnixClient read new data
+980880.505057512 DEBUG : UnixClient recv 31
+980880.505063154 DEBUG : UnixClient going to parse
+980880.505068763 DEBUG : < {"msg":"TASK_FINISHED","id":0}
+980880.505080077 DEBUG : Task 0 RUNNING: finished
+980880.505095527 DEBUG : WrapClient: clientFinished
+980880.505107672 DEBUG : UnixClient start
+980880.505113535 DEBUG : UnixClient read new data
+980880.505120604 DEBUG : UnixSchedScheduler: Writer: writeMessage
+980880.505138940 DEBUG : UnixClient: task finished 61
+980880.505148763 DEBUG : UnixClient recv -1
+980880.505157622 DEBUG : > {"msg":"TASK_FINISHED","id":61}
+980880.505168907 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980880.505179421 DEBUG : UnixClient nothing to parse
+980880.505187117 DEBUG : UnixServer accept
+980880.505214517 DEBUG : UnixServer POLL other data
+980880.505221827 DEBUG : UnixServer 8: POLL 1
+980880.505227383 DEBUG : UnixServer 8: read from client
+980880.505233333 DEBUG : UnixClient start
+980880.505238562 DEBUG : UnixClient read new data
+980880.505247659 DEBUG : UnixClient recv 15
+980880.505253199 DEBUG : UnixClient going to parse
+980880.505258703 DEBUG : < {"msg":"QUIT"}
+980880.505266547 DEBUG : WrapClient: clientQuit
+980880.505272515 DEBUG : UnixClient start
+980880.505277549 DEBUG : UnixClient read new data
+980880.505283666 DEBUG : UnixClient recv -1
+980880.505290647 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980880.505296087 DEBUG : UnixClient nothing to parse
+980880.505301429 DEBUG : UnixServer: removeClient
+980880.505307527 DEBUG : UnixServer: dyncast CComUnixClient c4000b70
+980880.505325232 DEBUG : UnixServer accept
+980880.505626196 DEBUG : 32 written
+980880.510870950 DEBUG : UnixServer POLL other data
+980880.510898515 DEBUG : UnixServer 17: POLL 1
+980880.510905069 DEBUG : UnixServer 17: read from client
+980880.510920320 DEBUG : < {"msg":"TASK_START","id":62,"resource":"IntelXeon","endprogress":512,"onend":"suspend"}
+980880.510938299 DEBUG : WrapClient: serverTaskStart 62
+980880.510947267 DEBUG : WrapClient: found task c4001140
+980880.510953331 DEBUG : Task 1 PRE: start
+980880.510984414 DEBUG : UnixSchedScheduler socket read failure 11 Resource temporarily unavailable
+980880.510991782 DEBUG : UnixClient: start task 1 on resource IntelXeon
+980880.511015302 DEBUG : UnixSchedScheduler nothing to parse
+980880.511026605 DEBUG : > {"msg":"TASK_START","id":1,"resource":"IntelXeon","endprogress":512,"onend":"suspend"}
+980880.511040723 DEBUG : UnixServer accept
+980880.511054086 DEBUG : 87 written
+980880.523285026 DEBUG : UnixServer POLL other data
+980880.523309615 DEBUG : UnixServer 9: POLL 1
+980880.523324400 DEBUG : UnixServer 9: read from client
+980880.523333013 DEBUG : UnixClient start
+980880.523338592 DEBUG : UnixClient read new data
+980880.523351268 DEBUG : UnixClient recv 30
+980880.523357178 DEBUG : UnixClient going to parse
+980880.523362884 DEBUG : < {"msg":"TASK_STARTED","id":1}
+980880.523378362 DEBUG : Task 1 STARTING: started
+980880.523395631 DEBUG : WrapClient: clientStarted
+980880.523421536 DEBUG : UnixClient start
+980880.523427442 DEBUG : UnixClient read new data
+980880.523435181 DEBUG : UnixSchedScheduler: Writer: writeMessage
+980880.523449003 DEBUG : UnixClient: task started 62
+980880.523457965 DEBUG : UnixClient recv -1
+980880.523467146 DEBUG : > {"msg":"TASK_STARTED","id":62}
+980880.523477404 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980880.523483168 DEBUG : 31 written
+980880.523675479 DEBUG : UnixClient nothing to parse
+980880.523689586 DEBUG : UnixServer accept
+980880.843371185 DEBUG : UnixServer POLL other data
+980880.843391017 DEBUG : UnixServer 9: POLL 1
+980880.843397508 DEBUG : UnixServer 9: read from client
+980880.843405713 DEBUG : UnixClient start
+980880.843411054 DEBUG : UnixClient read new data
+980880.843423750 DEBUG : UnixClient recv 31
+980880.843429494 DEBUG : UnixClient going to parse
+980880.843435639 DEBUG : < {"msg":"TASK_FINISHED","id":1}
+980880.843453078 DEBUG : Task 1 RUNNING: finished
+980880.843471354 DEBUG : WrapClient: clientFinished
+980880.843487169 DEBUG : UnixClient start
+980880.843493289 DEBUG : UnixClient read new data
+980880.843499687 DEBUG : UnixClient recv -1
+980880.843509959 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980880.843515442 DEBUG : UnixClient nothing to parse
+980880.843523761 DEBUG : UnixServer accept
+980880.843544996 DEBUG : UnixSchedScheduler: Writer: writeMessage
+980880.843552492 DEBUG : UnixClient: task finished 62
+980880.843569897 DEBUG : > {"msg":"TASK_FINISHED","id":62}
+980880.843582583 DEBUG : 32 written
+980880.843634226 DEBUG : UnixServer POLL other data
+980880.843642516 DEBUG : UnixServer 9: POLL 1
+980880.843647956 DEBUG : UnixServer 9: read from client
+980880.843653943 DEBUG : UnixClient start
+980880.843659126 DEBUG : UnixClient read new data
+980880.843668795 DEBUG : UnixClient recv 15
+980880.843674220 DEBUG : UnixClient going to parse
+980880.843679543 DEBUG : < {"msg":"QUIT"}
+980880.843687771 DEBUG : WrapClient: clientQuit
+980880.843693691 DEBUG : UnixClient start
+980880.843698763 DEBUG : UnixClient read new data
+980880.843704723 DEBUG : UnixClient recv -1
+980880.843711921 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980880.843717198 DEBUG : UnixClient nothing to parse
+980880.843722369 DEBUG : UnixServer: removeClient
+980880.843728371 DEBUG : UnixServer: dyncast CComUnixClient c4000960
+980880.843740201 DEBUG : UnixServer accept
+980880.849913032 DEBUG : UnixServer POLL other data
+980880.849941983 DEBUG : UnixServer 17: POLL 1
+980880.849948616 DEBUG : UnixServer 17: read from client
+980880.849964066 DEBUG : < {"msg":"TASK_START","id":63,"resource":"NvidiaTesla","endprogress":216,"onend":"suspend"}
+980880.849982234 DEBUG : WrapClient: serverTaskStart 63
+980880.849991330 DEBUG : WrapClient: found task c40022f0
+980880.849997618 DEBUG : Task 2 PRE: start
+980880.850039453 DEBUG : UnixSchedScheduler socket read failure 11 Resource temporarily unavailable
+980880.850048144 DEBUG : UnixSchedScheduler nothing to parse
+980880.850059275 DEBUG : UnixServer accept
+980880.850071925 DEBUG : UnixClient: start task 2 on resource NvidiaTesla
+980880.850114043 DEBUG : > {"msg":"TASK_START","id":2,"resource":"NvidiaTesla","endprogress":216,"onend":"suspend"}
+980880.850130170 DEBUG : 89 written
+980880.991886114 DEBUG : UnixServer POLL other data
+980880.991922637 DEBUG : UnixServer 10: POLL 1
+980880.991929346 DEBUG : UnixServer 10: read from client
+980880.991938983 DEBUG : UnixClient start
+980880.991944338 DEBUG : UnixClient read new data
+980880.991960509 DEBUG : UnixClient recv 30
+980880.991966480 DEBUG : UnixClient going to parse
+980880.991972714 DEBUG : < {"msg":"TASK_STARTED","id":2}
+980880.992022520 DEBUG : Task 2 STARTING: started
+980880.992056004 DEBUG : WrapClient: clientStarted
+980880.992076568 DEBUG : UnixClient start
+980880.992082581 DEBUG : UnixClient read new data
+980880.992089564 DEBUG : UnixClient recv -1
+980880.992102421 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980880.992107816 DEBUG : UnixClient nothing to parse
+980880.992116445 DEBUG : UnixServer accept
+980880.992130278 DEBUG : UnixSchedScheduler: Writer: writeMessage
+980880.992147913 DEBUG : UnixClient: task started 63
+980880.992178111 DEBUG : > {"msg":"TASK_STARTED","id":63}
+980880.992195558 DEBUG : 31 written
+980881.304509847 DEBUG : UnixServer POLL other data
+980881.304553541 DEBUG : UnixServer 10: POLL 1
+980881.304566521 DEBUG : UnixServer 10: read from client
+980881.304580064 DEBUG : UnixClient start
+980881.304590814 DEBUG : UnixClient read new data
+980881.304615407 DEBUG : UnixClient recv 47
+980881.304627297 DEBUG : UnixClient going to parse
+980881.304639297 DEBUG : < {"msg":"TASK_SUSPENDED","id":2,"progress":216}
+980881.304668224 DEBUG : Task 2 RUNNING: suspended
+980881.304699287 DEBUG : WrapClient: clientSuspended
+980881.304724567 DEBUG : UnixClient start
+980881.304736961 DEBUG : UnixClient read new data
+980881.304749984 DEBUG : UnixClient recv -1
+980881.304766644 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980881.304777741 DEBUG : UnixClient nothing to parse
+980881.304802511 DEBUG : UnixSchedScheduler: Writer: writeMessage
+980881.304851780 DEBUG : UnixServer accept
+980881.304870094 DEBUG : UnixClient: task suspended 63 216
+980881.304925091 DEBUG : > {"msg":"TASK_SUSPENDED","id":63,"progress":216}
+980881.304951634 DEBUG : 48 written
+980881.315663771 DEBUG : UnixServer POLL other data
+980881.315725428 DEBUG : UnixServer 17: POLL 1
+980881.315739031 DEBUG : UnixServer 17: read from client
+980881.315774115 DEBUG : < {"msg":"TASK_START","id":63,"resource":"IntelXeon","endprogress":768,"onend":"suspend"}
+980881.315809635 DEBUG : WrapClient: serverTaskStart 63
+980881.315830585 DEBUG : WrapClient: found task c40022f0
+980881.315843645 DEBUG : Task 2 SUSPENDED: start
+980881.315908628 DEBUG : UnixSchedScheduler socket read failure 11 Resource temporarily unavailable
+980881.315922941 DEBUG : UnixSchedScheduler nothing to parse
+980881.315934845 DEBUG : UnixServer accept
+980881.315958955 DEBUG : UnixClient: start task 2 on resource IntelXeon
+980881.316055770 DEBUG : > {"msg":"TASK_START","id":2,"resource":"IntelXeon","endprogress":768,"onend":"suspend"}
+980881.316091572 DEBUG : 87 written
+980881.316400160 DEBUG : UnixServer POLL other data
+980881.316416872 DEBUG : UnixServer 10: POLL 1
+980881.316423398 DEBUG : UnixServer 10: read from client
+980881.316430424 DEBUG : UnixClient start
+980881.316435794 DEBUG : UnixClient read new data
+980881.316447685 DEBUG : UnixClient recv 30
+980881.316453657 DEBUG : UnixClient going to parse
+980881.316459675 DEBUG : < {"msg":"TASK_STARTED","id":2}
+980881.316472284 DEBUG : Task 2 STARTING: started
+980881.316491810 DEBUG : WrapClient: clientStarted
+980881.316504680 DEBUG : UnixClient start
+980881.316510540 DEBUG : UnixSchedScheduler: Writer: writeMessage
+980881.316521467 DEBUG : UnixClient: task started 63
+980881.316530559 DEBUG : UnixClient read new data
+980881.316537609 DEBUG : > {"msg":"TASK_STARTED","id":63}
+980881.316545680 DEBUG : UnixClient recv -1
+980881.316551729 DEBUG : 31 written
+980881.316560145 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980881.316567327 DEBUG : UnixClient nothing to parse
+980881.316574727 DEBUG : UnixServer accept
+980883.130929337 DEBUG : UnixServer POLL other data
+980883.130955756 DEBUG : UnixServer 10: POLL 1
+980883.130962237 DEBUG : UnixServer 10: read from client
+980883.130971114 DEBUG : UnixClient start
+980883.130976386 DEBUG : UnixClient read new data
+980883.130989591 DEBUG : UnixClient recv 31
+980883.130995554 DEBUG : UnixClient going to parse
+980883.131013330 DEBUG : < {"msg":"TASK_FINISHED","id":2}
+980883.131038226 DEBUG : Task 2 RUNNING: finished
+980883.131057914 DEBUG : WrapClient: clientFinished
+980883.131084783 DEBUG : UnixClient start
+980883.131091489 DEBUG : UnixClient read new data
+980883.131098281 DEBUG : UnixClient recv -1
+980883.131109106 DEBUG : UnixSchedScheduler: Writer: writeMessage
+980883.131129002 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980883.131141162 DEBUG : UnixClient: task finished 63
+980883.131152222 DEBUG : UnixClient nothing to parse
+980883.131164626 DEBUG : UnixServer accept
+980883.131173986 DEBUG : > {"msg":"TASK_FINISHED","id":63}
+980883.131190889 DEBUG : 32 written
+980883.131207391 DEBUG : UnixServer POLL other data
+980883.131215404 DEBUG : UnixServer 10: POLL 1
+980883.131220662 DEBUG : UnixServer 10: read from client
+980883.131226378 DEBUG : UnixClient start
+980883.131231433 DEBUG : UnixClient read new data
+980883.131240065 DEBUG : UnixClient recv 15
+980883.131245330 DEBUG : UnixClient going to parse
+980883.131250558 DEBUG : < {"msg":"QUIT"}
+980883.131258175 DEBUG : WrapClient: clientQuit
+980883.131264241 DEBUG : UnixClient start
+980883.131269026 DEBUG : UnixClient read new data
+980883.131274919 DEBUG : UnixClient recv -1
+980883.131281782 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980883.131287241 DEBUG : UnixClient nothing to parse
+980883.131292265 DEBUG : UnixServer: removeClient
+980883.131298206 DEBUG : UnixServer: dyncast CComUnixClient c40008c0
+980883.131309970 DEBUG : UnixServer accept
+980883.137946935 DEBUG : UnixServer POLL other data
+980883.137974960 DEBUG : UnixServer 17: POLL 1
+980883.137981459 DEBUG : UnixServer 17: read from client
+980883.137997671 DEBUG : < {"msg":"TASK_START","id":64,"resource":"IntelXeon","endprogress":256,"onend":"suspend"}
+980883.138025747 DEBUG : WrapClient: serverTaskStart 64
+980883.138039823 DEBUG : WrapClient: found task c4002c50
+980883.138046336 DEBUG : Task 3 PRE: start
+980883.138078392 DEBUG : UnixSchedScheduler socket read failure 11 Resource temporarily unavailable
+980883.138084909 DEBUG : UnixSchedScheduler nothing to parse
+980883.138092432 DEBUG : UnixClient: start task 3 on resource IntelXeon
+980883.138113690 DEBUG : UnixServer accept
+980883.138126530 DEBUG : > {"msg":"TASK_START","id":3,"resource":"IntelXeon","endprogress":256,"onend":"suspend"}
+980883.138143463 DEBUG : 87 written
+980883.141159990 DEBUG : UnixServer POLL other data
+980883.141181411 DEBUG : UnixServer 11: POLL 1
+980883.141187897 DEBUG : UnixServer 11: read from client
+980883.141194681 DEBUG : UnixClient start
+980883.141199710 DEBUG : UnixClient read new data
+980883.141210910 DEBUG : UnixClient recv 30
+980883.141216641 DEBUG : UnixClient going to parse
+980883.141222291 DEBUG : < {"msg":"TASK_STARTED","id":3}
+980883.141234608 DEBUG : Task 3 STARTING: started
+980883.141251211 DEBUG : WrapClient: clientStarted
+980883.141264181 DEBUG : UnixClient start
+980883.141270139 DEBUG : UnixClient read new data
+980883.141277748 DEBUG : UnixSchedScheduler: Writer: writeMessage
+980883.141298281 DEBUG : UnixClient recv -1
+980883.141310857 DEBUG : UnixClient: task started 64
+980883.141324613 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980883.141332976 DEBUG : UnixClient nothing to parse
+980883.141343111 DEBUG : > {"msg":"TASK_STARTED","id":64}
+980883.141354214 DEBUG : UnixServer accept
+980883.141360515 DEBUG : 31 written
+980883.198496168 DEBUG : UnixServer POLL other data
+980883.198511395 DEBUG : UnixServer 11: POLL 1
+980883.198517432 DEBUG : UnixServer 11: read from client
+980883.198523763 DEBUG : UnixClient start
+980883.198528932 DEBUG : UnixClient read new data
+980883.198539289 DEBUG : UnixClient recv 31
+980883.198544915 DEBUG : UnixClient going to parse
+980883.198550380 DEBUG : < {"msg":"TASK_FINISHED","id":3}
+980883.198561676 DEBUG : Task 3 RUNNING: finished
+980883.198577651 DEBUG : WrapClient: clientFinished
+980883.198590251 DEBUG : UnixClient start
+980883.198596171 DEBUG : UnixClient read new data
+980883.198606983 DEBUG : UnixSchedScheduler: Writer: writeMessage
+980883.198623500 DEBUG : UnixClient recv -1
+980883.198635462 DEBUG : UnixClient: task finished 64
+980883.198653659 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980883.198663358 DEBUG : > {"msg":"TASK_FINISHED","id":64}
+980883.198674105 DEBUG : UnixClient nothing to parse
+980883.198686547 DEBUG : UnixServer accept
+980883.198696494 DEBUG : UnixServer POLL other data
+980883.198702097 DEBUG : UnixServer 11: POLL 1
+980883.198707357 DEBUG : UnixServer 11: read from client
+980883.198712782 DEBUG : UnixClient start
+980883.198717707 DEBUG : UnixClient read new data
+980883.198726440 DEBUG : UnixClient recv 15
+980883.198731728 DEBUG : UnixClient going to parse
+980883.198737272 DEBUG : < {"msg":"QUIT"}
+980883.198744937 DEBUG : WrapClient: clientQuit
+980883.198750945 DEBUG : UnixClient start
+980883.198756008 DEBUG : UnixClient read new data
+980883.198761883 DEBUG : UnixClient recv -1
+980883.198768611 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980883.198773822 DEBUG : UnixClient nothing to parse
+980883.198779021 DEBUG : UnixServer: removeClient
+980883.198784998 DEBUG : UnixServer: dyncast CComUnixClient c4002520
+980883.198795742 DEBUG : UnixServer accept
+980883.199186044 DEBUG : 32 written
+980883.204619215 DEBUG : UnixServer POLL other data
+980883.204637320 DEBUG : UnixServer 17: POLL 1
+980883.204643167 DEBUG : UnixServer 17: read from client
+980883.204657111 DEBUG : < {"msg":"TASK_START","id":65,"resource":"IntelXeon","endprogress":256,"onend":"suspend"}
+980883.204673362 DEBUG : WrapClient: serverTaskStart 65
+980883.204682402 DEBUG : WrapClient: found task c40031e0
+980883.204688439 DEBUG : Task 4 PRE: start
+980883.204716700 DEBUG : UnixSchedScheduler socket read failure 11 Resource temporarily unavailable
+980883.204723947 DEBUG : UnixClient: start task 4 on resource IntelXeon
+980883.204740532 DEBUG : UnixSchedScheduler nothing to parse
+980883.204749682 DEBUG : UnixServer accept
+980883.204760142 DEBUG : > {"msg":"TASK_START","id":4,"resource":"IntelXeon","endprogress":256,"onend":"suspend"}
+980883.204777427 DEBUG : 87 written
+980883.207804562 DEBUG : UnixServer POLL other data
+980883.207825058 DEBUG : UnixServer 12: POLL 1
+980883.207831534 DEBUG : UnixServer 12: read from client
+980883.207838690 DEBUG : UnixClient start
+980883.207843955 DEBUG : UnixClient read new data
+980883.207857245 DEBUG : UnixClient recv 30
+980883.207863307 DEBUG : UnixClient going to parse
+980883.207869256 DEBUG : < {"msg":"TASK_STARTED","id":4}
+980883.207881909 DEBUG : Task 4 STARTING: started
+980883.207896954 DEBUG : WrapClient: clientStarted
+980883.207910810 DEBUG : UnixClient start
+980883.207916848 DEBUG : UnixClient read new data
+980883.207923266 DEBUG : UnixClient recv -1
+980883.207930933 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980883.207936430 DEBUG : UnixClient nothing to parse
+980883.207942882 DEBUG : UnixServer accept
+980883.207978228 DEBUG : UnixSchedScheduler: Writer: writeMessage
+980883.207993777 DEBUG : UnixClient: task started 65
+980883.208019985 DEBUG : > {"msg":"TASK_STARTED","id":65}
+980883.208041587 DEBUG : 31 written
+980883.244687038 DEBUG : UnixServer POLL other data
+980883.244702515 DEBUG : UnixServer 12: POLL 1
+980883.244708718 DEBUG : UnixServer 12: read from client
+980883.244715313 DEBUG : UnixClient start
+980883.244720585 DEBUG : UnixClient read new data
+980883.244731155 DEBUG : UnixClient recv 31
+980883.244736769 DEBUG : UnixClient going to parse
+980883.244742584 DEBUG : < {"msg":"TASK_FINISHED","id":4}
+980883.244754617 DEBUG : Task 4 RUNNING: finished
+980883.244769768 DEBUG : WrapClient: clientFinished
+980883.244782414 DEBUG : UnixClient start
+980883.244788334 DEBUG : UnixClient read new data
+980883.244794947 DEBUG : UnixClient recv -1
+980883.244807100 DEBUG : UnixSchedScheduler: Writer: writeMessage
+980883.244827236 DEBUG : UnixClient: task finished 65
+980883.244838724 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980883.244852737 DEBUG : UnixClient nothing to parse
+980883.244863081 DEBUG : > {"msg":"TASK_FINISHED","id":65}
+980883.244878008 DEBUG : UnixServer accept
+980883.244891035 DEBUG : 32 written
+980883.244911280 DEBUG : UnixServer POLL other data
+980883.244922995 DEBUG : UnixServer 12: POLL 1
+980883.244928441 DEBUG : UnixServer 12: read from client
+980883.244934316 DEBUG : UnixClient start
+980883.244939516 DEBUG : UnixClient read new data
+980883.244949032 DEBUG : UnixClient recv 15
+980883.244954392 DEBUG : UnixClient going to parse
+980883.244959854 DEBUG : < {"msg":"QUIT"}
+980883.244967628 DEBUG : WrapClient: clientQuit
+980883.244973832 DEBUG : UnixClient start
+980883.244978793 DEBUG : UnixClient read new data
+980883.244984968 DEBUG : UnixClient recv -1
+980883.244992086 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980883.244997540 DEBUG : UnixClient nothing to parse
+980883.245009625 DEBUG : UnixServer: removeClient
+980883.245020102 DEBUG : UnixServer: dyncast CComUnixClient c4001710
+980883.245031664 DEBUG : UnixServer accept
+980883.251486629 DEBUG : UnixServer POLL other data
+980883.251518322 DEBUG : UnixServer 17: POLL 1
+980883.251525211 DEBUG : UnixServer 17: read from client
+980883.251537987 DEBUG : < {"msg":"TASK_START","id":66,"resource":"NvidiaTesla","endprogress":768,"onend":"suspend"}
+980883.251553490 DEBUG : WrapClient: serverTaskStart 66
+980883.251561715 DEBUG : WrapClient: found task c40033d0
+980883.251568096 DEBUG : Task 5 PRE: start
+980883.251595909 DEBUG : UnixSchedScheduler socket read failure 11 Resource temporarily unavailable
+980883.251602736 DEBUG : UnixSchedScheduler nothing to parse
+980883.251608511 DEBUG : UnixServer accept
+980883.251672906 DEBUG : UnixClient: start task 5 on resource NvidiaTesla
+980883.251702634 DEBUG : > {"msg":"TASK_START","id":5,"resource":"NvidiaTesla","endprogress":768,"onend":"suspend"}
+980883.251718295 DEBUG : 89 written
+980883.384291105 DEBUG : UnixServer POLL other data
+980883.384328553 DEBUG : UnixServer 13: POLL 1
+980883.384335441 DEBUG : UnixServer 13: read from client
+980883.384344924 DEBUG : UnixClient start
+980883.384350449 DEBUG : UnixClient read new data
+980883.384366710 DEBUG : UnixClient recv 30
+980883.384372598 DEBUG : UnixClient going to parse
+980883.384378966 DEBUG : < {"msg":"TASK_STARTED","id":5}
+980883.384402295 DEBUG : Task 5 STARTING: started
+980883.384422598 DEBUG : WrapClient: clientStarted
+980883.384442249 DEBUG : UnixClient start
+980883.384448330 DEBUG : UnixClient read new data
+980883.384455252 DEBUG : UnixClient recv -1
+980883.384462928 DEBUG : UnixSchedScheduler: Writer: writeMessage
+980883.384482625 DEBUG : UnixClient: task started 66
+980883.384492481 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980883.384501958 DEBUG : UnixClient nothing to parse
+980883.384507408 DEBUG : > {"msg":"TASK_STARTED","id":66}
+980883.384517873 DEBUG : UnixServer accept
+980883.384526366 DEBUG : 31 written
+980884.335671239 DEBUG : UnixServer POLL other data
+980884.335710007 DEBUG : UnixServer 13: POLL 1
+980884.335720239 DEBUG : UnixServer 13: read from client
+980884.335731519 DEBUG : UnixClient start
+980884.335739787 DEBUG : UnixClient read new data
+980884.335753764 DEBUG : UnixClient recv 46
+980884.335762211 DEBUG : UnixClient going to parse
+980884.335771297 DEBUG : < {"msg":"TASK_FINISHED","id":5}
+980884.335809785 DEBUG : Task 5 RUNNING: finished
+980884.335845365 DEBUG : WrapClient: clientFinished
+980884.335877465 DEBUG : < {"msg":"QUIT"}
+980884.335894958 DEBUG : WrapClient: clientQuit
+980884.335907265 DEBUG : UnixClient start
+980884.335918342 DEBUG : UnixClient read new data
+980884.335931702 DEBUG : UnixClient recv 0
+980884.335948575 DEBUG : UnixClient read 0
+980884.335962915 DEBUG : UnixClient nothing to parse
+980884.335982762 DEBUG : UnixSchedScheduler: Writer: writeMessage
+980884.336053332 DEBUG : UnixServer: removeClient
+980884.336077987 DEBUG : UnixClient: task finished 66
+980884.336097994 DEBUG : UnixServer: dyncast CComUnixClient c4002420
+980884.336115512 DEBUG : > {"msg":"TASK_FINISHED","id":66}
+980884.336131527 DEBUG : UnixServer accept
+980884.336146357 DEBUG : 32 written
+980884.347324016 DEBUG : UnixServer POLL other data
+980884.347378083 DEBUG : UnixServer 17: POLL 1
+980884.347398516 DEBUG : UnixServer 17: read from client
+980884.347445146 DEBUG : < {"msg":"TASK_START","id":67,"resource":"IntelXeon","endprogress":768,"onend":"suspend"}
+980884.347480320 DEBUG : WrapClient: serverTaskStart 67
+980884.347501683 DEBUG : WrapClient: found task c40040e0
+980884.347514416 DEBUG : Task 6 PRE: start
+980884.347577273 DEBUG : UnixSchedScheduler socket read failure 11 Resource temporarily unavailable
+980884.347591270 DEBUG : UnixSchedScheduler nothing to parse
+980884.347607903 DEBUG : UnixServer accept
+980884.347629730 DEBUG : UnixClient: start task 6 on resource IntelXeon
+980884.347728132 DEBUG : > {"msg":"TASK_START","id":6,"resource":"IntelXeon","endprogress":768,"onend":"suspend"}
+980884.347753980 DEBUG : 87 written
+980884.349304770 DEBUG : UnixServer POLL other data
+980884.349344261 DEBUG : UnixServer 14: POLL 1
+980884.349356581 DEBUG : UnixServer 14: read from client
+980884.349369976 DEBUG : UnixClient start
+980884.349379679 DEBUG : UnixClient read new data
+980884.349403698 DEBUG : UnixClient recv 30
+980884.349423399 DEBUG : UnixClient going to parse
+980884.349434456 DEBUG : < {"msg":"TASK_STARTED","id":6}
+980884.349457893 DEBUG : Task 6 STARTING: started
+980884.349486513 DEBUG : WrapClient: clientStarted
+980884.349510002 DEBUG : UnixClient start
+980884.349521516 DEBUG : UnixClient read new data
+980884.349533576 DEBUG : UnixClient recv -1
+980884.349548522 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980884.349566167 DEBUG : UnixClient nothing to parse
+980884.349593787 DEBUG : UnixServer accept
+980884.349613085 DEBUG : UnixSchedScheduler: Writer: writeMessage
+980884.349638701 DEBUG : UnixClient: task started 67
+980884.349663437 DEBUG : > {"msg":"TASK_STARTED","id":67}
+980884.349684031 DEBUG : 31 written
+980884.557924181 DEBUG : UnixServer POLL other data
+980884.557939898 DEBUG : UnixServer 14: POLL 1
+980884.557945840 DEBUG : UnixServer 14: read from client
+980884.557952464 DEBUG : UnixClient start
+980884.557957760 DEBUG : UnixClient read new data
+980884.557968542 DEBUG : UnixClient recv 31
+980884.557974122 DEBUG : UnixClient going to parse
+980884.557979997 DEBUG : < {"msg":"TASK_FINISHED","id":6}
+980884.557992139 DEBUG : Task 6 RUNNING: finished
+980884.558013411 DEBUG : WrapClient: clientFinished
+980884.558028024 DEBUG : UnixClient start
+980884.558034053 DEBUG : UnixClient read new data
+980884.558040629 DEBUG : UnixClient recv -1
+980884.558052970 DEBUG : UnixSchedScheduler: Writer: writeMessage
+980884.558073831 DEBUG : UnixClient: task finished 67
+980884.558085285 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980884.558094383 DEBUG : > {"msg":"TASK_FINISHED","id":67}
+980884.558108088 DEBUG : UnixClient nothing to parse
+980884.558121213 DEBUG : 32 written
+980884.558135597 DEBUG : UnixServer accept
+980884.558150469 DEBUG : UnixServer POLL other data
+980884.558156344 DEBUG : UnixServer 14: POLL 1
+980884.558161707 DEBUG : UnixServer 14: read from client
+980884.558167304 DEBUG : UnixClient start
+980884.558172259 DEBUG : UnixClient read new data
+980884.558181461 DEBUG : UnixClient recv 15
+980884.558186731 DEBUG : UnixClient going to parse
+980884.558192197 DEBUG : < {"msg":"QUIT"}
+980884.558199910 DEBUG : WrapClient: clientQuit
+980884.558205848 DEBUG : UnixClient start
+980884.558210869 DEBUG : UnixClient read new data
+980884.558217005 DEBUG : UnixClient recv -1
+980884.558224010 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980884.558229264 DEBUG : UnixClient nothing to parse
+980884.558234651 DEBUG : UnixServer: removeClient
+980884.558240760 DEBUG : UnixServer: dyncast CComUnixClient c4001510
+980884.558252112 DEBUG : UnixServer accept
+980884.564172586 DEBUG : UnixServer POLL other data
+980884.564193260 DEBUG : UnixServer 17: POLL 1
+980884.564199961 DEBUG : UnixServer 17: read from client
+980884.564213359 DEBUG : < {"msg":"TASK_START","id":68,"resource":"NvidiaTesla","endprogress":256,"onend":"suspend"}
+980884.564228233 DEBUG : WrapClient: serverTaskStart 68
+980884.564236279 DEBUG : WrapClient: found task c40043e0
+980884.564242404 DEBUG : Task 7 PRE: start
+980884.564284735 DEBUG : UnixSchedScheduler socket read failure 11 Resource temporarily unavailable
+980884.564291886 DEBUG : UnixSchedScheduler nothing to parse
+980884.564297554 DEBUG : UnixServer accept
+980884.564320708 DEBUG : UnixClient: start task 7 on resource NvidiaTesla
+980884.564350982 DEBUG : > {"msg":"TASK_START","id":7,"resource":"NvidiaTesla","endprogress":256,"onend":"suspend"}
+980884.564367673 DEBUG : 89 written
+980884.769887176 DEBUG : UnixServer POLL other data
+980884.769925646 DEBUG : UnixServer 15: POLL 1
+980884.769932985 DEBUG : UnixServer 15: read from client
+980884.769943169 DEBUG : UnixClient start
+980884.769948734 DEBUG : UnixClient read new data
+980884.769965758 DEBUG : UnixClient recv 30
+980884.769971809 DEBUG : UnixClient going to parse
+980884.769978060 DEBUG : < {"msg":"TASK_STARTED","id":7}
+980884.770014886 DEBUG : Task 7 STARTING: started
+980884.770039118 DEBUG : WrapClient: clientStarted
+980884.770062611 DEBUG : UnixClient start
+980884.770068613 DEBUG : UnixClient read new data
+980884.770075656 DEBUG : UnixClient recv -1
+980884.770088664 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980884.770094227 DEBUG : UnixClient nothing to parse
+980884.770101389 DEBUG : UnixServer accept
+980884.770116661 DEBUG : UnixSchedScheduler: Writer: writeMessage
+980884.770134197 DEBUG : UnixClient: task started 68
+980884.770157572 DEBUG : > {"msg":"TASK_STARTED","id":68}
+980884.770174231 DEBUG : 31 written
+980885.456457403 DEBUG : UnixServer POLL other data
+980885.456488773 DEBUG : UnixServer 15: POLL 1
+980885.456495726 DEBUG : UnixServer 15: read from client
+980885.456504072 DEBUG : UnixClient start
+980885.456509701 DEBUG : UnixClient read new data
+980885.456519739 DEBUG : UnixClient recv 46
+980885.456525446 DEBUG : UnixClient going to parse
+980885.456531720 DEBUG : < {"msg":"TASK_FINISHED","id":7}
+980885.456550563 DEBUG : Task 7 RUNNING: finished
+980885.456570282 DEBUG : WrapClient: clientFinished
+980885.456588138 DEBUG : < {"msg":"QUIT"}
+980885.456596451 DEBUG : WrapClient: clientQuit
+980885.456602858 DEBUG : UnixClient start
+980885.456608186 DEBUG : UnixClient read new data
+980885.456614653 DEBUG : UnixClient recv 0
+980885.456619786 DEBUG : UnixClient read 0
+980885.456626215 DEBUG : UnixSchedScheduler: Writer: writeMessage
+980885.456645719 DEBUG : UnixClient: task finished 68
+980885.456655571 DEBUG : UnixClient nothing to parse
+980885.456665365 DEBUG : UnixServer: removeClient
+980885.456675822 DEBUG : > {"msg":"TASK_FINISHED","id":68}
+980885.456686792 DEBUG : UnixServer: dyncast CComUnixClient c40015b0
+980885.456693457 DEBUG : 32 written
+980885.456702349 DEBUG : UnixServer accept
+980885.468128180 DEBUG : UnixServer POLL other data
+980885.468182285 DEBUG : UnixServer 17: POLL 1
+980885.468193345 DEBUG : UnixServer 17: read from client
+980885.468215530 DEBUG : < {"msg":"TASK_START","id":69,"resource":"NvidiaTesla","endprogress":768,"onend":"suspend"}
+980885.468244927 DEBUG : WrapClient: serverTaskStart 69
+980885.468262259 DEBUG : WrapClient: found task c4005010
+980885.468273273 DEBUG : Task 8 PRE: start
+980885.468322810 DEBUG : UnixSchedScheduler socket read failure 11 Resource temporarily unavailable
+980885.468337965 DEBUG : UnixSchedScheduler nothing to parse
+980885.468352823 DEBUG : UnixClient: start task 8 on resource NvidiaTesla
+980885.468374502 DEBUG : UnixServer accept
+980885.468392906 DEBUG : > {"msg":"TASK_START","id":8,"resource":"NvidiaTesla","endprogress":768,"onend":"suspend"}
+980885.468411841 DEBUG : 89 written
+980885.609825498 DEBUG : UnixServer POLL other data
+980885.609863618 DEBUG : UnixServer 16: POLL 1
+980885.609870703 DEBUG : UnixServer 16: read from client
+980885.609880624 DEBUG : UnixClient start
+980885.609886213 DEBUG : UnixClient read new data
+980885.609903223 DEBUG : UnixClient recv 30
+980885.609909352 DEBUG : UnixClient going to parse
+980885.609915743 DEBUG : < {"msg":"TASK_STARTED","id":8}
+980885.609936618 DEBUG : Task 8 STARTING: started
+980885.609956962 DEBUG : WrapClient: clientStarted
+980885.609976085 DEBUG : UnixClient start
+980885.609993685 DEBUG : UnixClient read new data
+980885.610012528 DEBUG : UnixClient recv -1
+980885.610029934 DEBUG : UnixSchedScheduler: Writer: writeMessage
+980885.610057804 DEBUG : UnixClient: task started 69
+980885.610066730 DEBUG : UnixClient socket read failure 11 Resource temporarily unavailable
+980885.610076389 DEBUG : UnixClient nothing to parse
+980885.610082446 DEBUG : > {"msg":"TASK_STARTED","id":69}
+980885.610091780 DEBUG : UnixServer accept
+980885.610100784 DEBUG : 31 written
+980886.713411891 DEBUG : UnixServer POLL other data
+980886.713434198 DEBUG : UnixServer 16: POLL 1
+980886.713440961 DEBUG : UnixServer 16: read from client
+980886.713448083 DEBUG : UnixClient start
+980886.713453405 DEBUG : UnixClient read new data
+980886.713462656 DEBUG : UnixClient recv 46
+980886.713468228 DEBUG : UnixClient going to parse
+980886.713474048 DEBUG : < {"msg":"TASK_FINISHED","id":8}
+980886.713487129 DEBUG : Task 8 RUNNING: finished
+980886.713503873 DEBUG : WrapClient: clientFinished
+980886.713517433 DEBUG : WrapClient: all tasks done
+980886.713558239 DEBUG : < {"msg":"QUIT"}
+980886.713575323 DEBUG : WrapClient: clientQuit
+980886.713606799 DEBUG : UnixClient start
+980886.713614442 DEBUG : UnixClient read new data
+980886.713625652 DEBUG : UnixSchedScheduler: Writer: writeMessage
+980886.713647706 DEBUG : UnixClient recv 0
+980886.713675306 DEBUG : UnixClient read 0
+980886.713690103 DEBUG : UnixClient nothing to parse
+980886.713705196 DEBUG : UnixServer: removeClient
+980886.713722116 DEBUG : UnixServer: dyncast CComUnixClient c40025c0
+980886.713739380 DEBUG : UnixClient: task finished 69
+980886.713760563 DEBUG : UnixServer accept
+980886.713791186 INFO : Received signal to shutdown 2
+980886.713851580 DEBUG : > {"msg":"TASK_FINISHED","id":69}
+980886.713868046 INFO : Main: Shutting down
+980886.713882916 INFO : UnixServer: stop
+980886.713902303 DEBUG : 32 written
+980886.713981096 DEBUG : UnixServer POLL wakeup
+980886.714056754 DEBUG : UnixServer thread done
+980886.714156775 DEBUG : UnixServer: close
+980886.714370667 DEBUG : > {"msg":"QUIT"}
+980886.714398860 DEBUG : 15 written
+980886.715106315 DEBUG : WrapTaskApp: join heat
+980886.715183201 DEBUG : WrapTaskApp: heat pid 22723 exit code 0 exit by signal 0 exit-signal 0
+980886.715250095 DEBUG : WrapTaskApp: join correlation
+980886.715289912 DEBUG : WrapTaskApp: correlation pid 22725 exit code 0 exit by signal 0 exit-signal 0
+980886.715340253 DEBUG : WrapTaskApp: join heat
+980886.715388503 DEBUG : WrapTaskApp: heat pid 22727 exit code 0 exit by signal 0 exit-signal 0
+980886.715422757 DEBUG : WrapTaskApp: join correlation
+980886.715458340 DEBUG : WrapTaskApp: correlation pid 22729 exit code 0 exit by signal 0 exit-signal 0
+980886.715492890 DEBUG : WrapTaskApp: join correlation
+980886.715527863 DEBUG : WrapTaskApp: correlation pid 22731 exit code 0 exit by signal 0 exit-signal 0
+980886.715563050 DEBUG : WrapTaskApp: join heat
+980886.715610447 DEBUG : WrapTaskApp: heat pid 22733 exit code 0 exit by signal 0 exit-signal 0
+980886.715645983 DEBUG : WrapTaskApp: join heat
+980886.715680250 DEBUG : WrapTaskApp: heat pid 22735 exit code 0 exit by signal 0 exit-signal 0
+980886.715714644 DEBUG : WrapTaskApp: join gaussblur
+980886.715759384 DEBUG : WrapTaskApp: gaussblur pid 22737 exit code 0 exit by signal 0 exit-signal 0
+980886.715818377 DEBUG : WrapTaskApp: join heat
+980886.756769354 DEBUG : WrapTaskApp: heat pid 22739 exit code 0 exit by signal 0 exit-signal 0

@@ -1,0 +1,122 @@
+{
+	"markov": {
+		"wd": "/",
+		"arg": ["/home/awiens/egysched/tasks_mig/build/markov/task_mig_markov1"],
+		"env": [
+			"LD_LIBRARY_PATH=/usr/local/cuda-7.0/targets/x86_64-linux/lib/:/opt/pgi/linux86-64/18.4/lib/",
+			"LD_PRELOAD=/usr/ampehre/lib/libms_common_apapi.so",
+			"CUDA_HOME=/usr/local/cuda-7.0/",
+			"SCHED_VERBOSE=1"
+		],
+		"res": ["IntelXeon","NvidiaTesla","MaxelerVectis"],
+		"sizes": {
+			"MaxelerVectis":[128,256,512,1024],
+			"NvidiaTesla":[128,256,512,1024,2048,4096,8192],
+			"IntelXeon":[128,256,512,1024,2048,4096,8192]
+		},
+		"checkpoints": {
+			"MaxelerVectis":[50,50,50,50],
+			"NvidiaTesla":[50,50,50,50,50,50,50],
+			"IntelXeon":[50,50,50,50,50,50,50]
+		},
+		"subtask":false
+	},
+	"bfs": {
+		"wd": "/",
+		"arg": ["/home/awiens/egysched/tasks_mig/build/bfs/task_mig_bfs1"],
+		"env": [
+			"LD_LIBRARY_PATH=/usr/local/cuda-7.0/targets/x86_64-linux/lib/:/opt/pgi/linux86-64/18.4/lib/",
+			"LD_PRELOAD=/usr/ampehre/lib/libms_common_apapi.so",
+			"CUDA_HOME=/usr/local/cuda-7.0/",
+			"SCHED_VERBOSE=1"
+		],
+		"res": ["IntelXeon","NvidiaTesla"],
+		"sizes": {
+			"NvidiaTesla":[128,256,512,1024,2048,4096,8192,16384],
+			"IntelXeon":[128,256,512,1024,2048,4096,8192,16384]
+		},
+		"checkpoints": {
+			"NvidiaTesla":[21,22,23,24,25,26,27,28],
+			"IntelXeon":[21,22,23,24,25,26,27,28]
+		},
+		"subtask":false
+	},
+	"correlation": {
+		"wd": "/",
+		"arg": ["/home/awiens/egysched/tasks_mig/build/correlation/task_mig_correlation1"],
+		"env": [
+			"LD_LIBRARY_PATH=/usr/local/cuda-7.0/targets/x86_64-linux/lib/:/opt/pgi/linux86-64/18.4/lib/",
+			"LD_PRELOAD=/usr/ampehre/lib/libms_common_apapi.so",
+			"CUDA_HOME=/usr/local/cuda-7.0/",
+			"SCHED_VERBOSE=1"
+		],
+		"res": ["IntelXeon","NvidiaTesla","MaxelerVectis"],
+		"sizes": {
+			"MaxelerVectis":[256,512,1024,2048,4096,8192,16384],
+			"NvidiaTesla":[128,256,512,1024,2048,4096,8192,16384],
+			"IntelXeon":[128,256,512,1024,2048,4096,8192,16384]
+		},
+		"checkpoints": {
+			"MaxelerVectis":[256,512,1024,2048,4096,8192,16384],
+			"NvidiaTesla":[128,256,512,1024,2048,4096,8192,16384],
+			"IntelXeon":[128,256,512,1024,2048,4096,8192,16384]
+		},
+		"subtask":false
+	},
+	"gaussblur": {
+		"wd": "/",
+		"arg": ["/home/awiens/egysched/tasks_mig/build/gaussblur/task_mig_gaussblur1"],
+		"env": [
+			"LD_LIBRARY_PATH=/usr/local/cuda-7.0/targets/x86_64-linux/lib/:/opt/pgi/linux86-64/18.4/lib/",
+			"LD_PRELOAD=/usr/ampehre/lib/libms_common_apapi.so",
+			"CUDA_HOME=/usr/local/cuda-7.0/",
+			"SCHED_VERBOSE=1"
+		],
+		"res": ["IntelXeon","NvidiaTesla","MaxelerVectis"],
+		"sizes": {
+			"MaxelerVectis":[256,512,1024,2048,4096,8192],
+			"NvidiaTesla":[128,256,512,1024,2048,4096,8192],
+			"IntelXeon":[128,256,512,1024,2048,4096,8192]
+		},
+		"checkpoints": {
+			"MaxelerVectis":[256,256,256,256,256,256],
+			"NvidiaTesla":[128,256,256,256,256,256,256],
+			"IntelXeon":[128,256,256,256,256,256,256]
+		},
+		"subtask":false
+	},
+	"heat": {
+		"wd": "/",
+		"arg": ["/home/awiens/egysched/tasks_mig/build/heat/task_mig_heat1"],
+		"env": [
+			"LD_LIBRARY_PATH=/usr/local/cuda-7.0/targets/x86_64-linux/lib/:/opt/pgi/linux86-64/18.4/lib/",
+			"LD_PRELOAD=/usr/ampehre/lib/libms_common_apapi.so",
+			"CUDA_HOME=/usr/local/cuda-7.0/",
+			"SCHED_VERBOSE=1"
+		],
+		"res": ["IntelXeon","NvidiaTesla","MaxelerVectis"],
+		"sizes": {
+			"MaxelerVectis":[256,512,1024,2048,4096,8192,16384],
+			"NvidiaTesla":[128,256,512,1024,2048,4096,8192,16384],
+			"IntelXeon":[128,256,512,1024,2048,4096,8192,16384]
+		},
+		"checkpoints": {
+			"MaxelerVectis":[768,768,768,768,768,768,768],
+			"NvidiaTesla":[768,768,768,768,768,768,768,768],
+			"IntelXeon":[768,768,768,768,768,768,768,768]
+		},
+		"subtask":false
+	},
+    "sleep": {
+        "wd": "/",
+        "arg": ["/home/awiens/sched/scripts/sleep.py"],
+        "env": ["FOO=BAR"],
+        "res": ["IntelXeon","NvidiaTesla","MaxelerVectis"],
+        "sizes": {
+            "MaxelerVectis":[],
+            "NvidiaTesla":[],
+            "IntelXeon":[]
+        },
+        "subtask":false
+    }
+}

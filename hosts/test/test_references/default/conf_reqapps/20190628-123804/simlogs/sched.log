@@ -1,0 +1,133 @@
+967577.026587159 INFO : Main: Starting scheduler
+967577.027147538 INFO : Main: Start TaskDatabase
+967577.027188256 INFO : TaskLoader: loaded TaskLoaderMS
+967577.027212698 INFO : TaskLoaderMS: path /home/awiens/sched/hosts/test/ms_results
+967577.036056041 INFO : ResourceLoader: loaded ResourceLoaderMS
+967577.036083099 INFO : ResourceLoaderMS: idle file /home/awiens/sched/hosts/test/ms_idle/idle_power_cc-8.pc2.uni-paderborn.de.json
+967577.036454202 INFO : Resource: task runs until target progress and suspends
+967577.036647524 INFO : Main: Found 3 resources:
+967577.036672774 INFO : Main:  - IntelXeon
+967577.036683374 INFO : Main:  - NvidiaTesla
+967577.036692719 INFO : Main:  - MaxelerVectis
+967577.036812192 INFO : ScheduleExecutor: rescheduling in case of idling not active
+967577.036836134 INFO : ScheduleComputer: get progress
+967577.036853294 INFO : ScheduleComputer: wait for 9 applications before computing schedule
+967577.036894787 INFO : ScheduleComputer: found algorithm: METMig2
+967577.037013582 INFO : Simulation: config key "simulation_file" not found
+967577.037033942 INFO : Simulation: environment variable SCHED_SIMFILE found
+967577.037044104 INFO : Simulation: loading simulation file: /home/awiens/sched/hosts/test/test_results/default/20190628-123804/conf_reqapps/conf_reqapps.sim
+967577.038225997 INFO : Simulation: reading simulation file /home/awiens/sched/hosts/test/test_results/default/20190628-123804/conf_reqapps/conf_reqapps.sim
+967577.039290743 INFO : Simulation: Added 80 tasks and 9 events
+967577.039454143 INFO : Main: Wait
+967577.039549859 INFO : Simulation: Started
+967577.039918945 INFO : Simulation: Going to compute new schedule
+967577.039943191 INFO : Simulation: Schedule computation not ready because of low reqistered application number
+967577.040292001 INFO : Simulation: Going to compute new schedule
+967577.040315927 INFO : Simulation: Schedule computation not ready because of low reqistered application number
+967577.040554392 INFO : Simulation: Going to compute new schedule
+967577.040573514 INFO : Simulation: Schedule computation not ready because of low reqistered application number
+967577.040733042 INFO : Simulation: Going to compute new schedule
+967577.040752086 INFO : Simulation: Schedule computation not ready because of low reqistered application number
+967577.041062584 INFO : Simulation: Going to compute new schedule
+967577.041087372 INFO : Simulation: Schedule computation not ready because of low reqistered application number
+967577.041426580 INFO : Simulation: Going to compute new schedule
+967577.041445672 INFO : Simulation: Schedule computation not ready because of low reqistered application number
+967577.041715272 INFO : Simulation: Going to compute new schedule
+967577.041733984 INFO : Simulation: Schedule computation not ready because of low reqistered application number
+967577.042010892 INFO : Simulation: Going to compute new schedule
+967577.042037738 INFO : Simulation: Schedule computation not ready because of low reqistered application number
+967577.042362610 INFO : Simulation: Going to compute new schedule
+967577.042511990 INFO : ScheduleAlgorithm: start schedule algorithm
+967577.046422631 INFO : ScheduleAlgorithm: duration 0.003863 s, 80 tasks
+967577.047448182 INFO : Simulation: comp wakeup
+967577.047494974 INFO : Simulation: Schedule completed
+967577.047521796 INFO : going to update schedule 0
+967577.048302555 INFO : sent update schedule
+967577.048481933 INFO : schedule updated: 1
+967577.051388690 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "NvidiaTesla" "heat" "512" "gaussblur" "512" "0" = 1
+967577.054300054 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "NvidiaTesla" "gaussblur" "512" "heat" "512" "33089618" = 1
+967577.057227415 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "correlation" "256" "heat" "256" "246168420" = 1
+967577.060107262 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "NvidiaTesla" "heat" "512" "heat" "512" "155284982" = 1
+967577.062900330 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "heat" "256" "correlation" "256" "0" = 1
+967577.065706736 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "correlation" "256" "correlation" "256" "0" = 1
+967577.068580178 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "correlation" "256" "correlation" "512" "0" = 1
+967577.071420507 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "correlation" "512" "heat" "256" "0" = 1
+967577.074205211 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "heat" "256" "heat" "256" "598084568" = 1
+967577.076814756 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "NvidiaTesla" "heat" "512" "heat" "256" "0" = 1
+967577.079639665 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "NvidiaTesla" "heat" "256" "heat" "1024" "0" = 1
+967577.082411196 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "NvidiaTesla" "heat" "1024" "heat" "1024" "310569964" = 1
+967577.084979501 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "heat" "256" "correlation" "256" "0" = 1
+967577.087633612 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "correlation" "256" "correlation" "256" "0" = 1
+967577.090312391 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "correlation" "256" "heat" "256" "0" = 1
+967577.092923432 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "heat" "256" "markov" "128" "846180140" = 1
+967577.095591521 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "NvidiaTesla" "heat" "1024" "heat" "1024" "0" = 1
+967577.098134134 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "NvidiaTesla" "heat" "1024" "heat" "512" "212412853" = 1
+967577.100690701 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "markov" "128" "correlation" "256" "0" = 1
+967577.103311280 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "correlation" "256" "correlation" "256" "0" = 1
+967577.105786699 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "correlation" "256" "correlation" "256" "913871381" = 1
+967577.108431042 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "NvidiaTesla" "heat" "512" "correlation" "1024" "0" = 1
+967577.110899108 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "NvidiaTesla" "correlation" "1024" "markov" "256" "0" = 1
+967577.113420516 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "NvidiaTesla" "markov" "256" "gaussblur" "512" "66179236" = 1
+967577.117491965 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "correlation" "256" "correlation" "256" "0" = 1
+967577.121224758 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "correlation" "256" "gaussblur" "256" "0" = 1
+967577.124793785 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "gaussblur" "256" "correlation" "256" "0" = 1
+967577.128394233 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "correlation" "256" "markov" "128" "0" = 1
+967577.131751044 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "markov" "128" "correlation" "256" "0" = 1
+967577.135185331 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "correlation" "256" "heat" "512" "0" = 1
+967577.138546612 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "heat" "512" "heat" "512" "0" = 1
+967577.141708292 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "NvidiaTesla" "gaussblur" "512" "heat" "512" "0" = 1
+967577.144949744 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "heat" "512" "correlation" "256" "188302354" = 1
+967577.148011159 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "NvidiaTesla" "heat" "512" "heat" "512" "0" = 1
+967577.151182274 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "NvidiaTesla" "heat" "512" "heat" "512" "212412853" = 1
+967577.154114160 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "correlation" "256" "markov" "128" "0" = 1
+967577.157045511 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "markov" "128" "correlation" "256" "0" = 1
+967577.160086688 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "correlation" "256" "correlation" "256" "246168420" = 1
+967577.162941263 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "NvidiaTesla" "heat" "512" "correlation" "1024" "296941837" = 1
+967577.165878790 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "correlation" "256" "markov" "128" "0" = 1
+967577.168760393 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "markov" "128" "correlation" "512" "0" = 1
+967577.171677650 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "correlation" "512" "heat" "256" "332808160" = 1
+967577.174530357 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "NvidiaTesla" "correlation" "1024" "heat" "1024" "0" = 1
+967577.177445473 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "heat" "256" "markov" "128" "300894706" = 1
+967577.180075332 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "NvidiaTesla" "heat" "1024" "heat" "1024" "476265072" = 1
+967577.182783475 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "markov" "128" "correlation" "256" "0" = 1
+967577.185563870 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "correlation" "256" "correlation" "512" "0" = 1
+967577.188299503 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "correlation" "512" "markov" "128" "0" = 1
+967577.190950007 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "markov" "128" "correlation" "256" "0" = 1
+967577.193650273 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "correlation" "256" "heat" "256" "423090070" = 1
+967577.196432942 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "NvidiaTesla" "heat" "1024" "markov" "256" "640601419" = 1
+967577.199036581 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "heat" "256" "markov" "128" "0" = 1
+967577.201809646 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "markov" "128" "correlation" "256" "0" = 1
+967577.204465083 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "correlation" "256" "correlation" "256" "0" = 1
+967577.207014687 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "correlation" "256" "heat" "256" "0" = 1
+967577.209678044 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "heat" "256" "correlation" "256" "0" = 1
+967577.212335728 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "correlation" "256" "correlation" "256" "0" = 1
+967577.214866788 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "correlation" "256" "correlation" "512" "0" = 1
+967577.217416341 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "correlation" "512" "markov" "128" "334894802" = 1
+967577.219868079 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "NvidiaTesla" "markov" "256" "heat" "512" "0" = 1
+967577.222423252 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "markov" "128" "markov" "128" "0" = 1
+967577.224913881 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "NvidiaTesla" "heat" "512" "heat" "1024" "432346397" = 1
+967577.227234619 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "markov" "128" "markov" "128" "0" = 1
+967577.229638628 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "markov" "128" "heat" "256" "0" = 1
+967577.232083918 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "heat" "256" "correlation" "512" "0" = 1
+967577.234448307 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "correlation" "512" "correlation" "256" "423090070" = 1
+967577.236816898 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "NvidiaTesla" "heat" "1024" "heat" "512" "66179236" = 1
+967577.239202202 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "correlation" "256" "correlation" "256" "0" = 1
+967577.241545147 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "correlation" "256" "heat" "256" "246168420" = 1
+967577.243843301 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "NvidiaTesla" "heat" "512" "gaussblur" "512" "122195364" = 1
+967577.246193092 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "heat" "256" "correlation" "256" "1863760030" = 1
+967577.248482443 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "NvidiaTesla" "gaussblur" "512" "heat" "1024" "0" = 1
+967577.250779409 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "NvidiaTesla" "heat" "1024" "gaussblur" "512" "0" = 1
+967577.253101617 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "NvidiaTesla" "gaussblur" "512" "heat" "512" "0" = 1
+967577.255329223 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "NvidiaTesla" "heat" "512" "correlation" "1024" "33089618" = 1
+967577.257648808 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "correlation" "256" "heat" "256" "667702961" = 1
+967577.259995122 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "NvidiaTesla" "correlation" "1024" "markov" "256" "0" = 1
+967577.262361785 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "NvidiaTesla" "markov" "256" "heat" "512" "305993202" = 1
+967577.264661647 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "heat" "256" "correlation" "256" "0" = 1
+967577.267047126 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "correlation" "256" "correlation" "512" "0" = 1
+967577.269329404 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "correlation" "512" "correlation" "256" "0" = 1
+967577.271571229 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "correlation" "256" = 1
+967577.273787367 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "NvidiaTesla" "heat" "512" = 1
+967577.274633103 INFO : Simulation: Finished
+967577.274700636 INFO : Received signal to shutdown 2
+967577.274730061 INFO : Main: Shutting down
+967577.274980250 INFO : Simulation: ~

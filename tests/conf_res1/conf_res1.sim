@@ -1,0 +1,92 @@
+[
+{"type":"PARAMETERS","randomseed":3636880149}
+,{"type":"TASKDEF","id":0,"name":"heat","size":512,"checkpoints":768,"dependencies":[],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":1,"name":"gaussblur","size":512,"checkpoints":256,"dependencies":[0],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":2,"name":"correlation","size":256,"checkpoints":256,"dependencies":[1],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":3,"name":"heat","size":512,"checkpoints":768,"dependencies":[2],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":4,"name":"heat","size":256,"checkpoints":768,"dependencies":[3],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":5,"name":"correlation","size":256,"checkpoints":256,"dependencies":[4],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":6,"name":"heat","size":512,"checkpoints":768,"dependencies":[5],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":7,"name":"correlation","size":256,"checkpoints":256,"dependencies":[],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":8,"name":"correlation","size":512,"checkpoints":512,"dependencies":[7],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":9,"name":"heat","size":256,"checkpoints":768,"dependencies":[8],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":10,"name":"heat","size":1024,"checkpoints":768,"dependencies":[9],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":11,"name":"heat","size":256,"checkpoints":768,"dependencies":[10],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":12,"name":"correlation","size":256,"checkpoints":256,"dependencies":[11],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":13,"name":"correlation","size":256,"checkpoints":256,"dependencies":[12],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":14,"name":"heat","size":256,"checkpoints":768,"dependencies":[13],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":15,"name":"heat","size":1024,"checkpoints":768,"dependencies":[14],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":16,"name":"heat","size":1024,"checkpoints":768,"dependencies":[15],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":17,"name":"markov","size":128,"checkpoints":21,"dependencies":[16],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":18,"name":"correlation","size":256,"checkpoints":256,"dependencies":[],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":19,"name":"correlation","size":256,"checkpoints":256,"dependencies":[18],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":20,"name":"heat","size":512,"checkpoints":768,"dependencies":[19],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":21,"name":"correlation","size":1024,"checkpoints":1024,"dependencies":[20],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":22,"name":"markov","size":256,"checkpoints":22,"dependencies":[21],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":23,"name":"correlation","size":256,"checkpoints":256,"dependencies":[22],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":24,"name":"correlation","size":256,"checkpoints":256,"dependencies":[23],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":25,"name":"gaussblur","size":512,"checkpoints":256,"dependencies":[24],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":26,"name":"gaussblur","size":256,"checkpoints":256,"dependencies":[],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":27,"name":"correlation","size":256,"checkpoints":256,"dependencies":[26],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":28,"name":"markov","size":128,"checkpoints":50,"dependencies":[27],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":29,"name":"correlation","size":256,"checkpoints":256,"dependencies":[28],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":30,"name":"heat","size":512,"checkpoints":768,"dependencies":[29],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":31,"name":"heat","size":512,"checkpoints":768,"dependencies":[],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":32,"name":"correlation","size":256,"checkpoints":256,"dependencies":[31],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":33,"name":"markov","size":128,"checkpoints":50,"dependencies":[32],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":34,"name":"correlation","size":256,"checkpoints":256,"dependencies":[33],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":35,"name":"heat","size":512,"checkpoints":768,"dependencies":[34],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":36,"name":"correlation","size":256,"checkpoints":256,"dependencies":[35],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":37,"name":"markov","size":128,"checkpoints":21,"dependencies":[36],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":38,"name":"correlation","size":512,"checkpoints":512,"dependencies":[37],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":39,"name":"correlation","size":1024,"checkpoints":1024,"dependencies":[38],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":40,"name":"heat","size":256,"checkpoints":768,"dependencies":[39],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":41,"name":"heat","size":1024,"checkpoints":768,"dependencies":[],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":42,"name":"markov","size":128,"checkpoints":50,"dependencies":[41],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":43,"name":"correlation","size":256,"checkpoints":256,"dependencies":[42],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":44,"name":"correlation","size":512,"checkpoints":512,"dependencies":[43],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":45,"name":"markov","size":128,"checkpoints":21,"dependencies":[44],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":46,"name":"correlation","size":256,"checkpoints":256,"dependencies":[45],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":47,"name":"heat","size":1024,"checkpoints":768,"dependencies":[46],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":48,"name":"heat","size":256,"checkpoints":768,"dependencies":[47],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":49,"name":"markov","size":128,"checkpoints":50,"dependencies":[48],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":50,"name":"correlation","size":256,"checkpoints":256,"dependencies":[49],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":51,"name":"correlation","size":256,"checkpoints":256,"dependencies":[50],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":52,"name":"heat","size":256,"checkpoints":768,"dependencies":[],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":53,"name":"correlation","size":256,"checkpoints":256,"dependencies":[52],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":54,"name":"correlation","size":256,"checkpoints":256,"dependencies":[53],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":55,"name":"correlation","size":512,"checkpoints":512,"dependencies":[54],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":56,"name":"markov","size":256,"checkpoints":50,"dependencies":[55],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":57,"name":"markov","size":128,"checkpoints":21,"dependencies":[56],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":58,"name":"markov","size":128,"checkpoints":50,"dependencies":[57],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":59,"name":"markov","size":128,"checkpoints":21,"dependencies":[58],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":60,"name":"heat","size":256,"checkpoints":768,"dependencies":[59],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":61,"name":"heat","size":512,"checkpoints":768,"dependencies":[],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":62,"name":"correlation","size":512,"checkpoints":512,"dependencies":[61],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":63,"name":"heat","size":1024,"checkpoints":768,"dependencies":[62],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":64,"name":"correlation","size":256,"checkpoints":256,"dependencies":[63],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":65,"name":"correlation","size":256,"checkpoints":256,"dependencies":[64],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":66,"name":"heat","size":512,"checkpoints":768,"dependencies":[65],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":67,"name":"heat","size":256,"checkpoints":768,"dependencies":[66],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":68,"name":"gaussblur","size":512,"checkpoints":256,"dependencies":[67],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":69,"name":"heat","size":1024,"checkpoints":768,"dependencies":[68],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":70,"name":"gaussblur","size":512,"checkpoints":256,"dependencies":[],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":71,"name":"heat","size":512,"checkpoints":768,"dependencies":[70],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":72,"name":"correlation","size":256,"checkpoints":256,"dependencies":[71],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":73,"name":"correlation","size":1024,"checkpoints":1024,"dependencies":[72],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":74,"name":"markov","size":256,"checkpoints":22,"dependencies":[73],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":75,"name":"heat","size":256,"checkpoints":768,"dependencies":[74],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":76,"name":"correlation","size":256,"checkpoints":256,"dependencies":[75],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":77,"name":"correlation","size":512,"checkpoints":512,"dependencies":[76],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":78,"name":"correlation","size":256,"checkpoints":256,"dependencies":[77],"resources":["IntelXeon"]}
+,{"type":"TASKDEF","id":79,"name":"heat","size":512,"checkpoints":768,"dependencies":[78],"resources":["IntelXeon"]}
+,{"type":"TASKREG","tasks":[0, 1, 2, 3, 4, 5, 6],"time":1522276477}
+,{"type":"TASKREG","tasks":[7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17],"time":3350240046}
+,{"type":"TASKREG","tasks":[18, 19, 20, 21, 22, 23, 24, 25],"time":5791853382}
+,{"type":"TASKREG","tasks":[26, 27, 28, 29, 30],"time":8928014061}
+,{"type":"TASKREG","tasks":[31, 32, 33, 34, 35, 36, 37, 38, 39, 40],"time":10470430526}
+,{"type":"TASKREG","tasks":[41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51],"time":12422475420}
+,{"type":"TASKREG","tasks":[52, 53, 54, 55, 56, 57, 58, 59, 60],"time":14636076415}
+,{"type":"TASKREG","tasks":[61, 62, 63, 64, 65, 66, 67, 68, 69],"time":17160114502}
+,{"type":"TASKREG","tasks":[70, 71, 72, 73, 74, 75, 76, 77, 78, 79],"time":19087142250}
+]

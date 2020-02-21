@@ -1,0 +1,64 @@
+{"time":"980866.629474342","event":"SCHEDULER_START","realtime":"1561731576.144056397"}
+{"time":"980866.640118445","event":"RESOURCES","resources":["IntelXeon","NvidiaTesla","MaxelerVectis"]}
+{"time":"980867.650605092","event":"NEWTASK","id":0,"res":["IntelXeon","NvidiaTesla","MaxelerVectis"],"dep":[],"name":"heat","size":512, "checkpoints":768}
+{"time":"980867.657637408","event":"NEWTASK","id":1,"res":["IntelXeon","NvidiaTesla","MaxelerVectis"],"dep":[],"name":"correlation","size":512, "checkpoints":512}
+{"time":"980867.670247109","event":"NEWTASK","id":2,"res":["IntelXeon","NvidiaTesla","MaxelerVectis"],"dep":[],"name":"heat","size":1024, "checkpoints":768}
+{"time":"980867.680666095","event":"NEWTASK","id":3,"res":["IntelXeon","NvidiaTesla","MaxelerVectis"],"dep":[],"name":"correlation","size":256, "checkpoints":256}
+{"time":"980867.685935182","event":"NEWTASK","id":4,"res":["IntelXeon","NvidiaTesla","MaxelerVectis"],"dep":[],"name":"correlation","size":256, "checkpoints":256}
+{"time":"980867.712477622","event":"NEWTASK","id":5,"res":["IntelXeon","NvidiaTesla","MaxelerVectis"],"dep":[],"name":"heat","size":512, "checkpoints":768}
+{"time":"980867.739833756","event":"NEWTASK","id":6,"res":["IntelXeon","NvidiaTesla","MaxelerVectis"],"dep":[],"name":"heat","size":256, "checkpoints":768}
+{"time":"980867.749435093","event":"NEWTASK","id":7,"res":["IntelXeon","NvidiaTesla","MaxelerVectis"],"dep":[],"name":"gaussblur","size":512, "checkpoints":256}
+{"time":"980867.758355128","event":"NEWTASK","id":8,"res":["IntelXeon","NvidiaTesla","MaxelerVectis"],"dep":[],"name":"heat","size":1024, "checkpoints":768}
+{"time":"980879.178993877","event":"TASK_START","id":0,"res":"NvidiaTesla","target_progress":429,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"980879.347568889","event":"TASK_STARTED","id":0,"res":"NvidiaTesla"}
+{"time":"980879.862523182","event":"TASK_SUSPENDED","id":0,"progress":429}
+{"time":"980880.233045491","event":"TASK_START","id":0,"res":"IntelXeon","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"980880.233447015","event":"TASK_STARTED","id":0,"res":"IntelXeon"}
+{"time":"980880.505087445","event":"TASK_FINISHED","id":0}
+{"time":"980880.510961810","event":"TASK_START","id":1,"res":"IntelXeon","target_progress":512,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"980880.523385626","event":"TASK_STARTED","id":1,"res":"IntelXeon"}
+{"time":"980880.843461823","event":"TASK_FINISHED","id":1}
+{"time":"980880.850015480","event":"TASK_START","id":2,"res":"NvidiaTesla","target_progress":216,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"980880.992035610","event":"TASK_STARTED","id":2,"res":"NvidiaTesla"}
+{"time":"980881.304682354","event":"TASK_SUSPENDED","id":2,"progress":216}
+{"time":"980881.315861128","event":"TASK_START","id":2,"res":"IntelXeon","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"980881.316479324","event":"TASK_STARTED","id":2,"res":"IntelXeon"}
+{"time":"980883.131047782","event":"TASK_FINISHED","id":2}
+{"time":"980883.138054871","event":"TASK_START","id":3,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"980883.141241629","event":"TASK_STARTED","id":3,"res":"IntelXeon"}
+{"time":"980883.198569184","event":"TASK_FINISHED","id":3}
+{"time":"980883.204696640","event":"TASK_START","id":4,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"980883.207888712","event":"TASK_STARTED","id":4,"res":"IntelXeon"}
+{"time":"980883.244762016","event":"TASK_FINISHED","id":4}
+{"time":"980883.251575887","event":"TASK_START","id":5,"res":"NvidiaTesla","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"980883.384410962","event":"TASK_STARTED","id":5,"res":"NvidiaTesla"}
+{"time":"980884.335827371","event":"TASK_FINISHED","id":5}
+{"time":"980884.347531360","event":"TASK_START","id":6,"res":"IntelXeon","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"980884.349471082","event":"TASK_STARTED","id":6,"res":"IntelXeon"}
+{"time":"980884.557999554","event":"TASK_FINISHED","id":6}
+{"time":"980884.564257058","event":"TASK_START","id":7,"res":"NvidiaTesla","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"980884.770027793","event":"TASK_STARTED","id":7,"res":"NvidiaTesla"}
+{"time":"980885.456560331","event":"TASK_FINISHED","id":7}
+{"time":"980885.468287296","event":"TASK_START","id":8,"res":"NvidiaTesla","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"980885.609945224","event":"TASK_STARTED","id":8,"res":"NvidiaTesla"}
+{"time":"980886.713495091","event":"TASK_FINISHED","id":8}
+{"time":"980886.713851763","event":"SCHEDULER_SIGNAL"}
+{"time":"980886.714767322","event":"ENDTASK","id":0,"times":{"added":980867650597833,"started":980880233041417,"finished":980880505084477,"aborted":0},"state":"POST"}
+{"time":"980886.714796645","event":"ENDTASK","id":1,"times":{"added":980867657630826,"started":980880510957448,"finished":980880843458076,"aborted":0},"state":"POST"}
+{"time":"980886.714809054","event":"ENDTASK","id":2,"times":{"added":980867670240324,"started":980881315852578,"finished":980883131043630,"aborted":0},"state":"POST"}
+{"time":"980886.714820348","event":"ENDTASK","id":3,"times":{"added":980867680659186,"started":980883138050343,"finished":980883198566120,"aborted":0},"state":"POST"}
+{"time":"980886.714831465","event":"ENDTASK","id":4,"times":{"added":980867685928472,"started":980883204692522,"finished":980883244758900,"aborted":0},"state":"POST"}
+{"time":"980886.714842625","event":"ENDTASK","id":5,"times":{"added":980867712467336,"started":980883251571883,"finished":980884335819731,"aborted":0},"state":"POST"}
+{"time":"980886.714866077","event":"ENDTASK","id":6,"times":{"added":980867739827031,"started":980884347522933,"finished":980884557996454,"aborted":0},"state":"POST"}
+{"time":"980886.714877533","event":"ENDTASK","id":7,"times":{"added":980867749425395,"started":980884564252847,"finished":980885456556051,"aborted":0},"state":"POST"}
+{"time":"980886.714888957","event":"ENDTASK","id":8,"times":{"added":980867758348754,"started":980885468280105,"finished":980886713491818,"aborted":0},"state":"POST"}
+{"time":"980886.715229158","event":"WRAPAPP","tasks":[0],"name":"heat","size":512,"status":0,"signaled":0,"signaled_signal":0,"endtask":{"id":-1006612176,"times":{"added":980867650597833,"started":980880233041417,"finished":980880505084477,"aborted":0},"state":"POST"}}
+{"time":"980886.715326517","event":"WRAPAPP","tasks":[1],"name":"correlation","size":512,"status":0,"signaled":0,"signaled_signal":0,"endtask":{"id":-1006627888,"times":{"added":980867657630826,"started":980880510957448,"finished":980880843458076,"aborted":0},"state":"POST"}}
+{"time":"980886.715410047","event":"WRAPAPP","tasks":[2],"name":"heat","size":1024,"status":0,"signaled":0,"signaled_signal":0,"endtask":{"id":-1006628560,"times":{"added":980867670240324,"started":980881315852578,"finished":980883131043630,"aborted":0},"state":"POST"}}
+{"time":"980886.715480163","event":"WRAPAPP","tasks":[3],"name":"correlation","size":256,"status":0,"signaled":0,"signaled_signal":0,"endtask":{"id":3,"times":{"added":980867680659186,"started":980883138050343,"finished":980883198566120,"aborted":0},"state":"POST"}}
+{"time":"980886.715550047","event":"WRAPAPP","tasks":[4],"name":"correlation","size":256,"status":0,"signaled":0,"signaled_signal":0,"endtask":{"id":-1006622672,"times":{"added":980867685928472,"started":980883204692522,"finished":980883244758900,"aborted":0},"state":"POST"}}
+{"time":"980886.715632463","event":"WRAPAPP","tasks":[5],"name":"heat","size":512,"status":0,"signaled":0,"signaled_signal":0,"endtask":{"id":-1006620208,"times":{"added":980867712467336,"started":980883251571883,"finished":980884335819731,"aborted":0},"state":"POST"}}
+{"time":"980886.715701490","event":"WRAPAPP","tasks":[6],"name":"heat","size":256,"status":0,"signaled":0,"signaled_signal":0,"endtask":{"id":-1006619712,"times":{"added":980867739827031,"started":980884347522933,"finished":980884557996454,"aborted":0},"state":"POST"}}
+{"time":"980886.715780947","event":"WRAPAPP","tasks":[7],"name":"gaussblur","size":512,"status":0,"signaled":0,"signaled_signal":0,"endtask":{"id":-1006616368,"times":{"added":980867749425395,"started":980884564252847,"finished":980885456556051,"aborted":0},"state":"POST"}}
+{"time":"980886.756815239","event":"WRAPAPP","tasks":[8],"name":"heat","size":1024,"status":0,"signaled":0,"signaled_signal":0,"endtask":{"id":-1006615600,"times":{"added":980867758348754,"started":980885468280105,"finished":980886713491818,"aborted":0},"state":"POST"}}
+{"time":"980886.756884679","event":"SCHEDULER_STOP"}

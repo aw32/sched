@@ -1,0 +1,38 @@
+#!/usr/bin/env python3
+# Copyright 2019, Alex Wiens <awiens@mail.upb.de>, Achim Lösch <achim.loesch@upb.de>
+# SPDX-License-Identifier: BSD-2-Clause
+
+
+import sys
+import statistics
+import test as schedtest
+
+
+if __name__ == "__main__":
+	if len(sys.argv) != 2 or sys.argv[1] not in ["sim","exp"]:
+		print(sys.argv[0],"[sim|exp]")
+		sys.exit(1)
+
+	test = schedtest.SchedTest.loadTest(sys.argv[1])
+	test.loadReferenceLogs()
+	test.loadTestLog()
+
+	refvalues = []
+	for rlog in test.reflogs:
+		refvalues.append(rlog.stat("makespan"))
+
+	#print(refvalues)
+
+	refvalue = statistics.mean(refvalues) if len(refvalues)>0 else 0
+
+	testvalue = test.testlog.stat("makespan")
+
+	dev = refvalue*0.9
+#	if testvalue == refvalue:
+	if testvalue > refvalue - dev and testvalue < refvalue + dev:
+		test.result("PASS", "test makespan {0:.10f} reference makespan {1:.10f}".format(testvalue, refvalue))
+	else:
+		test.result("FAIL", "test makespan {0:.10f} reference makespan {1:.10f}".format(testvalue, refvalue))
+	
+
+

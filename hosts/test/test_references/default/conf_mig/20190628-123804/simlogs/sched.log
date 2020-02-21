@@ -1,0 +1,37 @@
+967577.961865092 INFO : Main: Starting scheduler
+967577.962384925 INFO : Main: Start TaskDatabase
+967577.962423545 INFO : TaskLoader: loaded TaskLoaderMS
+967577.962446208 INFO : TaskLoaderMS: path /home/awiens/sched/hosts/test/ms_results
+967577.970889594 INFO : ResourceLoader: loaded ResourceLoaderMS
+967577.970914046 INFO : ResourceLoaderMS: idle file /home/awiens/sched/hosts/test/ms_idle/idle_power_cc-8.pc2.uni-paderborn.de.json
+967577.971282328 INFO : Resource: task runs until target progress and suspends
+967577.971458128 INFO : Main: Found 3 resources:
+967577.971474892 INFO : Main:  - IntelXeon
+967577.971484738 INFO : Main:  - NvidiaTesla
+967577.971493462 INFO : Main:  - MaxelerVectis
+967577.971594578 INFO : ScheduleExecutor: rescheduling in case of idling not active
+967577.971616000 INFO : ScheduleComputer: get progress
+967577.971628802 INFO : ScheduleComputer: config key "computer_required_applications" not found, using default: 0
+967577.971637610 INFO : ScheduleComputer: schedule computations starts immediately
+967577.971676398 INFO : ScheduleComputer: found algorithm: TestMigration
+967577.971766220 INFO : Simulation: config key "simulation_file" not found
+967577.971778154 INFO : Simulation: environment variable SCHED_SIMFILE found
+967577.971786806 INFO : Simulation: loading simulation file: /home/awiens/sched/hosts/test/test_results/default/20190628-123804/conf_mig/conf_mig.sim
+967577.971848132 INFO : Simulation: reading simulation file /home/awiens/sched/hosts/test/test_results/default/20190628-123804/conf_mig/conf_mig.sim
+967577.971904370 INFO : Simulation: Added 1 tasks and 1 events
+967577.971935892 INFO : Main: Wait
+967577.972033742 INFO : Simulation: Started
+967577.972261686 INFO : Simulation: Going to compute new schedule
+967577.972433910 INFO : ScheduleAlgorithm: start schedule algorithm
+967577.972589803 INFO : ScheduleAlgorithm: duration 0.000123 s, 1 tasks
+967577.972773627 INFO : Simulation: comp wakeup
+967577.972812184 INFO : Simulation: Schedule completed
+967577.972847097 INFO : going to update schedule 0
+967577.972937160 INFO : sent update schedule
+967577.973189017 INFO : schedule updated: 1
+967577.976418008 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "IntelXeon" "heat" "2048" = 1
+967577.979725123 INFO : ExternalHook: execute /home/awiens/sched/scripts/endtaskhook.sh "NvidiaTesla" "heat" "2048" = 1
+967577.979997343 INFO : Simulation: Finished
+967577.980108150 INFO : Received signal to shutdown 2
+967577.980152978 INFO : Main: Shutting down
+967577.980277488 INFO : Simulation: ~

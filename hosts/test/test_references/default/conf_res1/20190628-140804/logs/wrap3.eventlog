@@ -1,0 +1,34 @@
+{"time":"973236.994335859","event":"SCHEDULER_START","realtime":"1561723946.508918938"}
+{"time":"973237.006118542","event":"RESOURCES","resources":["IntelXeon"]}
+{"time":"973238.019342766","event":"NEWTASK","id":0,"res":["IntelXeon"],"dep":[],"name":"gaussblur","size":256, "checkpoints":256}
+{"time":"973238.039381983","event":"NEWTASK","id":1,"res":["IntelXeon"],"dep":[],"name":"correlation","size":256, "checkpoints":256}
+{"time":"973238.056519692","event":"NEWTASK","id":2,"res":["IntelXeon"],"dep":[],"name":"markov","size":128, "checkpoints":50}
+{"time":"973238.063501975","event":"NEWTASK","id":3,"res":["IntelXeon"],"dep":[],"name":"correlation","size":256, "checkpoints":256}
+{"time":"973238.087732978","event":"NEWTASK","id":4,"res":["IntelXeon"],"dep":[],"name":"heat","size":512, "checkpoints":768}
+{"time":"973267.045716844","event":"TASK_START","id":0,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"973267.052977604","event":"TASK_STARTED","id":0,"res":"IntelXeon"}
+{"time":"973269.363508190","event":"TASK_FINISHED","id":0}
+{"time":"973269.370483935","event":"TASK_START","id":1,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"973269.373820423","event":"TASK_STARTED","id":1,"res":"IntelXeon"}
+{"time":"973269.410795690","event":"TASK_FINISHED","id":1}
+{"time":"973269.417211751","event":"TASK_START","id":2,"res":"IntelXeon","target_progress":50,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"973269.417736381","event":"TASK_STARTED","id":2,"res":"IntelXeon"}
+{"time":"973269.654666399","event":"TASK_FINISHED","id":2}
+{"time":"973269.661350117","event":"TASK_START","id":3,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"973269.664674456","event":"TASK_STARTED","id":3,"res":"IntelXeon"}
+{"time":"973269.702015985","event":"TASK_FINISHED","id":3}
+{"time":"973269.708418578","event":"TASK_START","id":4,"res":"IntelXeon","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"973269.711036050","event":"TASK_STARTED","id":4,"res":"IntelXeon"}
+{"time":"973275.043469140","event":"TASK_FINISHED","id":4}
+{"time":"973275.043626499","event":"SCHEDULER_SIGNAL"}
+{"time":"973275.045180979","event":"ENDTASK","id":0,"times":{"added":973238019335880,"started":973267045711979,"finished":973269363504694,"aborted":0},"state":"POST"}
+{"time":"973275.045196920","event":"ENDTASK","id":1,"times":{"added":973238039376167,"started":973269370479172,"finished":973269410792567,"aborted":0},"state":"POST"}
+{"time":"973275.045203710","event":"ENDTASK","id":2,"times":{"added":973238056513664,"started":973269417207541,"finished":973269654663167,"aborted":0},"state":"POST"}
+{"time":"973275.045209993","event":"ENDTASK","id":3,"times":{"added":973238063495388,"started":973269661346135,"finished":973269702011952,"aborted":0},"state":"POST"}
+{"time":"973275.045216440","event":"ENDTASK","id":4,"times":{"added":973238087727191,"started":973269708414037,"finished":973275043464986,"aborted":0},"state":"POST"}
+{"time":"973275.045395517","event":"WRAPAPP","tasks":[0],"name":"gaussblur","size":256,"status":0,"signaled":0,"signaled_signal":0,"endtask":{"id":-603972048,"times":{"added":973238019335880,"started":973267045711979,"finished":973269363504694,"aborted":0},"state":"POST"}}
+{"time":"973275.045446347","event":"WRAPAPP","tasks":[1],"name":"correlation","size":256,"status":0,"signaled":0,"signaled_signal":0,"endtask":{"id":-603974736,"times":{"added":973238039376167,"started":973269370479172,"finished":973269410792567,"aborted":0},"state":"POST"}}
+{"time":"973275.045492406","event":"WRAPAPP","tasks":[2],"name":"markov","size":128,"status":0,"signaled":0,"signaled_signal":0,"endtask":{"id":-603975296,"times":{"added":973238056513664,"started":973269417207541,"finished":973269654663167,"aborted":0},"state":"POST"}}
+{"time":"973275.045556470","event":"WRAPAPP","tasks":[3],"name":"correlation","size":256,"status":0,"signaled":0,"signaled_signal":0,"endtask":{"id":-603970928,"times":{"added":973238063495388,"started":973269661346135,"finished":973269702011952,"aborted":0},"state":"POST"}}
+{"time":"973275.046350979","event":"WRAPAPP","tasks":[4],"name":"heat","size":512,"status":0,"signaled":1,"signaled_signal":15,"endtask":{"id":4,"times":{"added":973238087727191,"started":973269708414037,"finished":973275043464986,"aborted":0},"state":"POST"}}
+{"time":"973275.046405083","event":"SCHEDULER_STOP"}

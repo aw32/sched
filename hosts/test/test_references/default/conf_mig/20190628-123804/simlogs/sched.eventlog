@@ -1,0 +1,18 @@
+{"time":"967577.961961085","event":"SCHEDULER_START","realtime":"1561718287.476533655"}
+{"time":"967577.971502938","event":"RESOURCES","resources":["IntelXeon","NvidiaTesla","MaxelerVectis"]}
+{"time":"967577.971686656","event":"ALGORITHM","algorithm":"TestMigration"}
+{"time":"967577.972206649","event":"NEWTASK","id":0,"res":["IntelXeon","NvidiaTesla"],"dep":[],"name":"heat","size":2048, "checkpoints":768}
+{"time":"967577.972272894","event":"COMPUTER_UPDATE"}
+{"time":"967577.972403797","event":"COMPUTER_ALGOSTART"}
+{"time":"967577.972611347","event":"COMPUTER_ALGOSTOP","duration":0.000123}
+{"time":"967577.972737260","event":"SCHEDULE","schedule":{"id":0,"compute_start":967577972445207,"compute_stop":967577972567860,"compute_duration":122653,"duration":4756365328,"active_tasks":1,"static_energy":222192,"dynamic_energy":120903,"total_energy":343095,"tasks":[[{"id":0,"part":0,"start_progress":0,"stop_progress":384,"current_progress":0,"current_state":0,"duration_total":4099605528,"time_ready":0,"time_finish":4099605528,"duration_total":4099605528,"duration_init":292,"duration_compute":4099605000,"duration_fini":236,"duration_break":0,"energy":100930}],[{"id":0,"part":1,"start_progress":384,"stop_progress":768,"current_progress":0,"current_state":0,"duration_total":656759800,"time_ready":4099605528,"time_finish":4756365328,"duration_total":656759800,"duration_init":171186000,"duration_compute":461282000,"duration_fini":24291800,"duration_break":0,"energy":19972.9}],[]]}}
+{"time":"967577.972923244","event":"EXECUTOR_NEWSCHEDULE","id":0}
+{"time":"967577.973086643","event":"TASK_START","id":0,"res":"IntelXeon","target_progress":384,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967577.973250117","event":"TASK_STARTED","id":0,"res":"IntelXeon"}
+{"time":"967577.976473612","event":"TASK_SUSPENDED","id":0,"progress":384}
+{"time":"967577.976601010","event":"TASK_START","id":0,"res":"NvidiaTesla","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967577.976728692","event":"TASK_STARTED","id":0,"res":"NvidiaTesla"}
+{"time":"967577.979781289","event":"TASK_FINISHED","id":0}
+{"time":"967577.980134390","event":"SCHEDULER_SIGNAL"}
+{"time":"967577.980654758","event":"ENDTASK","id":0,"times":{"added":967577972190094,"started":967577976580568,"finished":967577979768163,"aborted":0},"state":"POST"}
+{"time":"967577.980775856","event":"SCHEDULER_STOP"}

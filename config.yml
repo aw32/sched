@@ -1,0 +1,120 @@
+resources:
+ - name: "IntelXeon"
+ - name: "NvidiaTesla"
+ - name: "MaxelerVectis"
+# - name: "CPU"
+# - name: "GPU"
+# - name: "FPGA"
+
+# Script executed every time a task ends
+#resource_taskendhook: "echo test >> /tmp/hooktest"
+#resource_taskendhook: "./endtaskhook.sh"
+
+scheduler: "MCT"
+
+# Seed for RNG of genetic algorithm based schedulers
+genetic_seed: 123456
+
+# Absolute path to lp solver script
+# The script is called with two arguments:
+# * Path to lp file in lp_solve LP-format
+# * Path to expected solution file
+geneticmig_solver: "lp_solve.sh"
+
+# Path for generated lp files (problem files and solution files)
+# Files are timestamped and the timestamps can be found in DEBUG sched logs
+lp_destination: "."
+
+# Switching Algorithm scheduler ratio limits
+# The ratio is minimal ready time / maximal ready time of machines.
+# If the ratio exceeds $sa_ratio_higher then SA switches to MET.
+# If the ratio falls below $sa_ratio_lower then SA switched to MCT.
+sa_ratio_lower: 0.5
+sa_ratio_higher: 0.9
+
+# K-percent best uses a combination of MET and MCT
+# The $kpb_percentage of machines with best execution times are picked.
+# Of these the machine with best completion time is selected.
+kpb_percentage: 0.5
+
+# Simulated Annealing parameters
+# 
+simann_init_prob: 0.4
+simann_loops_factor: 16
+simann_reduce: 0.95
+# Lower limit for probability, algorithm stops if probability drops under $simann_min_prob
+simann_min_prob: 0.02
+
+
+# computer_interrupt
+# option 1: "no_interrupt"
+#			The computer copies the current task information
+#			and starts the scheduling algorithm.
+# option 2: "get_progress"
+#			The computer asks for progress from all resources
+#			and once it got feedback it starts the scheduling algorithm.
+# option 3: "suspend_executor"
+#			The computer suspends the executor, which suspends all tasks.
+#			Afterwards the computer starts the scheduling algorithm.
+#			Once the schedule is created the executor continues with the
+#			new schedule.
+#           ! This option is not supported by simulation !
+#computer_interrupt: "no_interrupt"
+computer_interrupt: "get_progress"
+#computer_interrupt: "suspend_executor"
+
+# computer_required_applications
+# option 1: 0
+# 			The computer starts schedule computation immediately.
+# option 2: value > 0
+#			The computer waits for $value registered applications before
+#			starting the first computations.
+#			This allows to register a number of applications at startup,
+#			so the algorithm gets all desired task information in the first run.
+computer_required_applications: 0
+
+# executor_idle_reschedule
+# option 1: "true"
+#			The executor triggers a rescheduling in case all resources are idling
+#			and there tasks that are not done ("POST").
+# option 2: "false"
+#			The executor does nothing in idle case.
+#			This is the default.
+executor_idle_reschedule: false
+
+# task_rununtil
+# option 1: "estimation_timer"
+#			The resource starts the task and sets a timer with the estimated
+#			time for the current task entry. (e.g. 30 seconds until the task reaches progress 55)
+#			In the first case the task finishes before the timer and sends a taskfinish message.
+#			This deactivates the timer.
+#			In the second case the timer finishes before the task and lets the resource send a
+#			suspend message to the task.
+# option 2: "progress_suspend"
+#			The resource starts the task with the target progress of the task entry.
+#			The task runs until the specified target progress is reached, suspends itself and sends
+#			a suspend or finish message.
+#			The resource is waiting until the task reaches the targeted progress.
+#task_rununtil: "estimation_timer"
+task_rununtil: "progress_suspend"
+
+
+taskloader: "taskloaderms"
+taskloadermspath: "ms/ms_results"
+
+resourceloader: "resourceloaderms"
+resourceloaderms_idle: "ms/ms_idle/idle_power_test.json"
+
+measure: false
+#measure: false
+measurement: "ampehre"
+ampehre_cpu_s: 0
+ampehre_cpu_ns: 500000000
+ampehre_gpu_s: 0
+ampehre_gpu_ns: 500000000
+ampehre_fpga_s: 0
+ampehre_fpga_ns: 500000000
+ampehre_system_s: 0
+ampehre_system_ns: 500000000
+ampehre_mic_s: 0
+ampehre_mic_ns: 500000000

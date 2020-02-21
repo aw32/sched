@@ -1,0 +1,455 @@
+{"time":"967578.645828175","event":"SCHEDULER_START","realtime":"1561718288.160402045"}
+{"time":"967578.655111145","event":"RESOURCES","resources":["IntelXeon"]}
+{"time":"967578.655309765","event":"ALGORITHM","algorithm":"METMig2"}
+{"time":"967578.657613708","event":"NEWTASK","id":0,"res":["IntelXeon"],"dep":[],"name":"heat","size":512, "checkpoints":768}
+{"time":"967578.657639478","event":"NEWTASK","id":1,"res":["IntelXeon"],"dep":[0],"name":"gaussblur","size":512, "checkpoints":256}
+{"time":"967578.657651556","event":"NEWTASK","id":2,"res":["IntelXeon"],"dep":[1],"name":"correlation","size":256, "checkpoints":256}
+{"time":"967578.657662372","event":"NEWTASK","id":3,"res":["IntelXeon"],"dep":[2],"name":"heat","size":512, "checkpoints":768}
+{"time":"967578.657672790","event":"NEWTASK","id":4,"res":["IntelXeon"],"dep":[3],"name":"heat","size":256, "checkpoints":768}
+{"time":"967578.657683424","event":"NEWTASK","id":5,"res":["IntelXeon"],"dep":[4],"name":"correlation","size":256, "checkpoints":256}
+{"time":"967578.657694190","event":"NEWTASK","id":6,"res":["IntelXeon"],"dep":[5],"name":"heat","size":512, "checkpoints":768}
+{"time":"967578.657818504","event":"COMPUTER_UPDATE"}
+{"time":"967578.657917463","event":"COMPUTER_ALGOSTART"}
+{"time":"967578.658258268","event":"COMPUTER_ALGOSTOP","duration":0.000274}
+{"time":"967578.658445952","event":"SCHEDULE","schedule":{"id":0,"compute_start":967578657941732,"compute_stop":967578658216084,"compute_duration":274352,"duration":1875557330,"active_tasks":7,"static_energy":62895.9,"dynamic_energy":38389.5,"total_energy":101285,"tasks":[[{"id":0,"part":0,"start_progress":0,"stop_progress":768,"current_progress":0,"current_state":0,"duration_total":290019408,"time_ready":0,"time_finish":290019408,"duration_total":290019408,"duration_init":287,"duration_compute":290019000,"duration_fini":121,"duration_break":0,"energy":8283.46},{"id":1,"part":0,"start_progress":0,"stop_progress":256,"current_progress":0,"current_state":0,"duration_total":817124506,"time_ready":290019408,"time_finish":1107143914,"duration_total":817124506,"duration_init":378,"duration_compute":817124000,"duration_fini":128,"duration_break":0,"energy":9911.76},{"id":2,"part":0,"start_progress":0,"stop_progress":256,"current_progress":0,"current_state":0,"duration_total":33089618,"time_ready":1107143914,"time_finish":1140233532,"duration_total":33089618,"duration_init":1500780,"duration_compute":31588699,"duration_fini":139,"duration_break":0,"energy":167.765},{"id":3,"part":0,"start_progress":0,"stop_progress":768,"current_progress":0,"current_state":0,"duration_total":290019408,"time_ready":1140233532,"time_finish":1430252940,"duration_total":290019408,"duration_init":287,"duration_compute":290019000,"duration_fini":121,"duration_break":0,"energy":8283.46},{"id":4,"part":0,"start_progress":0,"stop_progress":768,"current_progress":0,"current_state":0,"duration_total":122195364,"time_ready":1430252940,"time_finish":1552448304,"duration_total":122195364,"duration_init":260,"duration_compute":122195000,"duration_fini":104,"duration_break":0,"energy":3291.79},{"id":5,"part":0,"start_progress":0,"stop_progress":256,"current_progress":0,"current_state":0,"duration_total":33089618,"time_ready":1552448304,"time_finish":1585537922,"duration_total":33089618,"duration_init":1500780,"duration_compute":31588699,"duration_fini":139,"duration_break":0,"energy":167.765},{"id":6,"part":0,"start_progress":0,"stop_progress":768,"current_progress":0,"current_state":0,"duration_total":290019408,"time_ready":1585537922,"time_finish":1875557330,"duration_total":290019408,"duration_init":287,"duration_compute":290019000,"duration_fini":121,"duration_break":0,"energy":8283.46}]]}}
+{"time":"967578.658752464","event":"EXECUTOR_NEWSCHEDULE","id":0}
+{"time":"967578.658903785","event":"TASK_START","id":0,"res":"IntelXeon","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.659073747","event":"TASK_STARTED","id":0,"res":"IntelXeon"}
+{"time":"967578.661970814","event":"TASK_FINISHED","id":0}
+{"time":"967578.662089004","event":"TASK_START","id":1,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.662239638","event":"TASK_STARTED","id":1,"res":"IntelXeon"}
+{"time":"967578.665083789","event":"TASK_FINISHED","id":1}
+{"time":"967578.665199783","event":"TASK_START","id":2,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.665351002","event":"TASK_STARTED","id":2,"res":"IntelXeon"}
+{"time":"967578.668226933","event":"TASK_FINISHED","id":2}
+{"time":"967578.668358296","event":"TASK_START","id":3,"res":"IntelXeon","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.668477256","event":"TASK_STARTED","id":3,"res":"IntelXeon"}
+{"time":"967578.671124571","event":"TASK_FINISHED","id":3}
+{"time":"967578.671244445","event":"TASK_START","id":4,"res":"IntelXeon","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.671386781","event":"TASK_STARTED","id":4,"res":"IntelXeon"}
+{"time":"967578.674065814","event":"TASK_FINISHED","id":4}
+{"time":"967578.674187198","event":"TASK_START","id":5,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.674316258","event":"TASK_STARTED","id":5,"res":"IntelXeon"}
+{"time":"967578.677029160","event":"TASK_FINISHED","id":5}
+{"time":"967578.677146457","event":"TASK_START","id":6,"res":"IntelXeon","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.677260984","event":"TASK_STARTED","id":6,"res":"IntelXeon"}
+{"time":"967578.677334698","event":"NEWTASK","id":7,"res":["IntelXeon"],"dep":[],"name":"correlation","size":256, "checkpoints":256}
+{"time":"967578.677349580","event":"NEWTASK","id":8,"res":["IntelXeon"],"dep":[7],"name":"correlation","size":512, "checkpoints":512}
+{"time":"967578.677361300","event":"NEWTASK","id":9,"res":["IntelXeon"],"dep":[8],"name":"heat","size":256, "checkpoints":768}
+{"time":"967578.677373068","event":"NEWTASK","id":10,"res":["IntelXeon"],"dep":[9],"name":"heat","size":1024, "checkpoints":768}
+{"time":"967578.677384750","event":"NEWTASK","id":11,"res":["IntelXeon"],"dep":[10],"name":"heat","size":256, "checkpoints":768}
+{"time":"967578.677396182","event":"NEWTASK","id":12,"res":["IntelXeon"],"dep":[11],"name":"correlation","size":256, "checkpoints":256}
+{"time":"967578.677407068","event":"NEWTASK","id":13,"res":["IntelXeon"],"dep":[12],"name":"correlation","size":256, "checkpoints":256}
+{"time":"967578.677418170","event":"NEWTASK","id":14,"res":["IntelXeon"],"dep":[13],"name":"heat","size":256, "checkpoints":768}
+{"time":"967578.677429364","event":"NEWTASK","id":15,"res":["IntelXeon"],"dep":[14],"name":"heat","size":1024, "checkpoints":768}
+{"time":"967578.677440238","event":"NEWTASK","id":16,"res":["IntelXeon"],"dep":[15],"name":"heat","size":1024, "checkpoints":768}
+{"time":"967578.677451188","event":"NEWTASK","id":17,"res":["IntelXeon"],"dep":[16],"name":"markov","size":128, "checkpoints":21}
+{"time":"967578.677650972","event":"COMPUTER_UPDATE"}
+{"time":"967578.677730658","event":"TASK_GOTPROGRESS","id":6,"progress":641}
+{"time":"967578.677747143","event":"COMPUTER_ALGOSTART"}
+{"time":"967578.678107880","event":"COMPUTER_ALGOSTOP","duration":0.000315}
+{"time":"967578.678203088","event":"SCHEDULE","schedule":{"id":1,"compute_start":967578677760343,"compute_stop":967578678074999,"compute_duration":314656,"duration":3789848052,"active_tasks":12,"static_energy":127091,"dynamic_energy":91618.4,"total_energy":218709,"tasks":[[{"id":6,"part":0,"start_progress":641,"stop_progress":768,"current_progress":641,"current_state":2,"duration_total":47959279,"time_ready":0,"time_finish":47959279,"duration_total":47959279,"duration_init":287,"duration_compute":47958871,"duration_fini":121,"duration_break":0,"energy":1369.79},{"id":7,"part":0,"start_progress":0,"stop_progress":256,"current_progress":0,"current_state":0,"duration_total":33089618,"time_ready":47959279,"time_finish":81048897,"duration_total":33089618,"duration_init":1500780,"duration_compute":31588699,"duration_fini":139,"duration_break":0,"energy":167.765},{"id":8,"part":0,"start_progress":0,"stop_progress":512,"current_progress":0,"current_state":0,"duration_total":117618602,"time_ready":81048897,"time_finish":198667499,"duration_total":117618602,"duration_init":7230520,"duration_compute":110388000,"duration_fini":82,"duration_break":0,"energy":522.312},{"id":9,"part":0,"start_progress":0,"stop_progress":768,"current_progress":0,"current_state":0,"duration_total":122195364,"time_ready":198667499,"time_finish":320862863,"duration_total":122195364,"duration_init":260,"duration_compute":122195000,"duration_fini":104,"duration_break":0,"energy":3291.79},{"id":10,"part":0,"start_progress":0,"stop_progress":768,"current_progress":0,"current_state":0,"duration_total":1004060536,"time_ready":320862863,"time_finish":1324923399,"duration_total":1004060536,"duration_init":411,"duration_compute":1004060000,"duration_fini":125,"duration_break":0,"energy":25308.2},{"id":11,"part":0,"start_progress":0,"stop_progress":768,"current_progress":0,"current_state":0,"duration_total":122195364,"time_ready":1324923399,"time_finish":1447118763,"duration_total":122195364,"duration_init":260,"duration_compute":122195000,"duration_fini":104,"duration_break":0,"energy":3291.79},{"id":12,"part":0,"start_progress":0,"stop_progress":256,"current_progress":0,"current_state":0,"duration_total":33089618,"time_ready":1447118763,"time_finish":1480208381,"duration_total":33089618,"duration_init":1500780,"duration_compute":31588699,"duration_fini":139,"duration_break":0,"energy":167.765},{"id":13,"part":0,"start_progress":0,"stop_progress":256,"current_progress":0,"current_state":0,"duration_total":33089618,"time_ready":1480208381,"time_finish":1513297999,"duration_total":33089618,"duration_init":1500780,"duration_compute":31588699,"duration_fini":139,"duration_break":0,"energy":167.765},{"id":14,"part":0,"start_progress":0,"stop_progress":768,"current_progress":0,"current_state":0,"duration_total":122195364,"time_ready":1513297999,"time_finish":1635493363,"duration_total":122195364,"duration_init":260,"duration_compute":122195000,"duration_fini":104,"duration_break":0,"energy":3291.79},{"id":15,"part":0,"start_progress":0,"stop_progress":768,"current_progress":0,"current_state":0,"duration_total":1004060536,"time_ready":1635493363,"time_finish":2639553899,"duration_total":1004060536,"duration_init":411,"duration_compute":1004060000,"duration_fini":125,"duration_break":0,"energy":25308.2},{"id":16,"part":0,"start_progress":0,"stop_progress":768,"current_progress":0,"current_state":0,"duration_total":1004060536,"time_ready":2639553899,"time_finish":3643614435,"duration_total":1004060536,"duration_init":411,"duration_compute":1004060000,"duration_fini":125,"duration_break":0,"energy":25308.2},{"id":17,"part":0,"start_progress":0,"stop_progress":21,"current_progress":0,"current_state":0,"duration_total":146233617,"time_ready":3643614435,"time_finish":3789848052,"duration_total":146233617,"duration_init":496,"duration_compute":146233000,"duration_fini":121,"duration_break":0,"energy":3423.03}]]}}
+{"time":"967578.678421091","event":"EXECUTOR_NEWSCHEDULE","id":1}
+{"time":"967578.681165392","event":"TASK_FINISHED","id":6}
+{"time":"967578.681285819","event":"TASK_START","id":7,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.681430929","event":"TASK_STARTED","id":7,"res":"IntelXeon"}
+{"time":"967578.683961998","event":"TASK_FINISHED","id":7}
+{"time":"967578.684086753","event":"TASK_START","id":8,"res":"IntelXeon","target_progress":512,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.684210454","event":"TASK_STARTED","id":8,"res":"IntelXeon"}
+{"time":"967578.686788767","event":"TASK_FINISHED","id":8}
+{"time":"967578.686921169","event":"TASK_START","id":9,"res":"IntelXeon","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.687073567","event":"TASK_STARTED","id":9,"res":"IntelXeon"}
+{"time":"967578.689597298","event":"TASK_FINISHED","id":9}
+{"time":"967578.689725505","event":"TASK_START","id":10,"res":"IntelXeon","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.689855239","event":"TASK_STARTED","id":10,"res":"IntelXeon"}
+{"time":"967578.692468858","event":"TASK_FINISHED","id":10}
+{"time":"967578.692589926","event":"TASK_START","id":11,"res":"IntelXeon","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.692709940","event":"TASK_STARTED","id":11,"res":"IntelXeon"}
+{"time":"967578.695180597","event":"TASK_FINISHED","id":11}
+{"time":"967578.695311907","event":"TASK_START","id":12,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.695430707","event":"TASK_STARTED","id":12,"res":"IntelXeon"}
+{"time":"967578.697818596","event":"TASK_FINISHED","id":12}
+{"time":"967578.697947016","event":"TASK_START","id":13,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.698094741","event":"TASK_STARTED","id":13,"res":"IntelXeon"}
+{"time":"967578.700503687","event":"TASK_FINISHED","id":13}
+{"time":"967578.700629395","event":"TASK_START","id":14,"res":"IntelXeon","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.700755131","event":"TASK_STARTED","id":14,"res":"IntelXeon"}
+{"time":"967578.703113651","event":"TASK_FINISHED","id":14}
+{"time":"967578.703268713","event":"TASK_START","id":15,"res":"IntelXeon","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.703396672","event":"TASK_STARTED","id":15,"res":"IntelXeon"}
+{"time":"967578.703450098","event":"NEWTASK","id":18,"res":["IntelXeon"],"dep":[],"name":"correlation","size":256, "checkpoints":256}
+{"time":"967578.703462474","event":"NEWTASK","id":19,"res":["IntelXeon"],"dep":[18],"name":"correlation","size":256, "checkpoints":256}
+{"time":"967578.703472472","event":"NEWTASK","id":20,"res":["IntelXeon"],"dep":[19],"name":"heat","size":512, "checkpoints":768}
+{"time":"967578.703482390","event":"NEWTASK","id":21,"res":["IntelXeon"],"dep":[20],"name":"correlation","size":1024, "checkpoints":1024}
+{"time":"967578.703491954","event":"NEWTASK","id":22,"res":["IntelXeon"],"dep":[21],"name":"markov","size":256, "checkpoints":22}
+{"time":"967578.703501342","event":"NEWTASK","id":23,"res":["IntelXeon"],"dep":[22],"name":"correlation","size":256, "checkpoints":256}
+{"time":"967578.703510666","event":"NEWTASK","id":24,"res":["IntelXeon"],"dep":[23],"name":"correlation","size":256, "checkpoints":256}
+{"time":"967578.703520072","event":"NEWTASK","id":25,"res":["IntelXeon"],"dep":[24],"name":"gaussblur","size":512, "checkpoints":256}
+{"time":"967578.703644380","event":"COMPUTER_UPDATE"}
+{"time":"967578.703723547","event":"TASK_GOTPROGRESS","id":15,"progress":616}
+{"time":"967578.703739802","event":"COMPUTER_ALGOSTART"}
+{"time":"967578.704056618","event":"COMPUTER_ALGOSTOP","duration":0.000273}
+{"time":"967578.704136324","event":"SCHEDULE","schedule":{"id":2,"compute_start":967578703752768,"compute_stop":967578704025824,"compute_duration":273056,"duration":3895887570,"active_tasks":11,"static_energy":130647,"dynamic_energy":73438.1,"total_energy":204085,"tasks":[[{"id":15,"part":0,"start_progress":616,"stop_progress":768,"current_progress":616,"current_state":2,"duration_total":198720744,"time_ready":0,"time_finish":198720744,"duration_total":198720744,"duration_init":411,"duration_compute":198720208,"duration_fini":125,"duration_break":0,"energy":5008.91},{"id":16,"part":0,"start_progress":0,"stop_progress":768,"current_progress":0,"current_state":0,"duration_total":1004060536,"time_ready":198720744,"time_finish":1202781280,"duration_total":1004060536,"duration_init":411,"duration_compute":1004060000,"duration_fini":125,"duration_break":0,"energy":25308.2},{"id":17,"part":0,"start_progress":0,"stop_progress":21,"current_progress":0,"current_state":0,"duration_total":146233617,"time_ready":1202781280,"time_finish":1349014897,"duration_total":146233617,"duration_init":496,"duration_compute":146233000,"duration_fini":121,"duration_break":0,"energy":3423.03},{"id":18,"part":0,"start_progress":0,"stop_progress":256,"current_progress":0,"current_state":0,"duration_total":33089618,"time_ready":1349014897,"time_finish":1382104515,"duration_total":33089618,"duration_init":1500780,"duration_compute":31588699,"duration_fini":139,"duration_break":0,"energy":167.765},{"id":19,"part":0,"start_progress":0,"stop_progress":256,"current_progress":0,"current_state":0,"duration_total":33089618,"time_ready":1382104515,"time_finish":1415194133,"duration_total":33089618,"duration_init":1500780,"duration_compute":31588699,"duration_fini":139,"duration_break":0,"energy":167.765},{"id":20,"part":0,"start_progress":0,"stop_progress":768,"current_progress":0,"current_state":0,"duration_total":290019408,"time_ready":1415194133,"time_finish":1705213541,"duration_total":290019408,"duration_init":287,"duration_compute":290019000,"duration_fini":121,"duration_break":0,"energy":8283.46},{"id":21,"part":0,"start_progress":0,"stop_progress":1024,"current_progress":0,"current_state":0,"duration_total":690179312,"time_ready":1705213541,"time_finish":2395392853,"duration_total":690179312,"duration_init":15508200,"duration_compute":674671000,"duration_fini":112,"duration_break":0,"energy":4023.97},{"id":22,"part":0,"start_progress":0,"stop_progress":22,"current_progress":0,"current_state":0,"duration_total":617190975,"time_ready":2395392853,"time_finish":3012583828,"duration_total":617190975,"duration_init":767,"duration_compute":617190000,"duration_fini":208,"duration_break":0,"energy":16807.7},{"id":23,"part":0,"start_progress":0,"stop_progress":256,"current_progress":0,"current_state":0,"duration_total":33089618,"time_ready":3012583828,"time_finish":3045673446,"duration_total":33089618,"duration_init":1500780,"duration_compute":31588699,"duration_fini":139,"duration_break":0,"energy":167.765},{"id":24,"part":0,"start_progress":0,"stop_progress":256,"current_progress":0,"current_state":0,"duration_total":33089618,"time_ready":3045673446,"time_finish":3078763064,"duration_total":33089618,"duration_init":1500780,"duration_compute":31588699,"duration_fini":139,"duration_break":0,"energy":167.765},{"id":25,"part":0,"start_progress":0,"stop_progress":256,"current_progress":0,"current_state":0,"duration_total":817124506,"time_ready":3078763064,"time_finish":3895887570,"duration_total":817124506,"duration_init":378,"duration_compute":817124000,"duration_fini":128,"duration_break":0,"energy":9911.76}]]}}
+{"time":"967578.704356249","event":"EXECUTOR_NEWSCHEDULE","id":2}
+{"time":"967578.706955519","event":"TASK_FINISHED","id":15}
+{"time":"967578.707089645","event":"TASK_START","id":16,"res":"IntelXeon","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.707213633","event":"TASK_STARTED","id":16,"res":"IntelXeon"}
+{"time":"967578.709554402","event":"TASK_FINISHED","id":16}
+{"time":"967578.709683695","event":"TASK_START","id":17,"res":"IntelXeon","target_progress":21,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.709814942","event":"TASK_STARTED","id":17,"res":"IntelXeon"}
+{"time":"967578.712071460","event":"TASK_FINISHED","id":17}
+{"time":"967578.712195282","event":"TASK_START","id":18,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.712320627","event":"TASK_STARTED","id":18,"res":"IntelXeon"}
+{"time":"967578.714683321","event":"TASK_FINISHED","id":18}
+{"time":"967578.714803622","event":"TASK_START","id":19,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.714921920","event":"TASK_STARTED","id":19,"res":"IntelXeon"}
+{"time":"967578.717302246","event":"TASK_FINISHED","id":19}
+{"time":"967578.717420698","event":"TASK_START","id":20,"res":"IntelXeon","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.717534088","event":"TASK_STARTED","id":20,"res":"IntelXeon"}
+{"time":"967578.719706823","event":"TASK_FINISHED","id":20}
+{"time":"967578.719831387","event":"TASK_START","id":21,"res":"IntelXeon","target_progress":1024,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.719958609","event":"TASK_STARTED","id":21,"res":"IntelXeon"}
+{"time":"967578.722243431","event":"TASK_FINISHED","id":21}
+{"time":"967578.722365823","event":"TASK_START","id":22,"res":"IntelXeon","target_progress":22,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.722479214","event":"TASK_STARTED","id":22,"res":"IntelXeon"}
+{"time":"967578.724664426","event":"TASK_FINISHED","id":22}
+{"time":"967578.724786012","event":"TASK_START","id":23,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.724906452","event":"TASK_STARTED","id":23,"res":"IntelXeon"}
+{"time":"967578.727175219","event":"TASK_FINISHED","id":23}
+{"time":"967578.727306914","event":"TASK_START","id":24,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.727420024","event":"TASK_STARTED","id":24,"res":"IntelXeon"}
+{"time":"967578.729517659","event":"TASK_FINISHED","id":24}
+{"time":"967578.729635418","event":"TASK_START","id":25,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.729747982","event":"TASK_STARTED","id":25,"res":"IntelXeon"}
+{"time":"967578.729781119","event":"NEWTASK","id":26,"res":["IntelXeon"],"dep":[],"name":"gaussblur","size":256, "checkpoints":256}
+{"time":"967578.729792460","event":"NEWTASK","id":27,"res":["IntelXeon"],"dep":[26],"name":"correlation","size":256, "checkpoints":256}
+{"time":"967578.729801650","event":"NEWTASK","id":28,"res":["IntelXeon"],"dep":[27],"name":"markov","size":128, "checkpoints":50}
+{"time":"967578.729811620","event":"NEWTASK","id":29,"res":["IntelXeon"],"dep":[28],"name":"correlation","size":256, "checkpoints":256}
+{"time":"967578.729820357","event":"NEWTASK","id":30,"res":["IntelXeon"],"dep":[29],"name":"heat","size":512, "checkpoints":768}
+{"time":"967578.729914674","event":"COMPUTER_UPDATE"}
+{"time":"967578.729990718","event":"TASK_GOTPROGRESS","id":25,"progress":18}
+{"time":"967578.730017379","event":"COMPUTER_ALGOSTART"}
+{"time":"967578.730210250","event":"COMPUTER_ALGOSTOP","duration":0.000146}
+{"time":"967578.730256984","event":"SCHEDULE","schedule":{"id":3,"compute_start":967578730043824,"compute_stop":967578730190002,"compute_duration":146178,"duration":1498845224,"active_tasks":6,"static_energy":50263,"dynamic_energy":25222,"total_energy":75485.1,"tasks":[[{"id":25,"part":0,"start_progress":18,"stop_progress":256,"current_progress":18,"current_state":2,"duration_total":759670474,"time_ready":0,"time_finish":759670474,"duration_total":759670474,"duration_init":378,"duration_compute":759669968,"duration_fini":128,"duration_break":0,"energy":9214.84},{"id":26,"part":0,"start_progress":0,"stop_progress":256,"current_progress":0,"current_state":0,"duration_total":236742489,"time_ready":759670474,"time_finish":996412963,"duration_total":236742489,"duration_init":400,"duration_compute":236742000,"duration_fini":89,"duration_break":0,"energy":3965.19},{"id":27,"part":0,"start_progress":0,"stop_progress":256,"current_progress":0,"current_state":0,"duration_total":33089618,"time_ready":996412963,"time_finish":1029502581,"duration_total":33089618,"duration_init":1500780,"duration_compute":31588699,"duration_fini":139,"duration_break":0,"energy":167.765},{"id":28,"part":0,"start_progress":0,"stop_progress":50,"current_progress":0,"current_state":0,"duration_total":146233617,"time_ready":1029502581,"time_finish":1175736198,"duration_total":146233617,"duration_init":496,"duration_compute":146233000,"duration_fini":121,"duration_break":0,"energy":3423.03},{"id":29,"part":0,"start_progress":0,"stop_progress":256,"current_progress":0,"current_state":0,"duration_total":33089618,"time_ready":1175736198,"time_finish":1208825816,"duration_total":33089618,"duration_init":1500780,"duration_compute":31588699,"duration_fini":139,"duration_break":0,"energy":167.765},{"id":30,"part":0,"start_progress":0,"stop_progress":768,"current_progress":0,"current_state":0,"duration_total":290019408,"time_ready":1208825816,"time_finish":1498845224,"duration_total":290019408,"duration_init":287,"duration_compute":290019000,"duration_fini":121,"duration_break":0,"energy":8283.46}]]}}
+{"time":"967578.730450097","event":"EXECUTOR_NEWSCHEDULE","id":3}
+{"time":"967578.732766310","event":"TASK_FINISHED","id":25}
+{"time":"967578.732894975","event":"TASK_START","id":26,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.733076605","event":"TASK_STARTED","id":26,"res":"IntelXeon"}
+{"time":"967578.735293982","event":"TASK_FINISHED","id":26}
+{"time":"967578.735415037","event":"TASK_START","id":27,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.735526896","event":"TASK_STARTED","id":27,"res":"IntelXeon"}
+{"time":"967578.737642129","event":"TASK_FINISHED","id":27}
+{"time":"967578.737761054","event":"TASK_START","id":28,"res":"IntelXeon","target_progress":50,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.737874767","event":"TASK_STARTED","id":28,"res":"IntelXeon"}
+{"time":"967578.739942421","event":"TASK_FINISHED","id":28}
+{"time":"967578.740072957","event":"TASK_START","id":29,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.740190998","event":"TASK_STARTED","id":29,"res":"IntelXeon"}
+{"time":"967578.742364724","event":"TASK_FINISHED","id":29}
+{"time":"967578.742486203","event":"TASK_START","id":30,"res":"IntelXeon","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.742599465","event":"TASK_STARTED","id":30,"res":"IntelXeon"}
+{"time":"967578.744687838","event":"TASK_FINISHED","id":30}
+{"time":"967578.744854613","event":"NEWTASK","id":31,"res":["IntelXeon"],"dep":[],"name":"heat","size":512, "checkpoints":768}
+{"time":"967578.744865918","event":"NEWTASK","id":32,"res":["IntelXeon"],"dep":[31],"name":"correlation","size":256, "checkpoints":256}
+{"time":"967578.744874999","event":"NEWTASK","id":33,"res":["IntelXeon"],"dep":[32],"name":"markov","size":128, "checkpoints":50}
+{"time":"967578.744883549","event":"NEWTASK","id":34,"res":["IntelXeon"],"dep":[33],"name":"correlation","size":256, "checkpoints":256}
+{"time":"967578.744897274","event":"NEWTASK","id":35,"res":["IntelXeon"],"dep":[34],"name":"heat","size":512, "checkpoints":768}
+{"time":"967578.744905384","event":"NEWTASK","id":36,"res":["IntelXeon"],"dep":[35],"name":"correlation","size":256, "checkpoints":256}
+{"time":"967578.744913499","event":"NEWTASK","id":37,"res":["IntelXeon"],"dep":[36],"name":"markov","size":128, "checkpoints":21}
+{"time":"967578.744921491","event":"NEWTASK","id":38,"res":["IntelXeon"],"dep":[37],"name":"correlation","size":512, "checkpoints":512}
+{"time":"967578.744929554","event":"NEWTASK","id":39,"res":["IntelXeon"],"dep":[38],"name":"correlation","size":1024, "checkpoints":1024}
+{"time":"967578.744937674","event":"NEWTASK","id":40,"res":["IntelXeon"],"dep":[39],"name":"heat","size":256, "checkpoints":768}
+{"time":"967578.745083743","event":"COMPUTER_UPDATE"}
+{"time":"967578.745138203","event":"COMPUTER_ALGOSTART"}
+{"time":"967578.745405663","event":"COMPUTER_ALGOSTOP","duration":0.000226}
+{"time":"967578.745474704","event":"SCHEDULE","schedule":{"id":4,"compute_start":967578745158126,"compute_stop":967578745383650,"compute_duration":225524,"duration":1901768182,"active_tasks":10,"static_energy":63774.8,"dynamic_energy":31754.3,"total_energy":95529.2,"tasks":[[{"id":31,"part":0,"start_progress":0,"stop_progress":768,"current_progress":0,"current_state":0,"duration_total":290019408,"time_ready":0,"time_finish":290019408,"duration_total":290019408,"duration_init":287,"duration_compute":290019000,"duration_fini":121,"duration_break":0,"energy":8283.46},{"id":32,"part":0,"start_progress":0,"stop_progress":256,"current_progress":0,"current_state":0,"duration_total":33089618,"time_ready":290019408,"time_finish":323109026,"duration_total":33089618,"duration_init":1500780,"duration_compute":31588699,"duration_fini":139,"duration_break":0,"energy":167.765},{"id":33,"part":0,"start_progress":0,"stop_progress":50,"current_progress":0,"current_state":0,"duration_total":146233617,"time_ready":323109026,"time_finish":469342643,"duration_total":146233617,"duration_init":496,"duration_compute":146233000,"duration_fini":121,"duration_break":0,"energy":3423.03},{"id":34,"part":0,"start_progress":0,"stop_progress":256,"current_progress":0,"current_state":0,"duration_total":33089618,"time_ready":469342643,"time_finish":502432261,"duration_total":33089618,"duration_init":1500780,"duration_compute":31588699,"duration_fini":139,"duration_break":0,"energy":167.765},{"id":35,"part":0,"start_progress":0,"stop_progress":768,"current_progress":0,"current_state":0,"duration_total":290019408,"time_ready":502432261,"time_finish":792451669,"duration_total":290019408,"duration_init":287,"duration_compute":290019000,"duration_fini":121,"duration_break":0,"energy":8283.46},{"id":36,"part":0,"start_progress":0,"stop_progress":256,"current_progress":0,"current_state":0,"duration_total":33089618,"time_ready":792451669,"time_finish":825541287,"duration_total":33089618,"duration_init":1500780,"duration_compute":31588699,"duration_fini":139,"duration_break":0,"energy":167.765},{"id":37,"part":0,"start_progress":0,"stop_progress":21,"current_progress":0,"current_state":0,"duration_total":146233617,"time_ready":825541287,"time_finish":971774904,"duration_total":146233617,"duration_init":496,"duration_compute":146233000,"duration_fini":121,"duration_break":0,"energy":3423.03},{"id":38,"part":0,"start_progress":0,"stop_progress":512,"current_progress":0,"current_state":0,"duration_total":117618602,"time_ready":971774904,"time_finish":1089393506,"duration_total":117618602,"duration_init":7230520,"duration_compute":110388000,"duration_fini":82,"duration_break":0,"energy":522.312},{"id":39,"part":0,"start_progress":0,"stop_progress":1024,"current_progress":0,"current_state":0,"duration_total":690179312,"time_ready":1089393506,"time_finish":1779572818,"duration_total":690179312,"duration_init":15508200,"duration_compute":674671000,"duration_fini":112,"duration_break":0,"energy":4023.97},{"id":40,"part":0,"start_progress":0,"stop_progress":768,"current_progress":0,"current_state":0,"duration_total":122195364,"time_ready":1779572818,"time_finish":1901768182,"duration_total":122195364,"duration_init":260,"duration_compute":122195000,"duration_fini":104,"duration_break":0,"energy":3291.79}]]}}
+{"time":"967578.745668395","event":"EXECUTOR_NEWSCHEDULE","id":4}
+{"time":"967578.745782229","event":"TASK_START","id":31,"res":"IntelXeon","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.745886725","event":"TASK_STARTED","id":31,"res":"IntelXeon"}
+{"time":"967578.749135035","event":"TASK_FINISHED","id":31}
+{"time":"967578.749200848","event":"TASK_START","id":32,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.749353211","event":"TASK_STARTED","id":32,"res":"IntelXeon"}
+{"time":"967578.752579249","event":"TASK_FINISHED","id":32}
+{"time":"967578.752693174","event":"TASK_START","id":33,"res":"IntelXeon","target_progress":50,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.752831865","event":"TASK_STARTED","id":33,"res":"IntelXeon"}
+{"time":"967578.755844997","event":"TASK_FINISHED","id":33}
+{"time":"967578.755960998","event":"TASK_START","id":34,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.756122063","event":"TASK_STARTED","id":34,"res":"IntelXeon"}
+{"time":"967578.759071371","event":"TASK_FINISHED","id":34}
+{"time":"967578.759136371","event":"TASK_START","id":35,"res":"IntelXeon","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.759248585","event":"TASK_STARTED","id":35,"res":"IntelXeon"}
+{"time":"967578.762132041","event":"TASK_FINISHED","id":35}
+{"time":"967578.762188911","event":"TASK_START","id":36,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.762300849","event":"TASK_STARTED","id":36,"res":"IntelXeon"}
+{"time":"967578.765110540","event":"TASK_FINISHED","id":36}
+{"time":"967578.765192974","event":"TASK_START","id":37,"res":"IntelXeon","target_progress":21,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.765329571","event":"TASK_STARTED","id":37,"res":"IntelXeon"}
+{"time":"967578.768074883","event":"TASK_FINISHED","id":37}
+{"time":"967578.768150963","event":"TASK_START","id":38,"res":"IntelXeon","target_progress":512,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.768256709","event":"TASK_STARTED","id":38,"res":"IntelXeon"}
+{"time":"967578.771016328","event":"TASK_FINISHED","id":38}
+{"time":"967578.771104494","event":"TASK_START","id":39,"res":"IntelXeon","target_progress":1024,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.771214180","event":"TASK_STARTED","id":39,"res":"IntelXeon"}
+{"time":"967578.773922023","event":"TASK_FINISHED","id":39}
+{"time":"967578.774012899","event":"TASK_START","id":40,"res":"IntelXeon","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.774123773","event":"TASK_STARTED","id":40,"res":"IntelXeon"}
+{"time":"967578.776772264","event":"TASK_FINISHED","id":40}
+{"time":"967578.776902476","event":"NEWTASK","id":41,"res":["IntelXeon"],"dep":[],"name":"heat","size":1024, "checkpoints":768}
+{"time":"967578.776917208","event":"NEWTASK","id":42,"res":["IntelXeon"],"dep":[41],"name":"markov","size":128, "checkpoints":50}
+{"time":"967578.776928734","event":"NEWTASK","id":43,"res":["IntelXeon"],"dep":[42],"name":"correlation","size":256, "checkpoints":256}
+{"time":"967578.776939628","event":"NEWTASK","id":44,"res":["IntelXeon"],"dep":[43],"name":"correlation","size":512, "checkpoints":512}
+{"time":"967578.776950328","event":"NEWTASK","id":45,"res":["IntelXeon"],"dep":[44],"name":"markov","size":128, "checkpoints":21}
+{"time":"967578.776961056","event":"NEWTASK","id":46,"res":["IntelXeon"],"dep":[45],"name":"correlation","size":256, "checkpoints":256}
+{"time":"967578.776971616","event":"NEWTASK","id":47,"res":["IntelXeon"],"dep":[46],"name":"heat","size":1024, "checkpoints":768}
+{"time":"967578.776981946","event":"NEWTASK","id":48,"res":["IntelXeon"],"dep":[47],"name":"heat","size":256, "checkpoints":768}
+{"time":"967578.776992524","event":"NEWTASK","id":49,"res":["IntelXeon"],"dep":[48],"name":"markov","size":128, "checkpoints":50}
+{"time":"967578.777013108","event":"NEWTASK","id":50,"res":["IntelXeon"],"dep":[49],"name":"correlation","size":256, "checkpoints":256}
+{"time":"967578.777028610","event":"NEWTASK","id":51,"res":["IntelXeon"],"dep":[50],"name":"correlation","size":256, "checkpoints":256}
+{"time":"967578.777239618","event":"COMPUTER_UPDATE"}
+{"time":"967578.777348118","event":"COMPUTER_ALGOSTART"}
+{"time":"967578.777653229","event":"COMPUTER_ALGOSTOP","duration":0.000262}
+{"time":"967578.777721901","event":"SCHEDULE","schedule":{"id":5,"compute_start":967578777371390,"compute_stop":967578777633137,"compute_duration":261747,"duration":2818994361,"active_tasks":11,"static_energy":94533.6,"dynamic_energy":65370.7,"total_energy":159904,"tasks":[[{"id":41,"part":0,"start_progress":0,"stop_progress":768,"current_progress":0,"current_state":0,"duration_total":1004060536,"time_ready":0,"time_finish":1004060536,"duration_total":1004060536,"duration_init":411,"duration_compute":1004060000,"duration_fini":125,"duration_break":0,"energy":25308.2},{"id":42,"part":0,"start_progress":0,"stop_progress":50,"current_progress":0,"current_state":0,"duration_total":146233617,"time_ready":1004060536,"time_finish":1150294153,"duration_total":146233617,"duration_init":496,"duration_compute":146233000,"duration_fini":121,"duration_break":0,"energy":3423.03},{"id":43,"part":0,"start_progress":0,"stop_progress":256,"current_progress":0,"current_state":0,"duration_total":33089618,"time_ready":1150294153,"time_finish":1183383771,"duration_total":33089618,"duration_init":1500780,"duration_compute":31588699,"duration_fini":139,"duration_break":0,"energy":167.765},{"id":44,"part":0,"start_progress":0,"stop_progress":512,"current_progress":0,"current_state":0,"duration_total":117618602,"time_ready":1183383771,"time_finish":1301002373,"duration_total":117618602,"duration_init":7230520,"duration_compute":110388000,"duration_fini":82,"duration_break":0,"energy":522.312},{"id":45,"part":0,"start_progress":0,"stop_progress":21,"current_progress":0,"current_state":0,"duration_total":146233617,"time_ready":1301002373,"time_finish":1447235990,"duration_total":146233617,"duration_init":496,"duration_compute":146233000,"duration_fini":121,"duration_break":0,"energy":3423.03},{"id":46,"part":0,"start_progress":0,"stop_progress":256,"current_progress":0,"current_state":0,"duration_total":33089618,"time_ready":1447235990,"time_finish":1480325608,"duration_total":33089618,"duration_init":1500780,"duration_compute":31588699,"duration_fini":139,"duration_break":0,"energy":167.765},{"id":47,"part":0,"start_progress":0,"stop_progress":768,"current_progress":0,"current_state":0,"duration_total":1004060536,"time_ready":1480325608,"time_finish":2484386144,"duration_total":1004060536,"duration_init":411,"duration_compute":1004060000,"duration_fini":125,"duration_break":0,"energy":25308.2},{"id":48,"part":0,"start_progress":0,"stop_progress":768,"current_progress":0,"current_state":0,"duration_total":122195364,"time_ready":2484386144,"time_finish":2606581508,"duration_total":122195364,"duration_init":260,"duration_compute":122195000,"duration_fini":104,"duration_break":0,"energy":3291.79},{"id":49,"part":0,"start_progress":0,"stop_progress":50,"current_progress":0,"current_state":0,"duration_total":146233617,"time_ready":2606581508,"time_finish":2752815125,"duration_total":146233617,"duration_init":496,"duration_compute":146233000,"duration_fini":121,"duration_break":0,"energy":3423.03},{"id":50,"part":0,"start_progress":0,"stop_progress":256,"current_progress":0,"current_state":0,"duration_total":33089618,"time_ready":2752815125,"time_finish":2785904743,"duration_total":33089618,"duration_init":1500780,"duration_compute":31588699,"duration_fini":139,"duration_break":0,"energy":167.765},{"id":51,"part":0,"start_progress":0,"stop_progress":256,"current_progress":0,"current_state":0,"duration_total":33089618,"time_ready":2785904743,"time_finish":2818994361,"duration_total":33089618,"duration_init":1500780,"duration_compute":31588699,"duration_fini":139,"duration_break":0,"energy":167.765}]]}}
+{"time":"967578.777983423","event":"EXECUTOR_NEWSCHEDULE","id":5}
+{"time":"967578.778063277","event":"TASK_START","id":41,"res":"IntelXeon","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.778166497","event":"TASK_STARTED","id":41,"res":"IntelXeon"}
+{"time":"967578.780819598","event":"TASK_FINISHED","id":41}
+{"time":"967578.780897498","event":"TASK_START","id":42,"res":"IntelXeon","target_progress":50,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.781029898","event":"TASK_STARTED","id":42,"res":"IntelXeon"}
+{"time":"967578.783643049","event":"TASK_FINISHED","id":42}
+{"time":"967578.783718845","event":"TASK_START","id":43,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.783819087","event":"TASK_STARTED","id":43,"res":"IntelXeon"}
+{"time":"967578.786331640","event":"TASK_FINISHED","id":43}
+{"time":"967578.786405996","event":"TASK_START","id":44,"res":"IntelXeon","target_progress":512,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.786506276","event":"TASK_STARTED","id":44,"res":"IntelXeon"}
+{"time":"967578.789068283","event":"TASK_FINISHED","id":44}
+{"time":"967578.789143863","event":"TASK_START","id":45,"res":"IntelXeon","target_progress":21,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.789242645","event":"TASK_STARTED","id":45,"res":"IntelXeon"}
+{"time":"967578.791799410","event":"TASK_FINISHED","id":45}
+{"time":"967578.791874064","event":"TASK_START","id":46,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.791984936","event":"TASK_STARTED","id":46,"res":"IntelXeon"}
+{"time":"967578.794510963","event":"TASK_FINISHED","id":46}
+{"time":"967578.794583235","event":"TASK_START","id":47,"res":"IntelXeon","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.794678365","event":"TASK_STARTED","id":47,"res":"IntelXeon"}
+{"time":"967578.794722543","event":"NEWTASK","id":52,"res":["IntelXeon"],"dep":[],"name":"heat","size":256, "checkpoints":768}
+{"time":"967578.794735373","event":"NEWTASK","id":53,"res":["IntelXeon"],"dep":[52],"name":"correlation","size":256, "checkpoints":256}
+{"time":"967578.794745441","event":"NEWTASK","id":54,"res":["IntelXeon"],"dep":[53],"name":"correlation","size":256, "checkpoints":256}
+{"time":"967578.794755215","event":"NEWTASK","id":55,"res":["IntelXeon"],"dep":[54],"name":"correlation","size":512, "checkpoints":512}
+{"time":"967578.794775101","event":"NEWTASK","id":56,"res":["IntelXeon"],"dep":[55],"name":"markov","size":256, "checkpoints":50}
+{"time":"967578.794784995","event":"NEWTASK","id":57,"res":["IntelXeon"],"dep":[56],"name":"markov","size":128, "checkpoints":21}
+{"time":"967578.794794459","event":"NEWTASK","id":58,"res":["IntelXeon"],"dep":[57],"name":"markov","size":128, "checkpoints":50}
+{"time":"967578.794803731","event":"NEWTASK","id":59,"res":["IntelXeon"],"dep":[58],"name":"markov","size":128, "checkpoints":21}
+{"time":"967578.794813371","event":"NEWTASK","id":60,"res":["IntelXeon"],"dep":[59],"name":"heat","size":256, "checkpoints":768}
+{"time":"967578.794960477","event":"COMPUTER_UPDATE"}
+{"time":"967578.795082985","event":"TASK_GOTPROGRESS","id":47,"progress":560}
+{"time":"967578.795123952","event":"COMPUTER_ALGOSTART"}
+{"time":"967578.795746616","event":"COMPUTER_ALGOSTOP","duration":0.000551}
+{"time":"967578.795913896","event":"SCHEDULE","schedule":{"id":6,"compute_start":967578795151355,"compute_stop":967578795702069,"compute_duration":550714,"duration":2090622061,"active_tasks":14,"static_energy":70108,"dynamic_energy":48422.9,"total_energy":118531,"tasks":[[{"id":47,"part":0,"start_progress":560,"stop_progress":768,"current_progress":560,"current_state":2,"duration_total":271933452,"time_ready":0,"time_finish":271933452,"duration_total":271933452,"duration_init":411,"duration_compute":271932916,"duration_fini":125,"duration_break":0,"energy":6854.3},{"id":48,"part":0,"start_progress":0,"stop_progress":768,"current_progress":0,"current_state":0,"duration_total":122195364,"time_ready":271933452,"time_finish":394128816,"duration_total":122195364,"duration_init":260,"duration_compute":122195000,"duration_fini":104,"duration_break":0,"energy":3291.79},{"id":49,"part":0,"start_progress":0,"stop_progress":50,"current_progress":0,"current_state":0,"duration_total":146233617,"time_ready":394128816,"time_finish":540362433,"duration_total":146233617,"duration_init":496,"duration_compute":146233000,"duration_fini":121,"duration_break":0,"energy":3423.03},{"id":50,"part":0,"start_progress":0,"stop_progress":256,"current_progress":0,"current_state":0,"duration_total":33089618,"time_ready":540362433,"time_finish":573452051,"duration_total":33089618,"duration_init":1500780,"duration_compute":31588699,"duration_fini":139,"duration_break":0,"energy":167.765},{"id":51,"part":0,"start_progress":0,"stop_progress":256,"current_progress":0,"current_state":0,"duration_total":33089618,"time_ready":573452051,"time_finish":606541669,"duration_total":33089618,"duration_init":1500780,"duration_compute":31588699,"duration_fini":139,"duration_break":0,"energy":167.765},{"id":52,"part":0,"start_progress":0,"stop_progress":768,"current_progress":0,"current_state":0,"duration_total":122195364,"time_ready":606541669,"time_finish":728737033,"duration_total":122195364,"duration_init":260,"duration_compute":122195000,"duration_fini":104,"duration_break":0,"energy":3291.79},{"id":53,"part":0,"start_progress":0,"stop_progress":256,"current_progress":0,"current_state":0,"duration_total":33089618,"time_ready":728737033,"time_finish":761826651,"duration_total":33089618,"duration_init":1500780,"duration_compute":31588699,"duration_fini":139,"duration_break":0,"energy":167.765},{"id":54,"part":0,"start_progress":0,"stop_progress":256,"current_progress":0,"current_state":0,"duration_total":33089618,"time_ready":761826651,"time_finish":794916269,"duration_total":33089618,"duration_init":1500780,"duration_compute":31588699,"duration_fini":139,"duration_break":0,"energy":167.765},{"id":55,"part":0,"start_progress":0,"stop_progress":512,"current_progress":0,"current_state":0,"duration_total":117618602,"time_ready":794916269,"time_finish":912534871,"duration_total":117618602,"duration_init":7230520,"duration_compute":110388000,"duration_fini":82,"duration_break":0,"energy":522.312},{"id":56,"part":0,"start_progress":0,"stop_progress":50,"current_progress":0,"current_state":0,"duration_total":617190975,"time_ready":912534871,"time_finish":1529725846,"duration_total":617190975,"duration_init":767,"duration_compute":617190000,"duration_fini":208,"duration_break":0,"energy":16807.7},{"id":57,"part":0,"start_progress":0,"stop_progress":21,"current_progress":0,"current_state":0,"duration_total":146233617,"time_ready":1529725846,"time_finish":1675959463,"duration_total":146233617,"duration_init":496,"duration_compute":146233000,"duration_fini":121,"duration_break":0,"energy":3423.03},{"id":58,"part":0,"start_progress":0,"stop_progress":50,"current_progress":0,"current_state":0,"duration_total":146233617,"time_ready":1675959463,"time_finish":1822193080,"duration_total":146233617,"duration_init":496,"duration_compute":146233000,"duration_fini":121,"duration_break":0,"energy":3423.03},{"id":59,"part":0,"start_progress":0,"stop_progress":21,"current_progress":0,"current_state":0,"duration_total":146233617,"time_ready":1822193080,"time_finish":1968426697,"duration_total":146233617,"duration_init":496,"duration_compute":146233000,"duration_fini":121,"duration_break":0,"energy":3423.03},{"id":60,"part":0,"start_progress":0,"stop_progress":768,"current_progress":0,"current_state":0,"duration_total":122195364,"time_ready":1968426697,"time_finish":2090622061,"duration_total":122195364,"duration_init":260,"duration_compute":122195000,"duration_fini":104,"duration_break":0,"energy":3291.79}]]}}
+{"time":"967578.796315798","event":"EXECUTOR_NEWSCHEDULE","id":6}
+{"time":"967578.798837347","event":"TASK_FINISHED","id":47}
+{"time":"967578.798908797","event":"TASK_START","id":48,"res":"IntelXeon","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.799015735","event":"TASK_STARTED","id":48,"res":"IntelXeon"}
+{"time":"967578.801529596","event":"TASK_FINISHED","id":48}
+{"time":"967578.801601834","event":"TASK_START","id":49,"res":"IntelXeon","target_progress":50,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.801697274","event":"TASK_STARTED","id":49,"res":"IntelXeon"}
+{"time":"967578.804088885","event":"TASK_FINISHED","id":49}
+{"time":"967578.804161301","event":"TASK_START","id":50,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.804268066","event":"TASK_STARTED","id":50,"res":"IntelXeon"}
+{"time":"967578.806692910","event":"TASK_FINISHED","id":50}
+{"time":"967578.806774567","event":"TASK_START","id":51,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.806877506","event":"TASK_STARTED","id":51,"res":"IntelXeon"}
+{"time":"967578.809455959","event":"TASK_FINISHED","id":51}
+{"time":"967578.809539203","event":"TASK_START","id":52,"res":"IntelXeon","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.809629745","event":"TASK_STARTED","id":52,"res":"IntelXeon"}
+{"time":"967578.812058476","event":"TASK_FINISHED","id":52}
+{"time":"967578.812129073","event":"TASK_START","id":53,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.812220192","event":"TASK_STARTED","id":53,"res":"IntelXeon"}
+{"time":"967578.814654372","event":"TASK_FINISHED","id":53}
+{"time":"967578.814722359","event":"TASK_START","id":54,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.814813685","event":"TASK_STARTED","id":54,"res":"IntelXeon"}
+{"time":"967578.817131896","event":"TASK_FINISHED","id":54}
+{"time":"967578.817199211","event":"TASK_START","id":55,"res":"IntelXeon","target_progress":512,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.817289445","event":"TASK_STARTED","id":55,"res":"IntelXeon"}
+{"time":"967578.819609196","event":"TASK_FINISHED","id":55}
+{"time":"967578.819677196","event":"TASK_START","id":56,"res":"IntelXeon","target_progress":50,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.819767780","event":"TASK_STARTED","id":56,"res":"IntelXeon"}
+{"time":"967578.822077638","event":"TASK_FINISHED","id":56}
+{"time":"967578.822146550","event":"TASK_START","id":57,"res":"IntelXeon","target_progress":21,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.822233063","event":"TASK_STARTED","id":57,"res":"IntelXeon"}
+{"time":"967578.824648282","event":"TASK_FINISHED","id":57}
+{"time":"967578.824726262","event":"TASK_START","id":58,"res":"IntelXeon","target_progress":50,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.824828552","event":"TASK_STARTED","id":58,"res":"IntelXeon"}
+{"time":"967578.826981422","event":"TASK_FINISHED","id":58}
+{"time":"967578.827034732","event":"TASK_START","id":59,"res":"IntelXeon","target_progress":21,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.827125685","event":"TASK_STARTED","id":59,"res":"IntelXeon"}
+{"time":"967578.829296435","event":"TASK_FINISHED","id":59}
+{"time":"967578.829360676","event":"TASK_START","id":60,"res":"IntelXeon","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.829447699","event":"TASK_STARTED","id":60,"res":"IntelXeon"}
+{"time":"967578.831527387","event":"TASK_FINISHED","id":60}
+{"time":"967578.831637599","event":"NEWTASK","id":61,"res":["IntelXeon"],"dep":[],"name":"heat","size":512, "checkpoints":768}
+{"time":"967578.831650073","event":"NEWTASK","id":62,"res":["IntelXeon"],"dep":[61],"name":"correlation","size":512, "checkpoints":512}
+{"time":"967578.831659305","event":"NEWTASK","id":63,"res":["IntelXeon"],"dep":[62],"name":"heat","size":1024, "checkpoints":768}
+{"time":"967578.831668068","event":"NEWTASK","id":64,"res":["IntelXeon"],"dep":[63],"name":"correlation","size":256, "checkpoints":256}
+{"time":"967578.831678358","event":"NEWTASK","id":65,"res":["IntelXeon"],"dep":[64],"name":"correlation","size":256, "checkpoints":256}
+{"time":"967578.831689255","event":"NEWTASK","id":66,"res":["IntelXeon"],"dep":[65],"name":"heat","size":512, "checkpoints":768}
+{"time":"967578.831698228","event":"NEWTASK","id":67,"res":["IntelXeon"],"dep":[66],"name":"heat","size":256, "checkpoints":768}
+{"time":"967578.831706973","event":"NEWTASK","id":68,"res":["IntelXeon"],"dep":[67],"name":"gaussblur","size":512, "checkpoints":256}
+{"time":"967578.831715496","event":"NEWTASK","id":69,"res":["IntelXeon"],"dep":[68],"name":"heat","size":1024, "checkpoints":768}
+{"time":"967578.831855284","event":"COMPUTER_UPDATE"}
+{"time":"967578.831961560","event":"COMPUTER_ALGOSTART"}
+{"time":"967578.832457557","event":"COMPUTER_ALGOSTOP","duration":0.000381}
+{"time":"967578.832580993","event":"SCHEDULE","schedule":{"id":7,"compute_start":967578832020508,"compute_stop":967578832401693,"compute_duration":381185,"duration":3711277596,"active_tasks":9,"static_energy":124456,"dynamic_energy":81244.7,"total_energy":205701,"tasks":[[{"id":61,"part":0,"start_progress":0,"stop_progress":768,"current_progress":0,"current_state":0,"duration_total":290019408,"time_ready":0,"time_finish":290019408,"duration_total":290019408,"duration_init":287,"duration_compute":290019000,"duration_fini":121,"duration_break":0,"energy":8283.46},{"id":62,"part":0,"start_progress":0,"stop_progress":512,"current_progress":0,"current_state":0,"duration_total":117618602,"time_ready":290019408,"time_finish":407638010,"duration_total":117618602,"duration_init":7230520,"duration_compute":110388000,"duration_fini":82,"duration_break":0,"energy":522.312},{"id":63,"part":0,"start_progress":0,"stop_progress":768,"current_progress":0,"current_state":0,"duration_total":1004060536,"time_ready":407638010,"time_finish":1411698546,"duration_total":1004060536,"duration_init":411,"duration_compute":1004060000,"duration_fini":125,"duration_break":0,"energy":25308.2},{"id":64,"part":0,"start_progress":0,"stop_progress":256,"current_progress":0,"current_state":0,"duration_total":33089618,"time_ready":1411698546,"time_finish":1444788164,"duration_total":33089618,"duration_init":1500780,"duration_compute":31588699,"duration_fini":139,"duration_break":0,"energy":167.765},{"id":65,"part":0,"start_progress":0,"stop_progress":256,"current_progress":0,"current_state":0,"duration_total":33089618,"time_ready":1444788164,"time_finish":1477877782,"duration_total":33089618,"duration_init":1500780,"duration_compute":31588699,"duration_fini":139,"duration_break":0,"energy":167.765},{"id":66,"part":0,"start_progress":0,"stop_progress":768,"current_progress":0,"current_state":0,"duration_total":290019408,"time_ready":1477877782,"time_finish":1767897190,"duration_total":290019408,"duration_init":287,"duration_compute":290019000,"duration_fini":121,"duration_break":0,"energy":8283.46},{"id":67,"part":0,"start_progress":0,"stop_progress":768,"current_progress":0,"current_state":0,"duration_total":122195364,"time_ready":1767897190,"time_finish":1890092554,"duration_total":122195364,"duration_init":260,"duration_compute":122195000,"duration_fini":104,"duration_break":0,"energy":3291.79},{"id":68,"part":0,"start_progress":0,"stop_progress":256,"current_progress":0,"current_state":0,"duration_total":817124506,"time_ready":1890092554,"time_finish":2707217060,"duration_total":817124506,"duration_init":378,"duration_compute":817124000,"duration_fini":128,"duration_break":0,"energy":9911.76},{"id":69,"part":0,"start_progress":0,"stop_progress":768,"current_progress":0,"current_state":0,"duration_total":1004060536,"time_ready":2707217060,"time_finish":3711277596,"duration_total":1004060536,"duration_init":411,"duration_compute":1004060000,"duration_fini":125,"duration_break":0,"energy":25308.2}]]}}
+{"time":"967578.832886872","event":"EXECUTOR_NEWSCHEDULE","id":7}
+{"time":"967578.832947060","event":"TASK_START","id":61,"res":"IntelXeon","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.833034249","event":"TASK_STARTED","id":61,"res":"IntelXeon"}
+{"time":"967578.835390578","event":"TASK_FINISHED","id":61}
+{"time":"967578.835455937","event":"TASK_START","id":62,"res":"IntelXeon","target_progress":512,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.835592472","event":"TASK_STARTED","id":62,"res":"IntelXeon"}
+{"time":"967578.837786542","event":"TASK_FINISHED","id":62}
+{"time":"967578.837863399","event":"TASK_START","id":63,"res":"IntelXeon","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.837945977","event":"TASK_STARTED","id":63,"res":"IntelXeon"}
+{"time":"967578.839962961","event":"TASK_FINISHED","id":63}
+{"time":"967578.840034311","event":"TASK_START","id":64,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.840122397","event":"TASK_STARTED","id":64,"res":"IntelXeon"}
+{"time":"967578.842184502","event":"TASK_FINISHED","id":64}
+{"time":"967578.842266040","event":"TASK_START","id":65,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.842354798","event":"TASK_STARTED","id":65,"res":"IntelXeon"}
+{"time":"967578.844464613","event":"TASK_FINISHED","id":65}
+{"time":"967578.844542715","event":"TASK_START","id":66,"res":"IntelXeon","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.844626170","event":"TASK_STARTED","id":66,"res":"IntelXeon"}
+{"time":"967578.846669415","event":"TASK_FINISHED","id":66}
+{"time":"967578.846733896","event":"TASK_START","id":67,"res":"IntelXeon","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.846816817","event":"TASK_STARTED","id":67,"res":"IntelXeon"}
+{"time":"967578.848793398","event":"TASK_FINISHED","id":67}
+{"time":"967578.848858411","event":"TASK_START","id":68,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.848941073","event":"TASK_STARTED","id":68,"res":"IntelXeon"}
+{"time":"967578.848979878","event":"NEWTASK","id":70,"res":["IntelXeon"],"dep":[],"name":"gaussblur","size":512, "checkpoints":256}
+{"time":"967578.848991040","event":"NEWTASK","id":71,"res":["IntelXeon"],"dep":[70],"name":"heat","size":512, "checkpoints":768}
+{"time":"967578.848999947","event":"NEWTASK","id":72,"res":["IntelXeon"],"dep":[71],"name":"correlation","size":256, "checkpoints":256}
+{"time":"967578.849020013","event":"NEWTASK","id":73,"res":["IntelXeon"],"dep":[72],"name":"correlation","size":1024, "checkpoints":1024}
+{"time":"967578.849046918","event":"NEWTASK","id":74,"res":["IntelXeon"],"dep":[73],"name":"markov","size":256, "checkpoints":22}
+{"time":"967578.849055301","event":"NEWTASK","id":75,"res":["IntelXeon"],"dep":[74],"name":"heat","size":256, "checkpoints":768}
+{"time":"967578.849063590","event":"NEWTASK","id":76,"res":["IntelXeon"],"dep":[75],"name":"correlation","size":256, "checkpoints":256}
+{"time":"967578.849082523","event":"NEWTASK","id":77,"res":["IntelXeon"],"dep":[76],"name":"correlation","size":512, "checkpoints":512}
+{"time":"967578.849091096","event":"NEWTASK","id":78,"res":["IntelXeon"],"dep":[77],"name":"correlation","size":256, "checkpoints":256}
+{"time":"967578.849098861","event":"NEWTASK","id":79,"res":["IntelXeon"],"dep":[78],"name":"heat","size":512, "checkpoints":768}
+{"time":"967578.849241351","event":"COMPUTER_UPDATE"}
+{"time":"967578.849320626","event":"TASK_GOTPROGRESS","id":68,"progress":11}
+{"time":"967578.849343526","event":"COMPUTER_ALGOSTART"}
+{"time":"967578.849780484","event":"COMPUTER_ALGOSTOP","duration":0.000387}
+{"time":"967578.849890617","event":"SCHEDULE","schedule":{"id":8,"compute_start":967578849360854,"compute_stop":967578849747919,"compute_duration":387065,"duration":4829690674,"active_tasks":12,"static_energy":161961,"dynamic_energy":86421.8,"total_energy":248383,"tasks":[[{"id":68,"part":0,"start_progress":11,"stop_progress":256,"current_progress":11,"current_state":2,"duration_total":782013709,"time_ready":0,"time_finish":782013709,"duration_total":782013709,"duration_init":378,"duration_compute":782013203,"duration_fini":128,"duration_break":0,"energy":9485.86},{"id":69,"part":0,"start_progress":0,"stop_progress":768,"current_progress":0,"current_state":0,"duration_total":1004060536,"time_ready":782013709,"time_finish":1786074245,"duration_total":1004060536,"duration_init":411,"duration_compute":1004060000,"duration_fini":125,"duration_break":0,"energy":25308.2},{"id":70,"part":0,"start_progress":0,"stop_progress":256,"current_progress":0,"current_state":0,"duration_total":817124506,"time_ready":1786074245,"time_finish":2603198751,"duration_total":817124506,"duration_init":378,"duration_compute":817124000,"duration_fini":128,"duration_break":0,"energy":9911.76},{"id":71,"part":0,"start_progress":0,"stop_progress":768,"current_progress":0,"current_state":0,"duration_total":290019408,"time_ready":2603198751,"time_finish":2893218159,"duration_total":290019408,"duration_init":287,"duration_compute":290019000,"duration_fini":121,"duration_break":0,"energy":8283.46},{"id":72,"part":0,"start_progress":0,"stop_progress":256,"current_progress":0,"current_state":0,"duration_total":33089618,"time_ready":2893218159,"time_finish":2926307777,"duration_total":33089618,"duration_init":1500780,"duration_compute":31588699,"duration_fini":139,"duration_break":0,"energy":167.765},{"id":73,"part":0,"start_progress":0,"stop_progress":1024,"current_progress":0,"current_state":0,"duration_total":690179312,"time_ready":2926307777,"time_finish":3616487089,"duration_total":690179312,"duration_init":15508200,"duration_compute":674671000,"duration_fini":112,"duration_break":0,"energy":4023.97},{"id":74,"part":0,"start_progress":0,"stop_progress":22,"current_progress":0,"current_state":0,"duration_total":617190975,"time_ready":3616487089,"time_finish":4233678064,"duration_total":617190975,"duration_init":767,"duration_compute":617190000,"duration_fini":208,"duration_break":0,"energy":16807.7},{"id":75,"part":0,"start_progress":0,"stop_progress":768,"current_progress":0,"current_state":0,"duration_total":122195364,"time_ready":4233678064,"time_finish":4355873428,"duration_total":122195364,"duration_init":260,"duration_compute":122195000,"duration_fini":104,"duration_break":0,"energy":3291.79},{"id":76,"part":0,"start_progress":0,"stop_progress":256,"current_progress":0,"current_state":0,"duration_total":33089618,"time_ready":4355873428,"time_finish":4388963046,"duration_total":33089618,"duration_init":1500780,"duration_compute":31588699,"duration_fini":139,"duration_break":0,"energy":167.765},{"id":77,"part":0,"start_progress":0,"stop_progress":512,"current_progress":0,"current_state":0,"duration_total":117618602,"time_ready":4388963046,"time_finish":4506581648,"duration_total":117618602,"duration_init":7230520,"duration_compute":110388000,"duration_fini":82,"duration_break":0,"energy":522.312},{"id":78,"part":0,"start_progress":0,"stop_progress":256,"current_progress":0,"current_state":0,"duration_total":33089618,"time_ready":4506581648,"time_finish":4539671266,"duration_total":33089618,"duration_init":1500780,"duration_compute":31588699,"duration_fini":139,"duration_break":0,"energy":167.765},{"id":79,"part":0,"start_progress":0,"stop_progress":768,"current_progress":0,"current_state":0,"duration_total":290019408,"time_ready":4539671266,"time_finish":4829690674,"duration_total":290019408,"duration_init":287,"duration_compute":290019000,"duration_fini":121,"duration_break":0,"energy":8283.46}]]}}
+{"time":"967578.850162756","event":"EXECUTOR_NEWSCHEDULE","id":8}
+{"time":"967578.852226841","event":"TASK_FINISHED","id":68}
+{"time":"967578.852288527","event":"TASK_START","id":69,"res":"IntelXeon","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.852377817","event":"TASK_STARTED","id":69,"res":"IntelXeon"}
+{"time":"967578.854330815","event":"TASK_FINISHED","id":69}
+{"time":"967578.854395703","event":"TASK_START","id":70,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.854477679","event":"TASK_STARTED","id":70,"res":"IntelXeon"}
+{"time":"967578.856412143","event":"TASK_FINISHED","id":70}
+{"time":"967578.856479189","event":"TASK_START","id":71,"res":"IntelXeon","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.856557783","event":"TASK_STARTED","id":71,"res":"IntelXeon"}
+{"time":"967578.858518235","event":"TASK_FINISHED","id":71}
+{"time":"967578.858583455","event":"TASK_START","id":72,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.858661497","event":"TASK_STARTED","id":72,"res":"IntelXeon"}
+{"time":"967578.860630211","event":"TASK_FINISHED","id":72}
+{"time":"967578.860694339","event":"TASK_START","id":73,"res":"IntelXeon","target_progress":1024,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.860774878","event":"TASK_STARTED","id":73,"res":"IntelXeon"}
+{"time":"967578.862701035","event":"TASK_FINISHED","id":73}
+{"time":"967578.862739682","event":"TASK_START","id":74,"res":"IntelXeon","target_progress":22,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.862813809","event":"TASK_STARTED","id":74,"res":"IntelXeon"}
+{"time":"967578.864874290","event":"TASK_FINISHED","id":74}
+{"time":"967578.864911544","event":"TASK_START","id":75,"res":"IntelXeon","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.864981658","event":"TASK_STARTED","id":75,"res":"IntelXeon"}
+{"time":"967578.866998444","event":"TASK_FINISHED","id":75}
+{"time":"967578.867052452","event":"TASK_START","id":76,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.867123160","event":"TASK_STARTED","id":76,"res":"IntelXeon"}
+{"time":"967578.870138812","event":"TASK_FINISHED","id":76}
+{"time":"967578.870191508","event":"TASK_START","id":77,"res":"IntelXeon","target_progress":512,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.870292670","event":"TASK_STARTED","id":77,"res":"IntelXeon"}
+{"time":"967578.872950327","event":"TASK_FINISHED","id":77}
+{"time":"967578.873025863","event":"TASK_START","id":78,"res":"IntelXeon","target_progress":256,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.873128482","event":"TASK_STARTED","id":78,"res":"IntelXeon"}
+{"time":"967578.875731857","event":"TASK_FINISHED","id":78}
+{"time":"967578.875810128","event":"TASK_START","id":79,"res":"IntelXeon","target_progress":768,"on_end":"TASK_ONEND_SUSPENDS"}
+{"time":"967578.875926575","event":"TASK_STARTED","id":79,"res":"IntelXeon"}
+{"time":"967578.878405892","event":"TASK_FINISHED","id":79}
+{"time":"967578.879454915","event":"SCHEDULER_SIGNAL"}
+{"time":"967578.879931375","event":"ENDTASK","id":0,"times":{"added":967578657594598,"started":967578658875008,"finished":967578661962056,"aborted":0},"state":"POST"}
+{"time":"967578.879944135","event":"ENDTASK","id":1,"times":{"added":967578657595458,"started":967578662069084,"finished":967578665075317,"aborted":0},"state":"POST"}
+{"time":"967578.879951402","event":"ENDTASK","id":2,"times":{"added":967578657596088,"started":967578665179325,"finished":967578668214260,"aborted":0},"state":"POST"}
+{"time":"967578.879970312","event":"ENDTASK","id":3,"times":{"added":967578657596706,"started":967578668337851,"finished":967578671116103,"aborted":0},"state":"POST"}
+{"time":"967578.879976671","event":"ENDTASK","id":4,"times":{"added":967578657597316,"started":967578671224107,"finished":967578674057220,"aborted":0},"state":"POST"}
+{"time":"967578.879982402","event":"ENDTASK","id":5,"times":{"added":967578657597924,"started":967578674166776,"finished":967578677020160,"aborted":0},"state":"POST"}
+{"time":"967578.879988035","event":"ENDTASK","id":6,"times":{"added":967578657598536,"started":967578677126107,"finished":967578681158914,"aborted":0},"state":"POST"}
+{"time":"967578.879993731","event":"ENDTASK","id":7,"times":{"added":967578677319504,"started":967578681264369,"finished":967578683954220,"aborted":0},"state":"POST"}
+{"time":"967578.879999427","event":"ENDTASK","id":8,"times":{"added":967578677320360,"started":967578684064928,"finished":967578686780061,"aborted":0},"state":"POST"}
+{"time":"967578.880018322","event":"ENDTASK","id":9,"times":{"added":967578677321004,"started":967578686891219,"finished":967578689588902,"aborted":0},"state":"POST"}
+{"time":"967578.880024528","event":"ENDTASK","id":10,"times":{"added":967578677321652,"started":967578689701566,"finished":967578692460662,"aborted":0},"state":"POST"}
+{"time":"967578.880030269","event":"ENDTASK","id":11,"times":{"added":967578677322300,"started":967578692565969,"finished":967578695172861,"aborted":0},"state":"POST"}
+{"time":"967578.880035824","event":"ENDTASK","id":12,"times":{"added":967578677322946,"started":967578695288035,"finished":967578697810718,"aborted":0},"state":"POST"}
+{"time":"967578.880041303","event":"ENDTASK","id":13,"times":{"added":967578677323600,"started":967578697922919,"finished":967578700495725,"aborted":0},"state":"POST"}
+{"time":"967578.880046781","event":"ENDTASK","id":14,"times":{"added":967578677324246,"started":967578700605677,"finished":967578703106420,"aborted":0},"state":"POST"}
+{"time":"967578.880052296","event":"ENDTASK","id":15,"times":{"added":967578677324892,"started":967578703232990,"finished":967578706948449,"aborted":0},"state":"POST"}
+{"time":"967578.880057826","event":"ENDTASK","id":16,"times":{"added":967578677325538,"started":967578707065802,"finished":967578709546784,"aborted":0},"state":"POST"}
+{"time":"967578.880063282","event":"ENDTASK","id":17,"times":{"added":967578677326184,"started":967578709659963,"finished":967578712064534,"aborted":0},"state":"POST"}
+{"time":"967578.880068751","event":"ENDTASK","id":18,"times":{"added":967578703426512,"started":967578712171433,"finished":967578714676145,"aborted":0},"state":"POST"}
+{"time":"967578.880074215","event":"ENDTASK","id":19,"times":{"added":967578703427158,"started":967578714779867,"finished":967578717294965,"aborted":0},"state":"POST"}
+{"time":"967578.880079685","event":"ENDTASK","id":20,"times":{"added":967578703427688,"started":967578717396682,"finished":967578719699553,"aborted":0},"state":"POST"}
+{"time":"967578.880085131","event":"ENDTASK","id":21,"times":{"added":967578703440444,"started":967578719807487,"finished":967578722236544,"aborted":0},"state":"POST"}
+{"time":"967578.880090583","event":"ENDTASK","id":22,"times":{"added":967578703440994,"started":967578722341966,"finished":967578724657617,"aborted":0},"state":"POST"}
+{"time":"967578.880096039","event":"ENDTASK","id":23,"times":{"added":967578703441550,"started":967578724762461,"finished":967578727168758,"aborted":0},"state":"POST"}
+{"time":"967578.880101495","event":"ENDTASK","id":24,"times":{"added":967578703442098,"started":967578727275065,"finished":967578729510667,"aborted":0},"state":"POST"}
+{"time":"967578.880106978","event":"ENDTASK","id":25,"times":{"added":967578703442648,"started":967578729611849,"finished":967578732759350,"aborted":0},"state":"POST"}
+{"time":"967578.880112424","event":"ENDTASK","id":26,"times":{"added":967578729772185,"started":967578732870497,"finished":967578735287363,"aborted":0},"state":"POST"}
+{"time":"967578.880121384","event":"ENDTASK","id":27,"times":{"added":967578729772945,"started":967578735391430,"finished":967578737635556,"aborted":0},"state":"POST"}
+{"time":"967578.880127266","event":"ENDTASK","id":28,"times":{"added":967578729773447,"started":967578737737132,"finished":967578739936098,"aborted":0},"state":"POST"}
+{"time":"967578.880132984","event":"ENDTASK","id":29,"times":{"added":967578729773954,"started":967578740049060,"finished":967578742358142,"aborted":0},"state":"POST"}
+{"time":"967578.880138589","event":"ENDTASK","id":30,"times":{"added":967578729774510,"started":967578742462176,"finished":967578744681481,"aborted":0},"state":"POST"}
+{"time":"967578.880144048","event":"ENDTASK","id":31,"times":{"added":967578744841473,"started":967578745762557,"finished":967578749125513,"aborted":0},"state":"POST"}
+{"time":"967578.880149679","event":"ENDTASK","id":32,"times":{"added":967578744842189,"started":967578749179155,"finished":967578752566756,"aborted":0},"state":"POST"}
+{"time":"967578.880155339","event":"ENDTASK","id":33,"times":{"added":967578744842656,"started":967578752670872,"finished":967578755832400,"aborted":0},"state":"POST"}
+{"time":"967578.880160925","event":"ENDTASK","id":34,"times":{"added":967578744843116,"started":967578755938781,"finished":967578759061859,"aborted":0},"state":"POST"}
+{"time":"967578.880166472","event":"ENDTASK","id":35,"times":{"added":967578744843578,"started":967578759116571,"finished":967578762123033,"aborted":0},"state":"POST"}
+{"time":"967578.880171941","event":"ENDTASK","id":36,"times":{"added":967578744844034,"started":967578762169391,"finished":967578765101542,"aborted":0},"state":"POST"}
+{"time":"967578.880177480","event":"ENDTASK","id":37,"times":{"added":967578744844489,"started":967578765173376,"finished":967578768066255,"aborted":0},"state":"POST"}
+{"time":"967578.880182992","event":"ENDTASK","id":38,"times":{"added":967578744845008,"started":967578768132591,"finished":967578770994968,"aborted":0},"state":"POST"}
+{"time":"967578.880188535","event":"ENDTASK","id":39,"times":{"added":967578744845463,"started":967578771085954,"finished":967578773913583,"aborted":0},"state":"POST"}
+{"time":"967578.880194075","event":"ENDTASK","id":40,"times":{"added":967578744845919,"started":967578773982997,"finished":967578776763696,"aborted":0},"state":"POST"}
+{"time":"967578.880199693","event":"ENDTASK","id":41,"times":{"added":967578776886418,"started":967578778045941,"finished":967578780811598,"aborted":0},"state":"POST"}
+{"time":"967578.880205117","event":"ENDTASK","id":42,"times":{"added":967578776887462,"started":967578780878922,"finished":967578783635219,"aborted":0},"state":"POST"}
+{"time":"967578.880210635","event":"ENDTASK","id":43,"times":{"added":967578776888054,"started":967578783701409,"finished":967578786323668,"aborted":0},"state":"POST"}
+{"time":"967578.880216047","event":"ENDTASK","id":44,"times":{"added":967578776888650,"started":967578786388382,"finished":967578789060325,"aborted":0},"state":"POST"}
+{"time":"967578.880221523","event":"ENDTASK","id":45,"times":{"added":967578776889294,"started":967578789126431,"finished":967578791791516,"aborted":0},"state":"POST"}
+{"time":"967578.880227032","event":"ENDTASK","id":46,"times":{"added":967578776889890,"started":967578791856402,"finished":967578794503381,"aborted":0},"state":"POST"}
+{"time":"967578.880232563","event":"ENDTASK","id":47,"times":{"added":967578776890484,"started":967578794566447,"finished":967578798830383,"aborted":0},"state":"POST"}
+{"time":"967578.880238099","event":"ENDTASK","id":48,"times":{"added":967578776891078,"started":967578798892233,"finished":967578801521898,"aborted":0},"state":"POST"}
+{"time":"967578.880243461","event":"ENDTASK","id":49,"times":{"added":967578776891670,"started":967578801585078,"finished":967578804081377,"aborted":0},"state":"POST"}
+{"time":"967578.880248874","event":"ENDTASK","id":50,"times":{"added":967578776892258,"started":967578804144515,"finished":967578806685672,"aborted":0},"state":"POST"}
+{"time":"967578.880257064","event":"ENDTASK","id":51,"times":{"added":967578776892850,"started":967578806758717,"finished":967578809448413,"aborted":0},"state":"POST"}
+{"time":"967578.880262946","event":"ENDTASK","id":52,"times":{"added":967578794710687,"started":967578809510831,"finished":967578812051060,"aborted":0},"state":"POST"}
+{"time":"967578.880268544","event":"ENDTASK","id":53,"times":{"added":967578794711583,"started":967578812113044,"finished":967578814646925,"aborted":0},"state":"POST"}
+{"time":"967578.880274147","event":"ENDTASK","id":54,"times":{"added":967578794712209,"started":967578814706471,"finished":967578817124792,"aborted":0},"state":"POST"}
+{"time":"967578.880279730","event":"ENDTASK","id":55,"times":{"added":967578794712743,"started":967578817183118,"finished":967578819602138,"aborted":0},"state":"POST"}
+{"time":"967578.880285287","event":"ENDTASK","id":56,"times":{"added":967578794713275,"started":967578819661314,"finished":967578822070806,"aborted":0},"state":"POST"}
+{"time":"967578.880290783","event":"ENDTASK","id":57,"times":{"added":967578794713805,"started":967578822131506,"finished":967578824641401,"aborted":0},"state":"POST"}
+{"time":"967578.880296290","event":"ENDTASK","id":58,"times":{"added":967578794714343,"started":967578824710525,"finished":967578826974665,"aborted":0},"state":"POST"}
+{"time":"967578.880301703","event":"ENDTASK","id":59,"times":{"added":967578794714877,"started":967578827019464,"finished":967578829289523,"aborted":0},"state":"POST"}
+{"time":"967578.880307146","event":"ENDTASK","id":60,"times":{"added":967578794715411,"started":967578829345514,"finished":967578831520379,"aborted":0},"state":"POST"}
+{"time":"967578.880312586","event":"ENDTASK","id":61,"times":{"added":967578831625678,"started":967578832933462,"finished":967578835383671,"aborted":0},"state":"POST"}
+{"time":"967578.880318008","event":"ENDTASK","id":62,"times":{"added":967578831626498,"started":967578835440745,"finished":967578837779581,"aborted":0},"state":"POST"}
+{"time":"967578.880323423","event":"ENDTASK","id":63,"times":{"added":967578831627076,"started":967578837848909,"finished":967578839956433,"aborted":0},"state":"POST"}
+{"time":"967578.880328844","event":"ENDTASK","id":64,"times":{"added":967578831627571,"started":967578840019811,"finished":967578842177827,"aborted":0},"state":"POST"}
+{"time":"967578.880334420","event":"ENDTASK","id":65,"times":{"added":967578831628055,"started":967578842239186,"finished":967578844457693,"aborted":0},"state":"POST"}
+{"time":"967578.880339944","event":"ENDTASK","id":66,"times":{"added":967578831628543,"started":967578844528236,"finished":967578846662834,"aborted":0},"state":"POST"}
+{"time":"967578.880345450","event":"ENDTASK","id":67,"times":{"added":967578831629028,"started":967578846719504,"finished":967578848786859,"aborted":0},"state":"POST"}
+{"time":"967578.880350884","event":"ENDTASK","id":68,"times":{"added":967578831629599,"started":967578848843909,"finished":967578852220707,"aborted":0},"state":"POST"}
+{"time":"967578.880356365","event":"ENDTASK","id":69,"times":{"added":967578831630107,"started":967578852273839,"finished":967578854324183,"aborted":0},"state":"POST"}
+{"time":"967578.880361828","event":"ENDTASK","id":70,"times":{"added":967578848969499,"started":967578854380813,"finished":967578856405909,"aborted":0},"state":"POST"}
+{"time":"967578.880367341","event":"ENDTASK","id":71,"times":{"added":967578848970125,"started":967578856461294,"finished":967578858511917,"aborted":0},"state":"POST"}
+{"time":"967578.880372836","event":"ENDTASK","id":72,"times":{"added":967578848970590,"started":967578858568690,"finished":967578860624054,"aborted":0},"state":"POST"}
+{"time":"967578.880378317","event":"ENDTASK","id":73,"times":{"added":967578848971059,"started":967578860679466,"finished":967578862695198,"aborted":0},"state":"POST"}
+{"time":"967578.880383733","event":"ENDTASK","id":74,"times":{"added":967578848971531,"started":967578862725525,"finished":967578864868263,"aborted":0},"state":"POST"}
+{"time":"967578.880389175","event":"ENDTASK","id":75,"times":{"added":967578848972054,"started":967578864898638,"finished":967578866992364,"aborted":0},"state":"POST"}
+{"time":"967578.880397330","event":"ENDTASK","id":76,"times":{"added":967578848972518,"started":967578867039725,"finished":967578870129772,"aborted":0},"state":"POST"}
+{"time":"967578.880403336","event":"ENDTASK","id":77,"times":{"added":967578848972985,"started":967578870176082,"finished":967578872941811,"aborted":0},"state":"POST"}
+{"time":"967578.880408927","event":"ENDTASK","id":78,"times":{"added":967578848973453,"started":967578873009679,"finished":967578875723457,"aborted":0},"state":"POST"}
+{"time":"967578.880414610","event":"ENDTASK","id":79,"times":{"added":967578848973917,"started":967578875793685,"finished":967578878397456,"aborted":0},"state":"POST"}
+{"time":"967578.880580237","event":"SCHEDULER_STOP"}

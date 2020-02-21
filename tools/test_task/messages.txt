@@ -1,0 +1,9 @@
+send {"msg":"TASKIDS","taskids":[0]}
+wait 1.0
+send {"msg":"TASK_START","id":0,"resource":"IntelXeon","endprogress":50,"onend":"suspend"}
+recv {"msg":"TASK_STARTED","id":0}
+wait 0.38
+send {"msg":"TASK_SUSPEND","id":0}
+wait 0.1
+send {"msg":"TASK_START","id":0,"resource":"IntelXeon","endprogress":50,"onend":"suspend"}
+recv {"msg":"QUIT"}
